@@ -1,0 +1,59 @@
+.container {
+  max-width: 1024px;
+  width: 100%;
+  margin: 0 auto;
+}
+.row{
+  margin: 0 -10px;
+}
+.row::after, .container::after {
+  display: block;
+  content: "";
+  clear: both;
+}
+.middle > * {
+  vertical-align: middle;
+}
+.center {
+  position: relative;
+  & > * {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+}
+.w10 {
+  width: 10%;
+}
+.w15 {
+  width: 15%;
+}
+.w20 {
+  width: 20%;
+}
+.w25 {
+  width: 25%;
+}
+.w30 {
+  width: 30%;
+}
+.w40 {
+  width: 40%;
+}
+.w50 {
+  width: 50%;
+}
+.w60 {
+  width: 60%;
+}
+.w75 {
+  width: 75%;
+}
+.w100 {
+  width: 100% !important;
+}
+.inline-block {
+  display: inline-block;
+}

@@ -1,0 +1,53 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: $font-body;
+}
+
+a {
+  text-decoration: none;
+  cursor: pointer;
+  color: $color-black;
+}
+
+button {
+  cursor: pointer;
+}
+
+input[type=submit] {
+  cursor: pointer;
+}
+
+ul {
+  list-style-type: none;
+}
+
+p {
+  line-height: 1.5;
+}
+
+a {
+  transition: all .5s;
+}
+
+label {
+  display: inline-block;
+  max-width: 100%;
+  margin-bottom: 5px;
+  font-weight: 700;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+h1 {
+  font-size: $m * 1.3 ;
+}
+
+h2 {
+  font-size: 1.2 * $m;
+}

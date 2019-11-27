@@ -1,0 +1,78 @@
+.pull-left {
+  float: left;
+}
+.pull-right {
+  float: right;
+}
+.unfloat {
+  float: none;
+}
+.clearfix {
+  @extend %clearfix;
+}
+.alert {
+  padding: 10px;
+  border-radius: 0  0 4px 4px;
+  border: 1px solid transparent;
+}
+.alert-danger {
+  color: $color-white;
+  background-color: $color-light-red;
+  border-color: $color-grey;
+}
+.active {
+  color: $color-blue !important;
+}
+.txt-center {
+  text-align: center;
+}
+.txt-left {
+  text-align: left !important;
+}
+.txt-right {
+  text-align: right;
+}
+.txt-bold {
+  font-weight: 600;
+}
+.txt-dm {
+  font-size: 10px !important;
+}
+.display-none {
+  display: none !important;
+}
+.display-full {
+  width: 100% !important;
+}
+.notification {
+  font-size: 33px;
+  color: $color-blue;
+  margin-bottom: 20px;
+}
+input.file {
+  position: relative;
+    -moz-opacity: 0;
+    opacity: 0;
+    z-index: 2;
+}
+.fileinputs {
+    position: relative;
+}
+.fakefile {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    z-index: 1;
+}
+.disabled-li {
+  pointer-events: none;
+}
+.position-left-30 {
+  left: 30px;
+}
+.height-1000 {
+  height: 900px !important;
+}
+.pl0 {
+  padding-left: 0 !important;
+}

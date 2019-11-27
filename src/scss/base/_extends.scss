@@ -1,0 +1,31 @@
+%clearfix {
+  &::after {
+    display: block;
+    content: '';
+    clear: both;
+  }
+}
+
+%clr {
+  &::after {
+    display: block;
+    content: '';
+    clear: both;
+  }
+}
+
+%pull-left {
+  float: left;
+}
+
+%pull-right {
+  float: right;
+}
+
+%txt-center {
+  text-align: center;
+}
+
+%txt-bold {
+  font-weight: 600;
+}

@@ -1,3 +1,20 @@
+# Feature
+
+Config CI (Travis, Zeplink, etc, ...)
+Cấu trúc dự án:
+## Xử lý form
+
+## Login
+
+## Upload image
+
+## Message thông báo
+
+## Cấu hình style scss
+
+Style các class status trong angular
+Style layout with flex
+
 # AngularTemplate
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.3.8.

@@ -1,0 +1,30 @@
+// === Space base ===
+$xxs: 2px;
+$xs: $xxs * 2;
+$s: $xs * 2;
+$m: $s * 2;
+$l: $m * 2;
+$xl: $l * 2;
+$xxl: $xl * 2;
+
+$breakpoints: (
+  small: 480px,
+  medium: 768px,
+  wide: 960px,
+  large: 1024px,
+  largest: 1280px
+);
+$color-green: #00ff00;
+$color-light-green: #76c100;
+$color-black: #000;
+$color-light-black: #2d2525;
+$color-red: #ff0000;
+$color-white: #fff;
+$color-dark-white: #f2f2f2;
+$color-grey: #808080;
+$color-light-grey: #bcbcbc;
+$color-bold-blue: blue;
+$color-blue: #00afd8;
+$color-light-red: #a94442;
+$color-primary: #62c6f8;
+$active-dot: #00afd8;
