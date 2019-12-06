@@ -1,0 +1,120 @@
+.page-footer {
+  width: 100%;
+  height: auto;
+  background-color: $color-black;
+  font-size: 14px;
+  .container{
+    .footer-top {
+      padding: 16px;
+      border-bottom: solid 1px $color-grey; 
+      .footer-top-left {
+        a {
+          font-family: fantasy;
+          font-size: 40px;
+          text-transform: uppercase;
+          color: $color-white;
+          display: inline-block;
+          .logo-footer {
+            margin-right: 20px;
+            transition: transform .8s ease-in-out; 
+          }
+          .logo-footer:hover {
+            transform:rotate(150deg);
+            color: $color-blue;
+          }
+          span {
+            color: $color-blue;
+          }
+        }
+      }
+      .footer-top-left:hover {
+        a { 
+          color: $color-blue;
+          span {
+            color: $color-white;
+          }
+        }
+      }
+      .footer-top-right {
+        .footer-social-list {
+          .footer-social-item {
+            display: inline;
+            margin-left: 16px;
+            a {
+              font-size: 20px;
+              line-height: 50px;
+              color: $color-white;
+            }
+            a:hover {
+              color: $color-blue;
+            }
+          }
+        }
+      }
+    }
+    .footer-bottom {
+      padding: 16px;
+      .footer-bottom-left {
+        .footer-menu-list {
+          .footer-menu-item {
+            padding-right: 40px;
+            display: inline-block;
+            a {
+              color: $color-white;
+            }
+            a:hover {
+              color: $color-blue;
+            }
+          }
+        }
+      }
+      .footer-bottom-right {
+        .address-name {
+          color: $color-grey;
+          .director-name {
+            a {
+              color: $color-white;
+            }
+            a:hover {
+              color: $color-blue;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 767px){
+  .page-footer {
+    .footer-bottom {
+      .footer-bottom-right {
+        float: none;
+        text-align: center;
+        display: block;
+      }
+      .footer-bottom-left {
+        float: none;
+        text-align: center;
+        display: block;
+        .footer-menu-list {
+          .footer-menu-item {
+            padding: 0 20px 16px 0 !important;
+          }
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 767px){
+  .page-footer {
+    .container{
+      .footer-top {
+        .footer-top-left, .footer-top-right {
+          float: none;
+          text-align: center;
+          display: block;
+        }
+      }
+    }
+  }
+}
