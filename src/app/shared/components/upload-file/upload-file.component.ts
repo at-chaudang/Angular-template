@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { ApiService } from "../../../services/api.service";
-import { HttpClient, HttpHeaders, HttpErrorResponse } from '@angular/common/http';
+import { ApiService } from '../../../core/services/api.service';
+import { HttpClient, HttpHeaders } from '@angular/common/http';
 
 @Component({
   selector: 'app-upload-file',

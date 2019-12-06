@@ -1,5 +1,5 @@
 export const environment = {
   production: true,
   hmr: false,
-  api: 'http://localhost:3000' // domain web
+  api: 'http://localhost:3000'
 };
