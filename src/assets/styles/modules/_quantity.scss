@@ -1,0 +1,54 @@
+.quantity {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.06);
+  button {
+    background: none;
+    border: 0;
+    i {
+      @include pxRem("font-size", 24);
+      @include pxRem("width", 24);
+      @include pxRem("height", 24);
+      color: map-get($colors, primary);
+      border-radius: 50%;
+      border: 1px solid;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+  }
+  input {
+    @include pxRem("font-size", 16);
+    @include pxRem("width", 45);
+    @include pxRem("height", 24);
+    @include pxRem("padding-top", 5);
+    text-align: center;
+    border: 0;
+  }
+  &.controls-overlap-input {
+    position: relative;
+    input {
+      @include formControl();
+      text-align: left;
+    }
+    button {
+      @include pxRem("width", 8);
+      @include pxRem("height", 12);
+      @include pxRem("right", 20);
+      position: absolute;
+      background: url('assets/images/icons/ic-arrow-rounded.svg') no-repeat center;
+      i {
+        display: none;
+      }
+    }
+    .quantity-minus {
+      transform: translateY(100%);
+      bottom: 50%;
+    }
+    .quantity-add {
+      top: 50%;
+      transform: translateY(-100%) rotate(180deg);
+    }
+  }
+}

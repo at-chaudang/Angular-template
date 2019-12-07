@@ -1,0 +1,40 @@
+.help-page {
+  @include pxRem('padding', 0 115);
+}
+.search-help {
+  @include pxRem('margin-top', 30);
+}
+.question-list {
+  .question-item {
+    @include pxRem('margin-top', 40);
+    .question,
+    .answer {
+      display: flex;
+      align-items: baseline;
+    }
+    .answer {
+      @include pxRem('margin-top', 12);
+    }
+    .iconf-question,
+    .iconf-answer {
+      @include pxRem('margin-right', 15);
+    }
+    .see-more {
+      @include pxRem('padding-left', 35);
+    }
+  }
+}
+.collapsed {
+  @include pxRem('height', 50);
+  overflow: hidden;
+}
+@include respond-below(medium) {
+  .help-page {
+    @include pxRem('padding', 0 35);
+  }
+}
+@include respond-below(small) {
+  .help-page {
+    @include pxRem('padding', 0 15);
+  }
+}

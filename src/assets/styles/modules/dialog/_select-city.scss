@@ -1,0 +1,158 @@
+.cdk-overlay-dark-backdrop {
+  background: rgba(255, 255, 255, 0.6);
+}
+.select-city-dialog {
+  @include pxRem(top, 80);
+  @include pxRem(max-width, 900);
+  width: 100% !important;
+  position: absolute !important;
+  left: 19%;
+  .btn {
+    &:hover {
+      color: map-get($colors, primary);
+    }
+  }
+  .mat-dialog-container {
+    @include pxRem(padding, 20 0 4);
+    @include pxRem(box-shadow, 0 0 8 0 rgba(0, 0, 0, 0.06));
+    overflow: initial;
+    width: auto;
+  }
+  .dropdown {
+    @include pxRem(top, 80);
+    height: 100%;
+    &-wrap:last-child {
+      .select-title {
+        @include pxRem(margin-bottom, 8);
+      }
+    }
+    &-container {
+      @include pxRem(padding-bottom, 15);
+      width: auto;
+      height: 90%;
+    }
+    &-wrap {
+      @include pxRem(padding-left, 30);
+      @include pxRem(width, 240);
+      overflow-x: hidden;
+      height: 100%;
+      float: left;
+      &::-webkit-scrollbar {
+        @include pxRem('width', 7);
+      }
+      &::-webkit-scrollbar-thumb {
+        @include pxRem('border-radius', 8);
+        background: map-get($colors, scroll-bg);
+      }
+      .top-searched {
+        @include pxRem(padding-bottom, 10);
+      }
+      li {
+        input[type='radio']:checked + span {
+          color: map-get($colors, primary);
+        }
+        span {
+          cursor: pointer;
+          &:hover {
+            color: map-get($colors, primary);
+          }
+        }
+      }
+    }
+    &-wrap-expand {
+      @include pxRem(width, 450);
+      @include pxRem(padding, 0 30);
+      float: left;
+    }
+  }
+  .action-form {
+    @include pxRem(margin, 0 30);
+    @include pxRem(height, 50);
+    border-top: 1px solid map-get($colors, border);
+    .btn-clear {
+      @include pxRem(padding-left, 0);
+    }
+    .btn-apply {
+      @include pxRem(padding-right, 0);
+    }
+  }
+}
+
+// Responsive
+@include respond-below(large) {
+  .select-city-dialog {
+    left: auto;
+  }
+}
+@include respond-below(wide) {
+  .daterangepicker-popup {
+    @include pxRem(width, 768);
+    overflow-x: scroll;
+  }
+  .panel-search {
+    width: 100% !important;
+    left: 50% !important;
+    transform: translateX(-50%) !important;
+    .search {
+      width: 90% !important;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+  }
+}
+@include respond-below(medium) {
+  .select-city-dialog {
+    max-width: 90vw !important;
+    .dropdown {
+      @include pxRem(font-size, 14);
+      @include pxRem(padding-right, 20);
+    }
+    .dropdown-wrap {
+      @include pxRem(padding-left, 20);
+    }
+  }
+}
+@include respond-below(small) {
+  .cdk-global-overlay-wrapper {
+    .mat-dialog-container {
+      @include pxRem(max-height, 500);
+    }
+  }
+  .select-city-dialog {
+    @include pxRem(top, 140);
+    max-width: 90vw !important;
+    .dropdown-container {
+      overflow-y: scroll;
+      scrollbar-width: none;
+      -ms-overflow-style: none;
+      &::-webkit-scrollbar {
+        display: none;
+      }
+    }
+    .dropdown {
+      @include pxRem(font-size, 16);
+      padding-right: 0;
+    }
+    .dropdown-wrap {
+      width: 100%;
+      &.dropdown-wrap-sp {
+        display: none;
+      }
+    }
+    .height-scroll {
+      @include pxRem(max-height, 200);
+      scrollbar-width: none;
+      -ms-overflow-style: none;
+      &::-webkit-scrollbar {
+        display: none;
+      }
+    }
+    .action-form {
+      width: 90%;
+      margin: 0 auto;
+      .btn-apply {
+        padding: 0;
+      }
+    }
+  }
+}

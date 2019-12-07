@@ -1,0 +1,499 @@
+[class*="icon-"] {
+  display: inline-block;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.icon-dolla {
+  @include pxRem("width", 25);
+  @include pxRem("height", 25);
+  background: map-get($colors, primary);
+  border-radius: 50%;
+  text-align: center;
+}
+.icon-question {
+  @include pxRem("width", 15);
+  @include pxRem("height", 15);
+  border: solid 1px map-get($colors, secondary);
+  border-radius: 50%;
+  cursor: pointer;
+  &::after {
+    content: "?";
+    @include pxRem("line-height", 15);
+    @include pxRem("font-size", 10);
+    color: map-get($colors, secondary);
+    text-align: center;
+    display: block;
+  }
+}
+.ic-minus {
+  @include pxRem("min-width", 24);
+  background-image: url("assets/images/buttons/bt_minus.png");
+}
+.ic-plus {
+  @include pxRem("min-width", 24);
+  background-image: url("assets/images/buttons/bt_plus.png");
+}
+.ic-home {
+  @include pxRem("height", 17);
+  @include pxRem("width", 18);
+  background-image: url("assets/images/buttons/bt_home.png");
+  background-size: cover;
+  display: inline-block;
+}
+.ic-triangel-down {
+  position: absolute;
+  &::before {
+    @include pxRem("border", 5 solid transparent);
+    border-top-color: map-get($colors, black);
+    content: "";
+    display: block;
+  }
+}
+.ic-triangel-up {
+  position: absolute;
+  &::before {
+    @include pxRem("border", 5 solid transparent);
+    border-bottom-color: map-get($colors, black);
+    content: "";
+    display: block;
+  }
+}
+.arrow {
+  border: solid map-get($colors, icon-arrow);
+  @include pxRem("padding", 4);
+  @include pxRem("border-width", 0 2 2 0);
+  display: inline-block;
+  &.up {
+    transform: rotate(-135deg);
+  }
+  &.down {
+    transform: rotate(45deg);
+  }
+}
+.ic-success {
+  &::after {
+    @include pxRem("width", 6);
+    @include pxRem("height", 12);
+    border: solid map-get($colors, black);
+    @include pxRem("border-width", 0 2 2 0);
+    content: "";
+    display: block;
+    position: relative;
+    right: 0;
+    transform: rotate(45deg);
+  }
+}
+.icon-amenities {
+  @include pxRem("width", 40);
+  @include pxRem("height", 40);
+  &.icon-shower {
+    background-image: url("assets/images/icons/ic-shower.svg");
+  }
+  &.icon-slipper {
+    background-image: url("assets/images/icons/ic-slipper.svg");
+  }
+  &.icon-televison {
+    background-image: url("assets/images/icons/ic-televison.svg");
+  }
+  &.icon-cocktail {
+    background-image: url("assets/images/icons/ic-cocktail.svg");
+  }
+  &.icon-bathtub {
+    background-image: url("assets/images/icons/ic-bathtub.svg");
+  }
+  &.icon-wifi {
+    background-image: url("assets/images/icons/ic-wifi.svg");
+  }
+}
+.icon-sort-down {
+  @include pxRem("width", 9);
+  @include pxRem("height", 10);
+  background: url("assets/images/icons/ic-arrow-rounded.svg") no-repeat center;
+  @include pxRem("background-size", 9);
+}
+.dots {
+  &::after {
+    @include pxRem("width", 14);
+    @include pxRem("height", 2);
+    content: "•••";
+  }
+}
+
+.iconf {
+  @include pxRem("font-size", 14);
+  @include pxRem("min-width", 16);
+  text-align: center;
+  display: inline-block;
+}
+
+// For icomoon
+[class^="iconf-"], [class*=" iconf-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: '#{$icomoon-font-family}' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.iconf-to {
+  &:before {
+    content: $iconf-to; 
+  }
+}
+.iconf-instagram {
+  &:before {
+    content: $iconf-instagram; 
+  }
+}
+.iconf-twitter {
+  &:before {
+    content: $iconf-twitter; 
+  }
+}
+.iconf-facebook {
+  &:before {
+    content: $iconf-facebook; 
+  }
+}
+.iconf-grid {
+  &:before {
+    content: $iconf-grid; 
+  }
+}
+.iconf-share {
+  &:before {
+    content: $iconf-share; 
+  }
+}
+.iconf-minus-circle {
+  &:before {
+    content: $iconf-minus-circle; 
+  }
+}
+.iconf-plus-circle {
+  &:before {
+    content: $iconf-plus-circle; 
+  }
+}
+.iconf-questions-circle {
+  &:before {
+    content: $iconf-questions-circle; 
+  }
+}
+.iconf-prev-chevron {
+  &:before {
+    content: $iconf-prev-chevron; 
+  }
+}
+.iconf-next-chevron {
+  &:before {
+    content: $iconf-next-chevron; 
+  }
+}
+.iconf-location {
+  &:before {
+    content: $iconf-location; 
+  }
+}
+.iconf-villa {
+  &:before {
+    content: $iconf-villa; 
+  }
+}
+.iconf-close {
+  &:before {
+    content: $iconf-close; 
+  }
+}
+.iconf-money {
+  &:before {
+    content: $iconf-money; 
+  }
+}
+.iconf-phone {
+  &:before {
+    content: $iconf-phone; 
+  }
+}
+.iconf-person {
+  &:before {
+    content: $iconf-person; 
+  }
+}
+.iconf-guest {
+  &:before {
+    content: $iconf-guest; 
+  }
+}
+.iconf-calendar {
+  &:before {
+    content: $iconf-calendar; 
+  }
+}
+.iconf-email {
+  &:before {
+    content: $iconf-email; 
+  }
+}
+.iconf-bt-filter {
+  &:before {
+    content: $iconf-bt-filter; 
+  }
+}
+.iconf-bt-map {
+  &:before {
+    content: $iconf-bt-map; 
+  }
+}
+.iconf-bt-map {
+  &:before {
+    content: $iconf-bt-map; 
+    color: map-get($colors, icon-arrow);
+  }
+}
+.iconf-bt-filter {
+  &:before {
+    content: $iconf-bt-filter; 
+    color: map-get($colors, icon-arrow);
+  }
+}
+.iconf-coin {
+  &:before {
+    content: $iconf-coin; 
+    color: map-get($colors, white);
+  }
+}
+.iconf-link {
+  &:before {
+    content: $iconf-link;
+  }
+}
+.iconf-upload {
+  &:before {
+    content: $iconf-upload;
+  }
+}
+.iconf-question {
+  &:before {
+    content: $iconf-question;
+    color: map-get($colors, primary);
+  }
+}
+.iconf-answer {
+  &:before {
+    content: $iconf-answer;
+    color: map-get($colors, answer);
+  }
+}
+.iconf-airport {
+  &:before {
+    content: $iconf-airport; 
+  }
+}
+.iconf-banks {
+  &:before {
+    content: $iconf-banks; 
+    color: map-get($colors, b-i);
+  }
+}
+.iconf-bookstores {
+  &:before {
+    content: $iconf-bookstores; 
+  }
+}
+.iconf-bridge {
+  &:before {
+    content: $iconf-bridge; 
+  }
+}
+.iconf-church {
+  &:before {
+    content: $iconf-church; 
+  }
+}
+.iconf-club {
+  &:before {
+    content: $iconf-club; 
+  }
+}
+.iconf-drugstore {
+  &:before {
+    content: $iconf-drugstore; 
+  }
+}
+.iconf-coffee {
+  &:before {
+    content: $iconf-coffee; 
+  }
+}
+.iconf-gas-stations {
+  &:before {
+    content: $iconf-gas-stations; 
+  }
+}
+.iconf-hospitals {
+  &:before {
+    content: $iconf-hospitals; 
+  }
+}
+.iconf-hotels {
+  &:before {
+    content: $iconf-hotels; 
+    color: map-get($colors, b-h);
+  }
+}
+.iconf-groceries {
+  &:before {
+    content: $iconf-groceries; 
+  }
+}
+.iconf-other-location {
+  &:before {
+    content: $iconf-other-location; 
+  }
+}
+.iconf-pagoda {
+  &:before {
+    content: $iconf-pagoda; 
+  }
+}
+.iconf-parks {
+  &:before {
+    content: $iconf-parks; 
+    color: map-get($colors, b-j);
+  }
+}
+.iconf-parking-lots {
+  &:before {
+    content: $iconf-parking-lots; 
+  }
+}
+.iconf-policy {
+  &:before {
+    content: $iconf-policy; 
+  }
+}
+.iconf-post-offices {
+  &:before {
+    content: $iconf-post-offices; 
+  }
+}
+.iconf-resort {
+  &:before {
+    content: $iconf-resort; 
+  }
+}
+.iconf-restaurants {
+  &:before {
+    content: $iconf-restaurants; 
+    color: map-get($colors, b-g);
+  }
+}
+.iconf-schools {
+  &:before {
+    content: $iconf-schools; 
+  }
+}
+.iconf-store {
+  &:before {
+    content: $iconf-store; 
+  }
+}
+.iconf-supermarket {
+  &:before {
+    content: $iconf-supermarket; 
+  }
+}
+.iconf-train-station {
+  &:before {
+    content: $iconf-train-station; 
+  }
+}
+.iconf-email-login {
+  &:before {
+    content: $iconf-email-login; 
+  }
+}
+.iconf-password {
+  &:before {
+    content: $iconf-password; 
+  }
+}
+.iconf-edit {
+  &:before {
+    content: $iconf-edit;     
+    color: #484848;
+  }
+}
+.iconf-logout {
+  &:before {
+    content: $iconf-logout;     
+    color: #484848;
+  }
+}
+.iconf-my-booking {
+  &:before {
+    content: $iconf-my-booking;     
+    color: #484848;
+  }
+}
+.iconf-my-profile {
+  &:before {
+    content: $iconf-my-profile;     
+    color: #484848;
+  }
+}
+.iconf-canelled {
+  &:before {
+    content: $iconf-canelled; 
+  }
+}
+.iconf-completed {
+  &:before {
+    content: $iconf-completed; 
+  }
+}
+.iconf-in-progress {
+  &:before {
+    content: $iconf-in-progress; 
+  }
+}
+.iconf-reserved {
+  &:before {
+    content: $iconf-reserved;     
+  }
+}
+.iconf-web {
+  &:before {
+    content: $iconf-web; 
+    color: #484848;
+  }
+}
+.iconf-back {
+  &:before {
+    content: $iconf-back; 
+  }
+}
+.iconf-link-web {
+  &:before {
+    content: $iconf-link-web;     
+    color: #484848;
+  }
+}
+.iconf-filter-white {
+  &:before {
+    content: $iconf-filter-white; 
+  }
+}
+.iconf-camera {
+  &:before {
+    content: $iconf-camera; 
+  }
+}

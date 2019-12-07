@@ -1,0 +1,69 @@
+.select-data {
+  @include pxRem("max-width", 247);
+  @include pxRem("border-radius", 20);
+  @include pxRem("padding", 10 16);
+  line-height: normal;
+  position: relative;
+  border: 1px solid map-get($colors, border);
+  &-name {
+    @include pxRem("margin", 0 10 0 12);
+  }
+  .icon-sort-down {
+    @include pxRem("height", 22);
+  }
+  .data {
+    &-dropdown {
+      @include pxRem("min-width", 210);
+      @include pxRem("top", calc(100% + 12px));
+      @include pxRem("right", -8);
+      @include pxRem("box-shadow", 0 4 8 0 rgba(0, 0, 0, 0.1));
+      border: 1px solid map-get($colors, light-white);
+      background: map-get($colors, white);
+      position: absolute;
+      text-align: left;
+      &::before {
+        @include pxRem("top", -8);
+        @include pxRem("right", 20);
+        @include pxRem("height", 16);
+        @include pxRem("width", 16);
+        @include pxRem("box-shadow", 0 0 1 0 rgba(0, 0, 0, 0.3));
+        background: map-get($colors, white);
+        border: 1px solid map-get($colors, light-white);
+        content: "";
+        position: absolute;
+        transform: rotate(45deg);
+      }
+      &-container {
+        position: relative;
+        background: map-get($colors, white);
+        z-index: 1;
+      }
+      &-item {
+        @include pxRem("margin", 0 20);
+        @include pxRem("height", 40);
+        @include pxRem("line-height", 40);
+        border-bottom: 1px solid map-get($colors, border);
+        .data-name {
+          @include pxRem("padding", 0 8);
+          align-items: center;
+        }
+        .data-name-image {
+          @include pxRem("width", 16);
+          @include pxRem("height", 16);
+          @include pxRem("margin-right", 13);
+          background-size: 100%;
+        }
+        &:last-child {
+          border: 0;
+        }
+      }
+    }
+    &-dropdown-top {
+      @include pxRem("top", -212);
+      &::before {
+        @include pxRem("bottom", -8);
+        top: initial;
+      }
+    }
+  }
+}

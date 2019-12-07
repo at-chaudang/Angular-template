@@ -1,0 +1,156 @@
+.become-a-host {
+  .upload-img {
+    @include pxRem(height, 382);
+    background: map-get($colors, pink);
+    border: 1px solid map-get($colors, slider-border);
+    .img-default {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+    .upload-btn,
+    .edit-btn {
+      @include pxRem(bottom, 16);
+      position: absolute;
+      background-color: map-get($colors, white);
+      border: solid 1px map-get($colors, d-a);
+      color: map-get($colors, black);
+      z-index: 1;
+    }
+    .upload-btn {
+      @include pxRem(right, 26);
+      @include pxRem(width, 200);
+      .upload-btn-text {
+        @include pxRem(margin-left, 13);
+      }
+    }
+    .edit-btn {
+      @include pxRem(width, 118);
+    }
+    // This is carousel module
+    .images-container {
+      .owl-item {
+        @include pxRem(height, 382);
+        & + .owl-item {
+          @include pxRem(padding-left, 5);
+        }
+      }
+    }
+  }
+  .mat-error {
+    @include pxRem(bottom, -22);
+  }
+  .intl-tel-input {
+    .flag-container {
+      @include pxRem(width, 90);
+    }
+    ~ .mat-error {
+      @include pxRem(left, 80);
+    }
+  }
+  .form-container {
+    @include pxRem(max-width, 860);
+    margin: 0 auto;
+  }
+  .dropdown-house-type {
+    @include pxRem(line-height, 40);
+    // FIXME: Remove it
+    @include pxRem(padding, 0 15);
+  }
+  .map-search {
+    @include pxRem(margin-bottom, 30);
+  }
+  .icon-location {
+    @include pxRem(height, 16);
+    @include pxRem(width, 16);
+    @include pxRem(right, 30);
+    @include pxRem(top, 20);
+    background-image: url('assets/images/icons/ic_format_paint.png');
+    background-size: cover;
+    display: inline-block;
+    transform: translateY(-50%);
+    cursor: pointer;
+  }
+  .host-main-title {
+    h4 {
+      @include pxRem(line-height, 30);
+      @include pxRem(font-size, 30);
+    }
+    @include pxRem(margin-bottom, 20);
+  }
+  .host-sub-title {
+    @include pxRem(line-height, 25);
+    @include pxRem(font-size, 25);
+    @include pxRem(margin-bottom, 5);
+  }
+  .form-group {
+    @include pxRem(margin-top, 52);
+    &:last-child {
+      @include pxRem(margin-bottom, 70);
+    }
+  }
+  .action {
+    display: inline-block;
+    width: 100%;
+  }
+  .form-field:not(:last-child) {
+    @include pxRem(margin-bottom, 25);
+  }
+  .iconf {
+    @include pxRem(right, 15);
+    position: absolute;
+    margin: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    color: map-get($colors, border);
+    &-email {
+      @include pxRem(font-size, 10);
+    }
+    &-phone {
+      @include pxRem(font-size, 12);
+    }
+  }
+  .google-map {
+    @include pxRem(height, 300);
+  }
+  .amenities {
+    @include pxRem(padding-bottom, 25);
+    border-bottom: 1px solid map-get($colors, border);
+    .amenities-list {
+      display: flex;
+      flex-wrap: wrap;
+      .amenities-item {
+        @include pxRem(padding-top, 28);
+        display: flex;
+        flex: 1 50%;
+        align-items: flex-end;
+      }
+      .icon-amenities {
+        @include pxRem(margin-right, 23);
+      }
+    }
+  }
+  .see-more {
+    @include pxRem(margin-top, 20);
+  }
+  .error-line {
+    @include pxRem(top, 66);
+  }
+  .intl-tel-input {
+    display: block;
+  }
+}
+.grecaptcha-badge {
+  visibility: hidden;
+}
+.visible-grecaptcha-badge {
+  visibility: visible;
+}
+.host-images-dlg {
+  .img-handle-btn.left {
+    background: map-get($colors, white);
+    border: 1px solid map-get($colors, primary);
+    color: map-get($colors, primary);
+  }
+}

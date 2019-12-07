@@ -1,0 +1,234 @@
+.profile {
+  @extend %clr;
+  .col-left {
+    width: 19%;
+    float: left;
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    &.is-content {
+      display: block;
+    }
+  }
+  .col-right {
+    width: 80%;
+    float: right;
+    box-shadow: -1px -3px 3px 0 rgba(0, 0, 0, 0.06);
+    border-left: solid 1px map-get($colors, border);
+    &.is-content {
+      display: block;
+    }
+  }
+  .profile-side {
+    @include pxRem('padding-top', 30);
+    border-right: solid 1px map-get($colors, border);
+    height: calc(100vh - 80px);
+  }
+  .profile-account {
+    img {
+      @include pxRem('width', 104);
+      @include pxRem('height', 104);
+      border-radius: 50%;
+      display: inline-block;
+      vertical-align: middle;
+      object-fit: cover;
+    }
+    .profile-name {
+      @include pxRem('margin', 6 0);
+    }
+    .profile-upload {
+      @include pxRem('padding', 6 14);
+      @include pxRem('border-radius', 20);
+      border: solid 1px map-get($colors, d-a);
+      background-color: map-get($colors, white);
+      box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.06);
+    }
+  }
+  .profile-list {
+    .profile-item {
+      @include pxRem('padding-left', 26);
+      border-bottom: solid 1px map-get($colors, border);
+      .profile-link {
+        @include pxRem('padding', 15 0);
+        display: flex;
+        align-items: center;
+        span {
+          @include pxRem('font-size', 18);
+          @include pxRem('margin-right', 13);
+        }
+        &.active {
+          font-weight: 700;
+          color: map-get($colors, secondary);
+        }
+      }
+    }
+  }
+  .wrap-form {
+    height: calc(100vh - 80px);
+  }
+  .profile-title {
+    @include pxRem('margin-bottom', 17);
+    width: 100%;
+  }
+  .form-profile {
+    @include pxRem('padding', 35 64);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    height: auto;
+    .form-group {
+      @include pxRem('width', 470);
+      @include pxRem('padding-bottom', 25);
+      .gender {
+        @include pxRem('line-height', 36);
+      }
+      .birthday-icon {
+        @include pxRem('right', 5);
+        position: absolute;
+      }
+    }
+    .form-control {
+      @include pxRem('margin-top', 8);
+    }
+    .form-action {
+      @include pxRem('margin-top', 15);
+      width: 100%;
+    }
+    .btn-primary {
+      @include pxRem('max-width', 250);
+    }
+    .intl-tel-input {
+      display: block;
+      .selected-flag {
+        @include pxRem('padding', 0 14);
+        @include pxRem('border-radius', 4 0 0 4);
+        background: map-get($colors, white);
+        border-right: solid 1px map-get($colors, border);
+      }
+      .selected-dial-code {
+        @include pxRem('margin-left', 10);
+      }
+      .iti-arrow {
+        @include pxRem('margin-left', 13);
+      }
+    }
+    .phone-number-container {
+      mat-error {
+        @include pxRem('left', 100);
+      }
+    }
+    .input-phone-number {
+      @include pxRem('padding-left', 115 !important);
+    }
+    .calendar {
+      .mat-button-focus-overlay {
+        background: none;
+      }
+      .mat-icon-button {
+        text-align: right;
+        width: 100%;
+      }
+    }
+  }
+}
+.mat-calendar {
+  @include pxRem('box-shadow', 0 0 8 0 rgba(0, 0, 0, 0.3));
+
+  .mat-calendar-body-selected {
+    background-color: map-get($colors, primary);
+  }
+  .mat-calendar-body-cell {
+    &:not(.mat-calendar-body-disabled):hover > .mat-calendar-body-cell-content:not(.mat-calendar-body-selected) {
+      background-color: map-get($colors, pink);
+    }
+  }
+}
+
+// responsive
+@include respond-below(largest) {
+  .profile {
+    .form-profile {
+      .form-group {
+        width: 47%;
+      }
+    }
+  }
+}
+@include respond-below(wide) {
+  .profile {
+    .col-left {
+      width: 24%;
+    }
+    .col-right {
+      width: 75%;
+    }
+    .form-profile {
+      @include pxRem("padding", 35);
+    }
+  }
+}
+@include respond-below(medium) {
+  .profile {
+    .profile-title {
+      @include pxRem("height", 55);
+      @include pxRem("line-height", 55);
+      @include pxRem("padding", 0 35);
+      text-align: center;
+      border-bottom: solid 1px map-get($colors, border);
+      .back-sp {
+        @include pxRem("margin", 18 0 0);
+        display: inline-block;
+        margin-bottom: 0;
+        float: left;
+      }
+    }
+    .col-left {
+      width: 100%;
+      &.is-content {
+        display: none;
+      }
+    }
+    .col-right {
+      @include pxRem("bottom", 10);
+      width: 100%;
+      position: fixed;
+      top: 0;
+      z-index: 124;
+      background: map-get($colors, white);
+      overflow: auto;
+      -webkit-animation-duration: 1s;
+      animation-duration: 1s;
+      -webkit-animation-fill-mode: both;
+      animation-fill-mode: both;
+      -webkit-animation-name: slideInRight;
+      animation-name: slideInRight;
+      &.is-content {
+        display: none;
+        -webkit-animation-duration: 1s;
+        animation-duration: 1s;
+        -webkit-animation-fill-mode: both;
+        animation-fill-mode: both;
+        -webkit-animation-name: slideOutRight;
+        animation-name: slideOutRight;
+      }
+    }
+    .form-profile {
+      padding: 0;
+      .form-group {
+        @include pxRem("padding", 0 35 25);
+        width: 100%;
+        .mat-error {
+          @include pxRem("left", 23);
+        }
+      }
+    }
+  }
+}
+@include respond-below(small) {
+  .profile {
+    .profile-title {
+      @include pxRem("padding", 0 15);
+    }
+  }
+}

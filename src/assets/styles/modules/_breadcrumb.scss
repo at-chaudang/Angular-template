@@ -1,0 +1,23 @@
+.breadcrumb {
+  @include pxRem("padding-top", 21);
+  display: flex;
+  .breadcrumb-item {
+    @include pxRem("padding-right", 10);
+    text-transform: capitalize;
+    font-weight: 700;
+    a {
+      text-decoration: none;
+      color: map-get($colors, secondary);
+    }
+    &::after {
+      @include pxRem("padding", 0 10);
+      content: url('/assets/images/icons/ic-arrow.svg');
+      display: inline-block;
+    }
+    &:last-child {
+      &::after {
+        content: none;
+      }
+    }
+  }
+}

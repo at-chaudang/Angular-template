@@ -1,0 +1,8 @@
+.privacy-policy-page {
+  &.container {
+    @include pxRem("max-width", 970);
+  }
+  .policy-list .item:last-child {
+    @include pxRem("margin-bottom", 60);
+  }
+}

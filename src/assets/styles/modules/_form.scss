@@ -1,0 +1,65 @@
+input {
+  font-family: $font-body;
+  outline: none;
+  &[type="number"] {
+    &::-webkit-inner-spin-button,
+    &::-webkit-outer-spin-button {
+      -webkit-appearance: none;
+      margin: 0;
+    }
+  }
+}
+input::placeholder {
+  color: map-get($colors, placeholder);
+}
+input:disabled {
+  border: 1px solid map-get($colors, d-a);
+  background: map-get($colors, p-g);
+}
+button {
+  font-family: $font-body;
+}
+textarea {
+  @include pxRem("border-radius", 4);
+  @include pxRem("padding", 10 15);
+  @include pxRem("font-size", 14);
+  border: 1px solid map-get($colors, border);
+  box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.06);
+  outline: 0;
+}
+.form-control {
+  @include formControl();
+  box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.06);
+}
+.form-field {
+  @include pxRem("margin-bottom", 10);
+}
+.form-control-hidden {
+  max-height: 0;
+  opacity: 0;
+  border: 0;
+  padding: 0;
+}
+form {
+  height: 100%;
+  // Checkbox Style
+  .mat-checkbox {
+    font-family: $font-body;
+  }
+  .mat-checkbox-checked.mat-accent .mat-checkbox-background {
+    background-color: map-get($colors, primary);
+  }
+  .mat-checkbox:not(.mat-checkbox-disabled).mat-accent .mat-checkbox-ripple .mat-ripple-element {
+    background-color: map-get($colors, primary) !important;
+  }
+  .mat-checkbox-frame {
+    background-color: map-get($colors, checkbox-bg);
+    border: 2px solid map-get($colors, checkbox-border);
+  }
+  .mat-error {
+    @include pxRem("padding", 0 15);
+    @include pxRem("font-size", 13);
+    @include pxRem("bottom", 3);
+    left: 0;
+  }
+}

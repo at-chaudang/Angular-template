@@ -1,0 +1,122 @@
+.pagination {
+  @include pxRem('margin', 30 0 14);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  .btn-prev,
+  .btn-next {
+    @include pxRem('width', 55);
+    @include pxRem('height', 36);
+    @include pxRem('border-radius', 4);
+    @include pxRem('line-height', 36);
+    background-color: map-get($colors, p-g);
+    color: map-get($colors, p-f) !important;
+    border: solid .5px map-get($colors, border);
+    text-align: center;
+    text-transform: capitalize;
+    cursor: pointer;
+    &.current {
+      color: map-get($colors, p-e) !important;
+      border: solid 0.5px map-get($colors, p-i);
+    }
+  }
+}
+.ngx-pagination {
+  @include pxRem('margin-top', 20);
+  @include pxRem('margin', 0 5 !important);
+  display: flex;
+  a:hover {
+    background: none !important;
+  }
+  li, a {
+    color: map-get($colors, secondary) !important;
+  }
+  li {
+    & + li {
+      @include pxRem('margin-left', 10);
+    }
+    @include pxRem('width', 34);
+    @include pxRem('height', 34);
+    color: map-get($colors, p-f) !important;
+    border-left: 0;
+    margin-right: 0 !important;
+    &:focus {
+      outline: none;
+    }
+    a {
+      @include pxRem('padding', 7 0);
+      cursor: pointer;
+      height: 100%;
+      width: 100%;
+      text-align: center;
+      line-height: normal;
+      outline: 0;
+      &:not(.current):hover {
+        color: map-get($colors, primary) !important;
+      }
+    }
+    .ng-star-inserted {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    &.current {
+      border-radius: 50%;
+      background-color: map-get($colors, primary) !important;
+      color: map-get($colors, white) !important;
+      .ng-star-inserted {
+        cursor: pointer;
+        height: 100%;
+        width: 100%;
+        text-align: center;
+        line-height: normal;
+      }
+    }
+  }
+  .small-screen {
+    display: none !important;
+  }
+  .pagination-previous,
+  .pagination-next {
+    span {
+      color: map-get($colors, p-e);
+    }
+    a {
+      border-radius: 50%;
+      border: solid 1px map-get($colors, primary);
+      color: map-get($colors, btn-close-border !important);
+      &:focus {
+        outline: 0;
+      }
+    }
+  }
+  .pagination-previous {
+    a {
+      &::before {
+        content: url('/assets/images/icons/ic-back-chevron.png') !important;
+        margin-right: 0 !important;
+      }
+    }
+  }
+  .pagination-next {
+    a {
+      &::after {
+        content: url('/assets/images/icons/ic-next-chevron.png') !important;
+        margin-left: 0 !important;
+      }
+    }
+  }
+  .current {
+    background-color: map-get($colors, pink) !important;
+    font-weight: 700;
+  }
+  .show-for-sr {
+    display: none !important;
+  }
+  .disabled {
+    display: none !important;
+  }
+}
+.pagination-retal {
+  color: map-get($colors, secondary);
+}

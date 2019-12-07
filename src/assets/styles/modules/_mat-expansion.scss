@@ -1,0 +1,31 @@
+.form-group {
+  @include pxRem("padding-bottom", 25);
+  // == Start Custom expansion panel ==
+  .mat-expansion-panel {
+    &:not([class*="mat-elevation-z"]) {
+      box-shadow: unset;
+    }
+    &.mat-expanded {
+      overflow: visible;
+    }
+    .mat-expansion-panel-header {
+      @include pxRem("font-size", 16);
+      @include pxRem("padding", 0 2 0 0);
+      font-family: $font-body;
+      position: relative;
+      .mat-expansion-indicator::after {
+        @include pxRem("padding", 4);
+        vertical-align: unset;
+      }
+    }
+  }
+  .mat-expansion-panel-body {
+    @include pxRem("padding", 8 0 0 0);
+  }
+  .mat-expansion-panel:not(.mat-expanded) {
+    .mat-expansion-panel-header:not([aria-disabled="true"]):hover {
+      background: none;
+    }
+  }
+  // == End Custom expansion panel ==
+}

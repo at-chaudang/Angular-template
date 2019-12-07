@@ -1,0 +1,371 @@
+// Custorm css datetimepicker
+.mat-datepicker-content {
+  box-shadow: unset;
+}
+.daterangepicker-popup {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 19%;
+  bottom: 0;
+  background: rgba(255, 255, 255, 0.8);
+  z-index: 12345;
+  th {
+    span {
+      @include pxRem("font-size", 14);
+    }
+  }
+  td {
+    &.active {
+      span {
+        background-color: map-get($colors, primary);
+      }
+    }
+    &:not(.in-range) {
+      background: none !important;
+    }
+    &.in-range {
+      &:not(.end-date):not(.start-date) {
+        background-color: map-get($colors, pink);
+      }
+    }
+    span {
+      @include pxRem("height", 34);
+      @include pxRem("width", 34);
+      @include pxRem("line-height", 34);
+      display: block;
+      margin: auto;
+      border-radius: 50%;
+      pointer-events: auto !important;
+    }
+    &:not(.off):not(.active) {
+      span {
+        &:hover {
+          background-color: map-get($colors, pink);
+        }
+      }
+    }
+  }
+  .month {
+    color: map-get($colors, secondary);
+    font-weight: 700;
+  }
+  .off:not(.disabled) {
+    transition: none;
+    visibility: hidden;
+  }
+  .calendar {
+    width: 49% !important;
+    max-width: 100% !important;
+  }
+  .today {
+    background: none !important;
+  }
+  .start-date:not(.end-date) {
+    background: none !important;
+    &.in-range, &.active {
+      &:after {
+        content: "";
+        height: 100%;
+        background: map-get($colors, pink) !important;
+        width: 50%;
+        position: absolute;
+        top: 0;
+        right: 0;
+        z-index: -1;
+      }
+    }
+  }
+  .start-date.end-date {
+    &:after {
+      background: none !important;
+    }
+  }
+  .end-date:not(.start-date) {
+    background: none !important;
+    &:after {
+      content: "";
+      height: 100%;
+      background: map-get($colors, pink) !important;
+      width: 50%;
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: -1;
+    }
+  }
+  .in-range {
+    &:hover {
+      border-radius: 0 !important;
+    }
+  }
+  .clear {
+    @include pxRem("left", 30);
+    @include pxRem("bottom", 28);
+    position: absolute;
+    svg {
+      display: none;
+    }
+  }
+  .md-drppicker {
+    @include pxRem("top", 89);
+    @include pxRem("height", 380);
+    @include pxRem("font-size", 16);
+    @include pxRem("padding", 5 20 0);
+    @include pxRem("box-shadow", 0 0 8 0 rgba(0, 0, 0, 0.06));
+    border: solid 1px map-get($colors, border);
+    border-radius: 0;
+    &.double {
+      @include pxRem("width", 768);
+    }
+  }
+
+  .pos-btn-clear {
+    @include pxRem("top", 404);
+    position: absolute;
+    left: 0;
+    z-index: 12345;
+  }
+
+  // btn Apply
+  .btn.btn {
+    @include pxRem("height", 22);
+    @include pxRem("font-size", 16);
+    @include pxRem("bottom", 30);
+    @include pxRem("right", 30);
+    position: absolute;
+    border: 0;
+    background-color: map-get($colors, white);
+    color: map-get($colors, black);
+    text-transform: unset;
+    box-shadow: unset;
+    line-height: 1;
+    width: auto;
+    font-weight: 700;
+    &:hover {
+      color: map-get($colors, primary);
+      background-color: map-get($colors, white);
+    }
+    &:focus {
+      background-color: map-get($colors, white);
+    }
+  }
+
+  thead {
+    th {
+      margin: 0 !important;
+    }
+  }
+}
+
+bs-daterangepicker-container {
+  width: 100%;
+  z-index: 123;
+}
+.bs-datepicker-container {
+  @include pxRem("padding", 23);
+  background: map-get($colors, white);
+  box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.06);
+  border: solid 1px map-get($colors, d-a);
+  text-align: center;
+  table {
+    width: 100%;
+  }
+  thead {
+    @include pxRem("font-size", 14);
+    th {
+      @include pxRem("padding-bottom", 11);
+    }
+  }
+  .bs-media-container {
+    display: flex;
+    justify-content: space-between;
+    .bs-datepicker-multiple {
+      width: 48%;
+    }
+  }
+  tbody {
+    @include pxRem("font-size", 16);
+  }
+  .bs-datepicker-body {
+    overflow: hidden;
+    .week {
+      display: none;
+    }
+    thead {
+      th {
+        &:empty {
+          display: none;
+        }
+      }
+    }
+  }
+  .bs-datepicker-head {
+    @include pxRem("padding", 2 0 25);
+    position: relative;
+    background: none;
+    button {
+      @include pxRem("font-size", 16);
+      font-weight: 700;
+      background: none;
+      border: 0;
+    }
+    .current {
+      pointer-events: none;
+    }
+    .previous,
+    .next {
+      @include pxRem("font-size", 12);
+      @include pxRem("width", 32);
+      line-height: normal;
+      span {
+        display: none;
+      }
+      &:before {
+        @extend [class^="iconf-"];
+        content: $iconf-prev-chevron; 
+      }
+    }
+    .previous {
+      @include pxRem("margin-right", 7);
+    }
+    .next {
+      @include pxRem("margin-left", 7);
+      &:before {
+        content: $iconf-next-chevron; 
+      }
+    }
+  }
+  .days {
+    span {
+      @include pxRem("min-width", 34);
+      @include pxRem("height", 34);
+      @include pxRem("line-height", 38);
+      @include pxRem("margin", 3 auto);
+      display: block;
+      cursor: pointer;
+    }
+    .in-range {
+      &:not(.selected) {
+        background: map-get($colors, pink);
+        box-shadow: -1rem 0 0 map-get($colors, pink);
+        &:not(:hover) {
+          box-shadow: -1rem 0 0 map-get($colors, pink), 1rem 0 0 map-get($colors, pink);
+        }
+      }
+    }
+    .selected {
+      @include pxRem("max-width", 34);
+      border-radius: 50%;
+      font-weight: 700;
+      color: map-get($colors, white);
+      background: map-get($colors, primary);
+    }
+    .select-start {
+      position: relative;
+    }
+    .select-end {
+      position: relative;
+    }
+    .is-other-month {
+      opacity: .2;
+      pointer-events: none;
+    }
+  }
+}
+.calendar-daterange-single {
+  position: relative;
+  .calendar-daterange-single-popup {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    z-index: 1;
+  }
+  .btn-text {
+    position: absolute;
+    bottom: 0;
+    z-index: 12;
+    left: 0;
+    right: 0;
+    text-align: center;
+    width: 100%;
+    border-top: solid 1px map-get($colors, d-a);
+    &:only-child {
+      display: none;
+    }
+  }
+  .bs-datepicker-container {
+    @include pxRem("padding-bottom", 50);
+  }
+  bs-daterangepicker-container {
+    position: static !important;
+    transform: none !important;
+  }
+  .bs-media-container {
+    display: block;
+  }
+  .bs-datepicker-multiple {
+    width: auto !important;
+    .next {
+      visibility: visible !important;
+    }
+    &:last-of-type {
+      display: none;
+    }
+  }
+}
+
+// calendar-daterange-inline
+.calendar-daterange-inline {
+  position: relative;
+  z-index: 1;
+  .daterange-clone {
+    position: static !important;
+    transform: none !important;
+  }
+  bs-daterangepicker-container:not(.daterange-clone) {
+    transform: none !important;
+    right: 0;
+  }
+  .bs-datepicker-container {
+    padding: 0;
+    border: 0;
+    box-shadow: none;
+  }
+}
+.calendar-disabled-event {
+  .bs-datepicker-body {
+    pointer-events: none;
+  }
+  .bs-datepicker-head {
+    .next,
+    .previous {
+      @include pxRem("width", 32);
+      @include pxRem("height", 32);
+      @include pxRem("top", -3);
+      @include pxRem("border-radius", 4);
+      position: absolute;
+      border: 1px solid map-get($colors, border);
+      text-indent: 1px;
+      left: 0;
+      &:hover {
+        color: map-get($colors, primary);
+        border-color: map-get($colors, primary);
+      }
+    }
+    .next {
+      left: auto;
+      right: 0;
+    }
+  }
+}
+
+.disabled {
+  text-decoration: line-through !important;
+  color: map-get($colors, primary);
+  &.in-range {
+    background: none !important;
+    box-shadow: none !important;
+  }
+}

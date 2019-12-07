@@ -1,0 +1,39 @@
+.container {
+  max-width: 1170px;
+  padding: 0 15px;
+  box-sizing: border-box;
+  margin: 0 auto;
+}
+.container-full {
+  padding: 0 15px;
+  box-sizing: border-box;
+}
+.layout-3-col-full {
+  > .col-left {
+    @include pxRem("top", 80);
+    width: 20%;
+    border-right: solid 1px map-get($colors, border);
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    z-index: 999;
+  }
+  > .col-middle {
+    width: 45%;
+    margin-left: 20%;
+  }
+  > .col-right {
+    @include pxRem("top", 80);
+    width: 35%;
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    border-left: solid 1px map-get($colors, border);
+  }
+}
+.content-left {
+  float: left;
+}
+.content-right {
+  float: right;
+}
