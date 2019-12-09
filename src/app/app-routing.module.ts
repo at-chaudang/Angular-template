@@ -7,11 +7,10 @@ const routes: Routes = [
     pathMatch: 'full',
     loadChildren: () => import('./features/features.module').then(m => m.FeaturesModule)
   },
-  {
-    path: '',
-    pathMatch: 'full',
-    loadChildren: () => import('./auth/auth.module').then(m => m.AuthModule)
-  },
+  // {
+  //   path: 'auth',
+  //   loadChildren: () => import('./auth/auth.module').then(m => m.AuthModule)
+  // },
 ];
 
 @NgModule({

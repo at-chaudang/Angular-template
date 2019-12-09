@@ -4,7 +4,7 @@ import { AuthComponent } from './auth.component';
 
 export const authRoutes: Routes = [
   {
-    path: 'auth',
+    path: '',
     component: AuthComponent,
     // canActivate: [AuthGuard],
     children: [
