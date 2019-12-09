@@ -1,0 +1,164 @@
+@keyframes pulse-me {
+  0% {
+    transform: scale(0.5);
+    opacity: 0;
+  }
+  50% {
+    opacity: 0.1;
+  }
+  70% {
+    opacity: 0.09;
+  }
+  100% {
+    transform: scale(5);
+    opacity: 0;
+  }
+}
+
+@keyframes placeholderAnimate {
+  0% {
+    background-position: -650px 0;
+  }
+  100% {
+    background-position: 650px 0;
+  }
+}
+@keyframes bouncing {
+  0%,
+  100% {
+    transform: translate(0, 0);
+  }
+
+  50% {
+    transform: translate(0, 3px);
+  }
+}
+@keyframes slideInUp {
+  from {
+    -webkit-transform: translate3d(0, 100%, 0);
+    transform: translate3d(0, 100%, 0);
+    visibility: visible;
+  }
+
+  to {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+@keyframes slideInRight {
+  from {
+    -webkit-transform: translate3d(100%, 0, 0);
+    transform: translate3d(100%, 0, 0);
+    visibility: visible;
+  }
+
+  to {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+@keyframes slideOutRight {
+  from {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+
+  to {
+    visibility: hidden;
+    -webkit-transform: translate3d(100%, 0, 0);
+    transform: translate3d(100%, 0, 0);
+  }
+}
+.placeholder-loading {
+  @include pxRem("height", 12);
+  animation-duration: 1.7s;
+  animation-fill-mode: forwards;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  animation-name: placeholderAnimate;
+  background: #f6f7f8; // Fallback
+  background: linear-gradient(to right, #eee 2%, #ddd 18%, #eee 33%);
+  background-size: 1300px; // Animation Area
+  display: block;
+}
+/**
+ * ==============================================
+ * Dot Pulse
+ * ==============================================
+ */
+.dot-pulse {
+  @include pxRem("left", -9999);
+  @include pxRem("width", 10);
+  @include pxRem("height", 10);
+  @include pxRem("border-radius", 5);
+  @include pxRem("box-shadow", 9999 0 0 -5 map-get($colors, primary));
+  background-color: map-get($colors, primary);
+  color: map-get($colors, primary);
+  position: relative;
+  animation: dotPulse 1.5s infinite linear;
+  animation-delay: 0.25s;
+}
+
+.dot-pulse::before,
+.dot-pulse::after {
+  @include pxRem("width", 10);
+  @include pxRem("height", 10);
+  @include pxRem("border-radius", 5);
+  background-color: map-get($colors, primary);
+  color: map-get($colors, primary);
+  content: "";
+  display: inline-block;
+  position: absolute;
+  top: 0;
+}
+
+.dot-pulse::before {
+  @include pxRem("box-shadow", 9984 0 0 -5 map-get($colors, primary));
+  animation: dotPulseBefore 1.5s infinite linear;
+  animation-delay: 0s;
+}
+
+.dot-pulse::after {
+  @include pxRem("box-shadow", 10014 0 0 -5 map-get($colors, primary));
+  animation: dotPulseAfter 1.5s infinite linear;
+  animation-delay: 0.5s;
+}
+
+@keyframes dotPulseBefore {
+  0% {
+    @include pxRem("box-shadow", 9984 0 0 -5 map-get($colors, primary));
+  }
+  30% {
+    @include pxRem("box-shadow", 9984 0 0 2 map-get($colors, primary));
+  }
+  60%,
+  100% {
+    @include pxRem("box-shadow", 9984 0 0 -5 map-get($colors, primary));
+  }
+}
+
+@keyframes dotPulse {
+  0% {
+    @include pxRem("box-shadow", 9999 0 0 -5 map-get($colors, primary));
+  }
+  30% {
+    @include pxRem("box-shadow", 9999 0 0 2 map-get($colors, primary));
+  }
+  60%,
+  100% {
+    @include pxRem("box-shadow", 9999 0 0 -5 map-get($colors, primary));
+  }
+}
+
+@keyframes dotPulseAfter {
+  0% {
+    @include pxRem("box-shadow", 10014 0 0 -5 map-get($colors, primary));
+  }
+  30% {
+    @include pxRem("box-shadow", 10014 0 0 2 map-get($colors, primary));
+  }
+  60%,
+  100% {
+    @include pxRem("box-shadow", 10014 0 0 -5 map-get($colors, primary));
+  }
+}

@@ -1,0 +1,42 @@
+.signup-modal {
+  .form-field {
+    @include pxRem(margin-bottom, 20);
+  }
+  .dropdown-phone-type {
+    @include pxRem(line-height, 40);
+    @include pxRem(width, 118);
+  }
+  .phone-input {
+    @include pxRem(width, calc(100% - 118px));
+  }
+  .mat-select-arrow {
+    @include pxRem(margin-right, -5);
+  }
+  .intl-tel-input {
+    display: block;
+    .country-list {
+      @include pxRem(width, 370);
+    }
+    input {
+      @include pxRem(padding-left, 140 !important);
+    }
+    ~.mat-error {
+      @include pxRem(left, 105);
+    }
+  }
+  .intl-tel-input.separate-dial-code {
+    .selected-dial-code {
+      @include pxRem(margin-left, 10);
+    }
+    .selected-flag {
+     @include pxRem(border-radius, 22 0 0 22);
+     @include pxRem(width, 118);
+     @include pxRem(padding-left, 24);
+     background: map-get($colors, white);
+     border-right: 1px solid map-get($colors, d-a);
+     .iti-arrow {
+      @include pxRem(margin-left, 10);
+     }
+   }
+  }
+}

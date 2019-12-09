@@ -1,0 +1,564 @@
+{
+  "title-page": {
+    "home": "Tìm kiếm chỗ ở nhanh chóng tại YuuStay bao gồm HomeStay, Studio, Căn hộ,...",
+    "become-a-host": "Trở thành chủ nhà",
+    "about-us": "Về chúng tôi",
+    "help": "Trợ giúp",
+    "privacy-policy": "Chính sách bảo mật",
+    "terms-of-service": "Điều khoản dịch vụ",
+    "page-not-found": "Page not found",
+    "detail":"Yuustay - {{ title }}"
+  },
+  "meta": {
+    "description": {
+      "home": "Nền tảng tìm kiếm và đặt các loại chỗ ở trực tuyến tại Việt Nam với phương châm hướng tới sự thoải mái và mức độ tin tưởng của khách hàng.",
+      "become-a-host": "Trở thành người chủ nhà để cùng đồng hành với YuuStay quản lí loại hình lưu trú của bạn!",
+      "about-us": "Thông tin về YuuStay",
+      "help": "Trang trợ giúp tìm kiếm và các thắc mắc cần được giải đáp của YuuStay",
+      "privacy-policy": "Chính sách bảo mật",
+      "terms-of-service": "Điều khoản dịch vụ",
+      "page-not-found": "Không tìm thấy trang"
+    }
+  },
+  "about-us-page": {
+    "banner-text": "Chào mừng đến với",
+    "company-profile": "Thông tin YuuStay",
+    "company-name-title": "Tên công ty",
+    "company-name-content": "YuuStay là 1 nền tảng mở chia sẻ và hợp tác với chủ nhà trong lĩnh vực kinh đoanh dịch vụ lưu trú. Lĩnh vực chính của chúng tôi là cho thuê căn hộ, nhà nguyên căn, chung cư, khu nghỉ dưỡng, ... với phương châm đặt sự yên tâm, tin tưởng và uy tín lên hàng đầu. Ngoài ra, chúng tôi cũng đã và đang kết nối với chủ của các dịch vụ lưu trú tại đia phương để cùng vạch ra chiến lược, hợp tác kinh doanh, kí gửi và phát triển tiềm năng của dịch vụ lưu trú, kết nối với khách hàng tiềm năng. Mục tiêu của chúng tôi là tìm được sự thoải mái, sự tín nhiệm của khách hàng bằng nghiệp vụ kiểm soát chất lượng của dịch vụ lưu trú hiện hành.Nếu các bạn quan tâm, hãy liên hệ trực tiếp với chúng tôi thông qua Website của YuuStay, hoặc liên hệ Hotline để trả lời các thắc mắc.",
+    "company-address": "Slot #35 Str. No.4, Da Nang Industrial Zone, Son Tra Dist., Da Nang City.",
+    "support-team": {
+      "title": "Thành viên công ty",
+      "name_1": "Ông Hoàng",
+      "description_1": "Thông tin của Giám Đốc",
+      "name_2": "Ông Toàn",
+      "description_2": "Thông tin đội Sales",
+      "name_3": "Ông Bách",
+      "description_3": "Thông tin đội điều hành"
+    },
+    "service-provider": {
+      "title": "Dịch vụ cung cấp",
+      "name_1": "Dễ dàng tìm kiếm chỗ ở",
+      "name_2": "Đăng tin cho thuê nhà",
+      "name_3": "Khác"
+    }
+  },
+  "privacy-policy-page": {
+    "description-page": "Chúng tôi đảm bảo rằng tất cả thông tin nhận dạng cá nhân của bạn sẽ được bảo vệ và tôn trọng. Vui lòng đọc chính sách quyền riêng tư sau đây để hiểu rõ hơn về tất cả các cam kết mà chúng tôi đã thực hiện để bảo vệ quyền lợi của người dùng, thành viên và khách hàng của chúng tôi. Chính sách bảo mật sẽ giải thích cách chúng tôi nhận, sử dụng và (trong một số trường hợp nhất định) để tiết lộ thông tin cá nhân của bạn. \nChúng tôi hiểu và nhấn mạnh vào việc bảo vệ dữ liệu cá nhân của bạn cũng như nâng cao sự tự tin của bạn, do đó, việc chúng tôi sử dụng tên của bạn và các thông tin khác sẽ được tuân thủ nghiêm ngặt chính sách bảo mật. Chúng tôi chỉ thu thập các thông tin cần thiết liên quan đến các giao dịch.",
+    "title_1": "1. Khi nào chúng tôi thu thập thông tin?",
+    "description_1": "Chúng tôi thu thập thông tin từ bạn khi bạn đăng ký trên trang web của chúng tôi, đăng ký nhận bản tin, điền vào mẫu hoặc nhập thông tin trên trang web của chúng tôi. Mục đích của việc thu thập và lưu trữ dữ liệu cá nhân của bạn là xử lý các đơn đặt hàng, cung cấp dịch vụ và hoàn thành các yêu cầu thông tin thông qua trang web dựa trên yêu cầu của bạn. Hơn nữa, chúng tôi cũng sử dụng dữ liệu của bạn để quản lý tài khoản của bạn; xác minh và thực hiện các giao dịch trực tuyến, quản lý dữ liệu được tải xuống từ trang web; cải thiện hiển thị và nội dung của trang web và điều chỉnh cho phù hợp với người dùng khác; xác định người dùng, thành viên và khách hàng truy cập vào trang web, nghiên cứu nhân khẩu học, gửi thông tin về sản phẩm và dịch vụ nếu bạn không có dấu hiệu từ chối. Nếu bạn không muốn nhận thông tin tiếp thị như vậy, chúng tôi có thể ngừng gửi cho bạn bất cứ lúc nào nếu được yêu cầu.",
+    "title_2": "2. Chúng tôi bảo vệ thông tin của bạn như thế nào?",
+    "description_2": "Thông tin cá nhân của bạn được chứa đằng sau các mạng được bảo mật và chỉ có thể truy cập được bởi một số người giới hạn có quyền truy cập đặc biệt vào các hệ thống đó và được yêu cầu giữ bí mật thông tin. Ngoài ra, tất cả thông tin nhạy cảm / tín dụng bạn cung cấp được mã hóa thông qua công nghệ cổng bảo mật.Chúng tôi luôn duy trì các phương án an ninh về mặt vật lý, điện tử và có tổ chức để bảo vệ thông tin của khách hàng khỏi bị hủy hoại một cách vô tình hoặc phi pháp, hay bị mất mát, chỉnh sửa một cách vô tình, hoặc bị tiết lộ và truy cập trái phép. \n Chúng tôi thực hiện một loạt các biện pháp bảo mật khi người dùng nhập, gửi hoặc truy cập thông tin của họ để duy trì sự an toàn của thông tin cá nhân của bạn. \n Tất cả các giao dịch được xử lý thông qua một nhà cung cấp cổng và không được lưu trữ hoặc xử lý trên các máy chủ của chúng tôi. \n Chúng tôi sẽ giữ thông tin của bạn trong thời gian cần thiết để thỏa mãn mục đích đã nêu trong chính Sách Bảo Mật này và quy định nội bộ của công ty. Khi Yuustay không cần đến những chi tiết này nữa, trừ khi chúng tôi cần giữ thông tin do luật áp dụng yêu cầu hoặc trách nhiệm pháp lý, hoặc cần giữ thông tin để làm việc trong công ty và đạt mục tiêu kinh doanh, chúng tôi sẽ xóa bỏ những thông tin này khỏi hệ thống và dữ liệu của mình, và/hoặc thực hiện các bước thích hợp để làm cho dữ liệu trở thành vô danh và không thể xác định danh tính khách hàng từ những thông tin này.",
+    "title_3": "3. Phương tiện và công cụ để người dùng tiếp cận và chỉnh sửa dữ liệu cá nhân của mình.",
+    "description_3": "Người dùng có thể tiếp cận và chỉnh sửa trực tiếp dữ liệu cá nhân của mình thông qua website YuuStay.com bằng cách đăng nhập vào tài khoản mà mình đã đăng ký và sửa lại các thông tin, dữ liệu cá nhân của mình.\n Việc đăng nhập có thể thực hiện trên máy tính, điện thoại, hay các công cụ khác có tính năng truy cập vào website.",
+    "title_4": "4. Làm thế nào để chúng tôi sử dụng thông tin của bạn?",
+    "description_4": "Chúng tôi có thể sử dụng thông tin chúng tôi thu thập từ bạn khi bạn đăng ký, mua hàng, đăng ký nhận bản tin của chúng tôi, trả lời khảo sát hoặc truyền thông tiếp thị, lướt trang web hoặc sử dụng một số tính năng trang web khác theo các cách sau: \n- Để cá nhân hóa kinh nghiệm và cho phép chúng tôi cung cấp loại nội dung và dịch vụ sản phẩm mà bạn quan tâm nhất. \n- Để cải thiện trang web của chúng tôi để phục vụ bạn tốt hơn. \n- Để yêu cầu xếp hạng và đánh giá về dịch vụ hoặc sản phẩm.",
+    "title_5": "5. Đảm bảo lợi ích khách hàng",
+    "description_5": "Để bảo vệ lợi ích của khách hàng, ban giám đốc của chúng tôi muốn cung cấp cho khách hàng những thông tin quan trọng cơ bản trước khi tham gia bất kỳ giao dịch nào trên trang web, đảm bảo khách hàng an toàn trước mọi ý định gây hại. Bạn nên xem xét cẩn thận các thông tin liên quan đến các sản phẩm và dịch vụ được đăng trên Trang web: giá cả, dịch vụ bổ sung, điều kiện sử dụng cụ thể, địa chỉ, phương thức thanh toán, số tài khoản ngân hàng và các thông tin liên quan khác mà trang web đã hỏi như, tên doanh nghiệp, số liên lạc, địa chỉ, địa chỉ mạng xã hội, để đảm bảo các giao dịch được chính xác và an toàn. \nChúng tôi yêu cầu người dùng đã đăng ký cung cấp thông tin đầy đủ bao gồm, tên, danh bạ, email, số chứng minh nhân dân, số điện thoại, số tài khoản ngân hàng và chịu trách nhiệm về tính hợp pháp của thông tin đó.",
+    "title_6": "6. Liên hệ với chúng tôi",
+    "description_6": "Nếu có bất kỳ câu hỏi nào liên quan đến chính sách bảo mật và quyền riêng tư này, bạn có thể liên hệ với chúng tôi bằng thông tin sau: infor@yuustay.vn"
+  },
+  "terms-of-service-page": {
+    "description-page": "Chào mừng bạn đến với trang web YuuStay. Trang web này được cung cấp chỉ để hỗ trợ mọi người thu thập thông tin, đăng ký ,ký gửi bất động sản  và tìm kiếm chỗ ở lưu trú chứ không nhằm mục đích nào khác. \nTrang web này được cung cấp cho bạn dựa trên sự chấp nhận của bạn mà không sửa đổi bất kỳ / tất cả các điều khoản, điều kiện và thông báo được nêu dưới đây (gọi chung là Thỏa thuận ràng buộc). Bằng cách truy cập hoặc sử dụng Trang web này dưới bất kỳ hình thức nào, bạn đồng ý bị ràng buộc bởi Thỏa thuận và tuyên bố rằng bạn đã đọc và hiểu các điều khoản của nó. Vui lòng đọc kỹ Thỏa thuận, vì nó chứa thông tin liên quan đến các quyền và giới hạn pháp lý của bạn đối với các quyền này, cũng như một phần liên quan đến luật hiện hành và quyền tài phán của các tranh chấp. Nếu bạn không chấp nhận tất cả các điều khoản và điều kiện này, bạn không được phép sử dụng trang web này.",
+    "title_1": "1. Phạm vi dịch vụ của YuuStay",
+    "description_1": "Web YuuStay là một thị trường trực tuyến cho phép người dùng đăng ký ( “ thành viên ”) và các bên thứ ba nào đó người cung cấp dịch vụ (Thành viên và các bên thứ ba cung cấp dịch vụ là “ máy chủ ” và các dịch vụ mà họ cung cấp là “ Dịch vụ máy chủ ”) xuất bản như vậy Dịch vụ lưu trữ trên Nền tảng yuustay và để liên lạc và giao dịch trực tiếp với các Thành viên đang tìm cách đặt các Dịch vụ lưu trữ đó (thành viên sử dụng Dịch vụ lưu trữ là khách của khách sạn ). Dịch vụ lưu trữ có thể bao gồm việc cung cấp kỳ nghỉ hoặc các tài sản khác để sử dụng (\" chỗ ở \"), các hoạt động một ngày hoặc nhiều ngày trong các danh mục khác nhau  , truy cập vào các sự kiện và địa điểm độc đáo sự kiện, và một loạt các dịch vụ du lịch và không liên quan đến du lịch khác như  dịch vụ ký gửi bất động sản",
+    "title_2": "2. Điều kiện sử dụng dịch vụ ,thành viên.",
+    "description_2": "Để truy cập và sử dụng web yuustay hoặc đăng ký Tài khoản YuuStay, bạn phải là một cá nhân  hoặc là một doanh nghiệp, tổ chức hoặc pháp nhân hợp pháp có tổ chức hợp pháp theo luật pháp của quốc gia bạn thành lập và có thể ký kết hợp đồng ràng buộc pháp lý. \nXác minh người dùng trên Internet rất khó khăn và chúng tôi không chịu trách nhiệm về việc xác nhận danh tính của bất kỳ thành viên nào. Mặc dù ở trên, vì mục đích phòng chống gian lận và minh bạch, và được pháp luật hiện hành cho phép, chúng tôi có thể, nhưng không có nghĩa vụ yêu cầu thành viên cung cấp một hình thức nhận dạng chính phủ hoặc thông tin khác hoặc thực hiện kiểm tra bổ sung được thiết kế để giúp xác minh danh tính hoặc nguồn gốc của thành viên, sàng lọc thành viên dựa trên cơ sở dữ liệu của bên thứ ba hoặc các nguồn khác và yêu cầu báo cáo từ các nhà cung cấp dịch vụ và  nơi chúng tôi có đủ thông tin để xác định thành viên, lấy báo cáo từ hồ sơ công khai về tội phạm  hoặc một phiên bản tương đương của lý lịch  đã đăng ký trong phạm vi quyền hạn địa phương. \nViệc truy cập hoặc sử dụng một số khu vực và tính năng nhất định của webYuustay  có thể phải tuân theo các chính sách, tiêu chuẩn hoặc hướng dẫn riêng biệt hoặc có thể yêu cầu bạn chấp nhận các điều khoản và điều kiện bổ sung, trước khi bạn có thể truy cập các khu vực hoặc tính năng có liên quan của Yuustay . Nếu có mâu thuẫn giữa các điều khoản và điều kiện áp dụng cho một khu vực hoặc tính năng cụ thể của yuustay, các điều khoản và điều kiện sau sẽ được ưu tiên đối với quyền truy cập hoặc sử dụng khu vực hoặc tính năng đó, trừ khi được quy định khác trong các điều khoản và điều kiện sau.",
+    "title_3": "3. Đảm bảo an toàn dịch vụ",
+    "description_3": "Để thực hiện các giao dịch thành công, hạn chế tối đa các rủi ro có thể phát sinh, người sử dụng, các thành viên và khách hàng của YuuStay cần phải tuân thủ các cam kết sau đây: \nThành viên không nên cung cấp thông tin chi tiết về các khoản thanh toán cho bất kỳ ai bằng e-mail, chúng tôi không chịu trách nhiệm cho bất kỳ tổn thất nào gây ra bởi các thành viên như một kết quả của sự trao đổi thông tin qua internet hoặc e-mail. \nCơ chế chúng tôi sử dụng để đảm bảo các giao dịch như sau: \nQuản lý thành viên: thành viên của Yuustay.com phải cung cấp đầy đủ các thông tin có liên quan và chịu trách nhiệm về tính xác thực của những thông tin này. Chúng tôi sẽ ghi lại tất cả các thông tin cá nhân và tình trạng pháp lý của bạn cho mục đích quản lý. Chúng tôi sẽ cập nhật thông tin thường xuyên đồng thời tạo ra những đánh giá dựa trên các thông tin này. \nChúng tôi cũng đánh giá chủ nhà qua những lần nhận xét, phản hồi và ý kiến của khách hàng. \nChúng tôi sẽ nỗ lực hết sức để giải quyết bất kỳ khiếu nại và tranh chấp có thể phát sinh. Quyền lợi của bạn sẽ được bảo vệ bởi chúng tôi hoặc sự can thiệp của các cơ quan chính quyền địa phương.",
+    "title_4": "4. Sửa đổi các điều khoản",
+    "description_4": "YuuStay có quyền sửa đổi các Điều khoản này bất cứ lúc nào theo quy định này. Nếu chúng tôi thực hiện các thay đổi đối với các điều khoản này, chúng tôi sẽ đăng điều khoản sửa đổi trên Yuustay và cập nhật  ở đầu các điều khoản này. Chúng tôi cũng sẽ cung cấp cho bạn thông báo về các sửa đổi qua email ít nhất ba mươi (30) ngày trước ngày chúng có hiệu lực. Nếu bạn không đồng ý với các điều khoản được sửa đổi, bạn có thể chấm dứt thỏa thuận này có hiệu lực ngay lập tức. Chúng tôi sẽ thông báo cho bạn về quyền chấm dứt thỏa thuận trong email thông báo. Nếu bạn không chấm dứt thỏa thuận trước ngày điều khoản được sửa đổi có hiệu lực, việc bạn tiếp tục truy cập hoặc sử dụng Yuustay sẽ cấu thành sự chấp nhận điều khoản được sửa đổi.",
+    "title_5": "5. Đăng ký tài khoản",
+    "description_5": "Bạn phải đăng ký tài khoản YuuStay để truy cập và sử dụng một số tính năng nhất định của YuuStay, chẳng hạn trở thành chủ nhà . Nếu bạn đang đăng ký tài khoản Yuustay cho một doanh nghiệp, tổ chức hoặc pháp nhân khác, bạn tuyên bố và bảo đảm rằng bạn có quyền ràng buộc về mặt pháp lý đối với thực thể đó và cấp cho chúng tôi tất cả các quyền và giấy phép được cung cấp trong các điều khoản này. \nBạn có thể đăng ký tài khoản Yuustay bằng địa chỉ email và tạo mật khẩu hoặc thông qua tài khoản của bạn với một số dịch vụ mạng xã hội của bên thứ ba, chẳng hạn như Facebook hoặc Google.",
+    "title_6": "6.Quy định chung",
+    "description_6": "Bạn đồng ý rằng không có mối quan hệ liên doanh, đại lý, đối tác hoặc việc làm nào tồn tại giữa bạn và YuuStay khi sử dụng trang web này, chúng tôi chỉ là bên thứ 3 đứng ra cung cấp dịch vụ du lịch và kí gửi bất động sản. \nViệc thực hiện thỏa thuận này của chúng tôi tuân theo luật pháp và quy trình pháp lý hiện hành và những gì không có trong thỏa thuận này chúng tôi không chịu trách nhiệm."
+  },
+  "home": {
+    "header": {
+      "share": "Chia sẻ",
+      "blog": "Blog",
+      "host": "Trở thành chủ nhà",
+      "sign-up": "Đăng kí",
+      "login": "Đăng nhập",
+      "logout": "Đăng xuất",
+      "password": "Mật khẩu"
+    },
+    "search": {
+      "explore": "Khám phá",
+      "search-result-information": "Kết quả tìm kiếm",
+      "scroll-to-see-more": "Cuộn xuống để xem thêm",
+      "address": "Địa chỉ"
+    },
+    "sortby": {
+      "label": "Sắp xếp",
+      "option-1": "Tốt nhất",
+      "option-2": "Giá từ thấp tới cao",
+      "option-3": "Giá từ cao tới thấp"
+    },
+    "select-city": {
+      "top-searched": "Nổi bật",
+      "provinces": "Tỉnh",
+      "cities": "Thành phố",
+      "districts": "Quận/ Huyện",
+      "back": "Back"
+    },
+    "share": "Chia sẻ",
+    "see-more": "Xem thêm",
+    "expand-searching-area": "Mở rộng phạm vi tìm kiếm",
+    "rental": "Kết quả",
+    "rental-period": "Thời gian thuê",
+    "pricing": "Giá",
+    "house-type": "Loại chỗ ở",
+    "rooms": "Phòng",
+    "beds": "Giường",
+    "bedrooms": "Phòng ngủ",
+    "bathrooms": "Phòng tắm",
+    "estimated-guest": "Tổng số khách",
+    "clear": "Xóa",
+    "apply": "Áp dụng",
+    "in-out": "Nhận phòng - Trả phòng",
+    "min": "Thấp nhất",
+    "max": "Nhiều nhất",
+    "compare-to": "Giá trị bên trái không được nhỏ hơn giá trị bên phải",
+    "amenities": "Tiện nghi",
+    "your-location": "Your location",
+    "today": "Hôm nay",
+    "twoweek": "2 tuần tới",
+    "fourweek": "4 tuần tới",
+    "month": "tháng",
+    "threemonth": "3 tháng tới",
+    "oneyear": "1 năm tới",
+    "title-products": "Hiển thị phòng trống cho",
+    "of": "của"
+  },
+  "google-map": {
+    "messages": {
+      "get-position": {
+        "success": "Xác nhận đặt chỗ thành công. Chúng tôi sẽ xử lí đặt chỗ của bạn và liên hệ với bạn trong thời gian sớm nhất. Mọi thắc mắc xin vui lòng liên hệ với bộ phận CSKH của chúng tôi!",
+        "fail": "Service failed",
+        "off": "You have turned off location tracking.",
+        "not-supported": "Your browser doesn't support geolocation."
+      }
+    }
+  },
+  "realestate-detail": {
+    "header": {
+      "overview": "Tổng quan",
+      "rental-rooms": "Thuê phòng",
+      "amenities": "Tiện nghi",
+      "availability": "Xem lịch",
+      "neighborhood": "Tiện ích",
+      "policies": "Điều khoản"
+    },
+    "vietnam": "Việt Nam",
+    "view-photo": "Xem ảnh",
+    "share": "Chia sẻ",
+    "now-available": "Còn phòng",
+    "rooms": "Phòng",
+    "great-location": "Vị trí tốt",
+    "rental-form": "Lựa chọn loại phòng cần thuê",
+    "des-rental": "Bạn có thể thuê nguyên căn nhà hoặc theo từng loại phòng tùy theo mục đích sử dụng",
+    "select": "Chọn",
+    "amenities": "Tiện nghi",
+    "des-amenities": "Hãy nhấn và liệt kê những tiện ích trong căn hộ/ nhà của bạn.",
+    "show-all": "Hiện tất cả",
+    "availability": "Thời gian còn phòng",
+    "des-avaibability": "Giá phòng có thể thay đổi tăng hoặc giảm theo ưu đãi tùy theo thời gian thuê phòng",
+    "clear-date": "Xóa những ngày đã chọn",
+    "neighborhood": "Khu vực xung quanh",
+    "read-more-space": "Read more about the space",
+    "read-more-neighborhood": "Hiển thị những tiện ích xung quanh và vị trí của căn hộ",
+    "read-more-policies": "Hiển thị các điều khoản và quy định của căn hộ",
+    "read-more-amenities": "Hiển thị các tiện nghi của căn hộ",
+    "policies": "Điều khoản",
+    "more-home": "Chỗ ở tương tự",
+    "month": "tháng",
+    "day": "ngày",
+    "view-map": "Xem bản đồ",
+    "rental-period": "Thời gian thuê",
+    "estimated-guest": "Tổng số khách",
+    "total": "Tổng",
+    "nights": "đêm",
+    "pricing": "Giá",
+    "location-info": "Địa chỉ bên trên chỉ mang tính chất tương đối, chúng tôi sẽ cung cấp vị trí sau khi quá trình đặt chỗ hoàn tất.",
+    "news": "Tin tức",
+    "uncategorized": "Không có danh mục",
+    "posted": "Đăng bởi",
+    "check-in": "Nhận phòng",
+    "check-out": "Trả phòng",
+    "all-in-one": "Nguyên căn",
+    "price-info": {
+      "title": "Chi tiết số tiền",
+      "select-week": "Chọn những cụm thời gian sau để hiển thị những phòng sẽ trống trong thời gian đã chọn",
+      "electric-fee": "Tiền điện",
+      "service-fee": "Tiền dịch vụ",
+      "note": "Tiền điện/nước là bản ước lượng và sẽ thay đổi theo định mức sử dụng thực tế",
+      "tax": "Thuế VAT chỉ tính dựa trên tiền phòng"
+    },
+    "booking": {
+      "estimated": "Uớc lượng",
+      "all-inclusive": "Bao trọn gói",
+      "request-to-book": "Gửi giữ chỗ",
+      "note-book": "Bạn chưa phải thanh toán khi đặt chỗ.",
+      "not-service-charge": "Không bao gồm chi phí phát sinh như điện, nước,...",
+      "more-detail": "Chi tiết bảng giá",
+      "reserve": "Đặt chỗ",
+      "message": {
+        "take-a-reservation": {
+          "success": "Xác nhận đặt chỗ thành công. Chúng tôi sẽ xử lí đặt chỗ của bạn và liên hệ với bạn trong thời gian sớm nhất. Mọi thắc mắc xin vui lòng liên hệ với bộ phận CSKH của chúng tôi!",
+          "fail": "Service failed" 
+        }
+      }
+    },
+    "wifi": {
+      "choose": "Lựa gói WIFI",
+      "money": "Tiền WIFI",
+      "fee": "Phí WIFI"
+    },
+    "share-modal": {
+      "share": "Chia sẻ liên kết",
+      "copylink": "Sao chép liên kết",
+      "share-fb": "Đăng lên Facebook",
+      "share-tw": "Đăng lên Twitter"
+    }
+  },
+  "become-a-host": {
+    "house-name": "Name",
+    "full-name": "Full Name",
+    "email": "Email",
+    "mobile-number": "Số điện thoại",
+    "home-info": "Home information",
+    "homeowners-info": "Homeowners information",
+    "amenities": "Tiện nghi",
+    "note": "Ghi chú",
+    "des-home-info": "Liệt kê vài thông tin cơ bản của nhà/ căn hộ của bạn theo biểu mẫu bên dưới.",
+    "des-amenities": "Hãy nhấn và liệt kê những tiện ích trong căn hộ/ nhà của bạn.",
+    "des-homeowners-info": "Đây là thông tin mà YuuStay dùng để liên hệ với bạn, vui lòng cung cấp chính xác!",
+    "des-note": "Hãy mô tả về một chút về căn hộ/ nhà hoặc loại hình lưu trú của bạn",
+    "submit": "Đăng nhập",
+    "upload-image": "Tải ảnh lên",
+    "edit": "Sửa",
+    "choose-amenities": "Chọn tiện nghi",
+    "type": "Loại chỗ ở",
+    "map": "Bản đồ",
+    "show-all": "Hiện tất cả",
+    "select-a-type": "Chọn một giá trị",
+    "messages": {
+      "create-a-host": {
+        "success": "Cảm ơn bạn đã gửi thông tin. Chúng tôi sẽ phản hồi bạn trong thời gian sớm nhất. Mọi thắc mắc xin vui lòng liên hệ với bộ phận CSKH của chúng tôi!",
+        "fail": "Service failed"
+      },
+      "upload-images": {
+        "success": "Upload image(s) successfully",
+        "fail": "Upload image(s) fail",
+        "invalid-format": "Your file is unaccepted format",
+        "exceeded-size": "Your file exceeds the maximum size of 2MB",
+        "service-fail": "Service failed"
+      }
+    }
+  },
+  "policy-modal": {
+    "total": "Tổng",
+    "not-service-charge": "Không bao gồm chi phí phát sinh như điện, nước,...",
+    "day": "Ngày",
+    "rent-fee": "Phí thuê",
+    "fee-wifi": "Phí WIFI",
+    "your-booking-details": "Chi tiết đặt phòng",
+    "guests": "Khách",
+    "rental-period": "Thời gian thuê",
+    "in": "in",
+    "check-in": "Nhận phòng",
+    "check-out": "Trả phòng",
+    "your-information": "Thông tin của bạn",
+    "customer-name": "Tên khách hàng",
+    "email": "Email",
+    "mobile-number": "Số điện thoại",
+    "special-requests": "Yêu cầu đặc biệt",
+    "contact-language": "Ngôn ngữ liên hệ",
+    "agree-to-our": "Đồng ý với chúng tôi",
+    "privacy-policy": "Chính sách bảo mật",
+    "submit": "Đăng nhập"
+  },
+  "profile-page": {
+    "my-booking": "Quản lí đặt chỗ",
+    "my-profile": "Hồ sơ của tôi",
+    "edit-password": "Đổi mật khẩu",
+    "log-out": "Đăng xuất"
+  },
+  "editting-password": {
+    "edit-password": "Đổi mật khẩu",
+    "title": "Đổi mật khẩu",
+    "current-password": "Mật khẩu hiện tại",
+    "new-password": "Mật khẩu mới",
+    "confirm-new-password": "Xác nhận mật khẩu mới",
+    "save": "Cập nhật",
+    "characters": "character(s)",
+    "errors": {
+      "required": "Xin hãy nhập vào đầy đủ thông tin!",
+      "email": "Email không đúng định dạng!",
+      "invalid": "Vui lòng nhập đúng định dạng!",
+      "maxlength": "Maximum length is ",
+      "minlength": "Minimum length is ",
+      "mismatched": "Your password and confirmation password do not match",
+      "invalid-password": "Your current password is incorrect"
+    },
+    "message": {
+      "edit-password": {
+        "success": "Edit password successfully",
+        "fail": "Edit password fail"
+      }
+    }
+  },
+  "my-profile-page": {
+    "profile": "Hồ sơ",
+    "first-name": "Họ và tên đệm",
+    "last-name": "Tên chính",
+    "birthday": "Ngày sinh",
+    "gender": "Giới tính",
+    "save": "Cập nhật",
+    "email": "Email",
+    "mobile-number": "Số điện thoại",
+    "select-a-type": "Chọn một giá trị",
+    "add-photo": "Cập nhật ảnh đại diện",
+    "messages": {
+      "update-avatar": {
+        "success": "Update avatar successfully",
+        "fail": "Update avatar fail",
+        "invalid-format": "Your file is unaccepted format",
+        "exceeded-size": "Your file exceeds the maximum size of 2MB"
+      },
+      "edit-profile": {
+        "success": "Edit profile successfully",
+        "fail": "Edit profile fail"
+      }
+    }
+  },
+  "my-booking-history": {
+    "my-booking": "Quản lí đặt chỗ",
+    "view-details": "Chi tiết",
+    "upcoming": "Đang xử lí",
+    "completed": "Đã xử lí",
+    "canceled": "Hủy bỏ",
+    "check-in": "Nhận phòng",
+    "check-out": "Trả phòng",
+    "text-no-booking": "Xin lỗi! \nbạn chưa đặt phòng nào mới ở đây",
+    "search-new": "Tìm kiếm mới",
+    "NEW": "Đã giữ chỗ",
+    "PROCESSING": "Đang xử lí",
+    "PENDING": "Đang xử lí",
+    "DONE": "Đã hoàn thành",
+    "CONFIRMED": "Đã hoàn thành",
+    "CANCELED": "Đã hủy"
+  },
+  "my-booking-detail": {
+    "id": "Mã đặt chỗ",
+    "contact-email": "Email",
+    "mobile": "Di động",
+    "guest-name": "Tên khách hàng",
+    "room-type": "Loại chỗ ở",
+    "room-name": "Tên phòng",
+    "house-type-history": "Kiểu nhà",
+    "payment-status": "Thanh toán",
+    "check-in": "Nhận phòng",
+    "check-out": "Trả phòng",
+    "total": "Tổng",
+    "rent-fee": "Phí thuê",
+    "fee-wifi": "Phí WIFI",
+    "day": "ngày",
+    "go-back": "Back to booking",
+    "link-web": "Link web",
+    "ELECTRICFEE": "Tiền điện",
+    "WATERFEE": "Tiền nước",
+    "VAT": "Thuế VAT",
+    "NEW": "Chưa thanh toán",
+    "PROCESSING":"Chưa thanh toán",
+    "PENDING":"Chưa thanh toán",
+    "CANCELED": "Chưa thanh toán",
+    "PAID": "Đã thanh toán",
+    "DONE": "Đã thanh toán"
+  },
+  "fee": {
+    "quantity-per-date": "Ước tính sử dụng mỗi ngày",
+    "price-per-unit": "Giá tiền mỗi đơn vị",
+    "total": "Tổng tiền"
+  },
+  "auth-modal": {
+    "login-modal": {
+      "title": "Đăng nhập",
+      "no-account": "Bạn chưa có tài khoản?",
+      "reset-password": "Quên mật khẩu?",
+      "login-with-google": "Đăng nhập bằng Google",
+      "login-with-twitter": "Đăng nhập bằng Twitter",
+      "login-with-facebook": "Đăng nhập bằng Facebook"
+    },
+    "sign-up-modal": {
+      "title": "Đăng kí",
+      "confirm-password": "Xác nhận mật khẩu",
+      "first-name": "Họ và tên đệm",
+      "last-name": "Tên chính"
+    },
+    "forgot-password-modal": {
+      "title": "Khôi phục mật khẩu",
+      "description": "Nhập vào địa chỉ mail để lấy lại password."
+    },
+    "message": {
+      "sign-up": {
+        "verify-your-email": "Xác nhận email của bạn."
+      },
+      "authenticate": {
+        "email-not-verified": "Email chưa được xác thực",
+        "can-not-create-user": "Không thể tạo tài khoản, liên hệ hỗ trợ YuuStay để được trợ giúp!",
+        "auth/email-already-exists": "Email này đã tồn tại",
+        "email-not-exists": "Email không tồn tại",
+        "method-not-allowed": "Phương thức không được hỗ trợ",
+        "link-account": "Tài khoản đã tồn tài trước đó, bạn có muốn liên kết với tài khoản trước đó?",
+        "account-already-linked": "Tài khoản này đã được liên kết",
+        "auth/popup-closed-by-user": "The popup has been closed by the user before finalizing the operation.",
+        "auth/invalid-email": "Email không đúng định dạng!",
+        "auth/email-not-exists": "Email không tồn tại",
+        "auth/account-exists-with-different-credential": "Tài khoản này đã tồn tại",
+        "auth/email-already-in-use": "Email đã được sử dụng cho tài khoản khác.",
+        "auth/user-not-found": "Tài khoản không tồn tại.",
+        "auth/wrong-password": "Mật khẩu không đúng hoặc tài khoản không tồn tại.",
+        "try-again": "Xin vui lòng thử lại"
+      }
+    },
+    "sign-up": "Đăng kí",
+    "login": "Đăng nhập",
+    "logout": "Đăng xuất",
+    "password": "Mật khẩu",
+    "email": "Email",
+    "or": "Hoặc",
+    "word": "word",
+    "mobile-number": "Số điện thoại",
+    "send": "Gửi"
+  },
+  "help-content": {
+    "question_1": "How do I create an account?",
+    "answer_1": "Nếu bạn chưa có tài khoản  yuustay,hãy truy cập vào yuustay .com và nhấp đăng kí bằng email của bạn.Hoặc có thể đăng nhập trực tiếp thông qua facebook,google,twitter.",
+    "question_2": "Làm thế nào khi quên mật khẩu?",
+    "answer_2": "Nếu bạn quên mật khẩu thì truy câph vào trang yuustay sau đo vô my account bấm vô Reset  your password? Sau đó nhập email của bạn để lấy mât khẩu mới.",
+    "question_3": "Tại sao mức giá các phòng có sự khác nhau ?",
+    "answer_3": "Các phòng có mức giá khác nhau vì tuỳ thuộc vào loại phòng ,và kích thước tiện ích của từng phòng mà no quy định giá cả của phòng đó.",
+    "question_4": "Tôi muốn ở lại dài ngày hơn? ",
+    "answer_4": "yuustay cung cấp cho bạn dịch vụ cho thuê ngắn hạn  hoặc dài hạn  đều đươc ngoài ra còn cung cấp thêm dịch vụ trọn gói để bạn tiết kiệm chi phí hơn.",
+    "question_5": "Làm thế nào để trở thành chủ nhà ?",
+    "answer_5": "Bạn muốn trở thành chủ nhà truy cấp vào trang yuustay.com vào become a host làm theo mẫu  có sẵn cung cấp dữ liệu với chúng tôi. ",
+    "question_6": "Quyền lợi gì khi là chủ nhà với yuustay ?",
+    "answer_6": "Khi trở thành chủ nhà của yuustay chúng tôi luôn cam kêy mang dịch vụ của bạn tới với người tiêu dùng 1 cách nhanh nhất, bên cạnh đó còn có 1 số chế độ phúc lợi khi hợp tác vói chúng tôi.",
+    "question_7": "Làm thế nào để đặt phòng ?",
+    "answer_7": "Để đặt phòng bạn vui lòng truy cập vào trang yuustay.com,sau đó tìm kiếm điạ điểm mà bạn mong muốn ở khu vực và mức giá như thế nào.Sau đó bấm vô xem chi tiết cụ thể, tại đây bạn có thể thuê nhà nguyên căn hoặc từng phòng theo nhu cầu sử dụng của bạn với điều kiện  phòng đó còn trống trong thời gian bạn muốn thuê  .Chúng tôi hỗ trợ dịch vụ cho thuê theo ngày hoặc trọn gói nếu bạn muốn.",
+    "question_8": "Làm thế nào để chọn phòng giá rẻ ?",
+    "answer_8": "Sau khi nhập điểm đến và ngày du lịch vào ô tìm kiếm, bạn sẽ được đưa đến trang kết quả tìm kiếm. Tại đây, bạn có thể chọn lọc kết quả theo giá phòng. Bạn cũng có thể chọn lọc kết quả tìm kiếm theo khoảng giá tiền, hoặc loại chỗ ở để tìm phòng giá rẻ.",
+    "question_9": "Làm thế nào để tôi có thể xem mức giá phòng với loại tiền tệ tôi chọn ?",
+    "answer_9": "Bạn có thể dễ dàng chọn loại tiền tệ của mình từ danh sách ở góc trên đầu trang. Trang web sẽ tự động cập nhật giá phòng theo tiền tệ được chọn. ",
+    "question_10": "Làm thế nào để kéo dài thời gian lưu trú ?",
+    "answer_10": "Bạn có thể dễ dàng kéo dài thời gian lưu trú, bằng cách  đặt phòng mới cho thời gian lưu trú căn phòng mà bạn muốn gia hạn  trên web. Thông thường các khách sạn tự động sắp xếp cùng một phòng để bạn không phải chuyển phòng trong thời gian gia hạn. ",
+    "question_11": "Lúc nào tôi có email xác nhận ?",
+    "answer_11": "Trong hầu hết trường hợp, bạn sẽ nhận được email  trong vòng 30 phút kể từ lúc bạn thực hiện việc đặt phòng. Nếu bạn không nhận được sau thời gian này, hãy kiểm tra thư rác của bạn và / hoặc các bộ lọc thư rác. Bạn cũng có thể kiểm tra tình trạng đặt phòng của mình bằng cách đăng nhập vào mục 'Quản lý các đặt phòng của tôi' thông qua trang web",
+    "question_12": "Kiểm tra tình trạng đặt phòng vài chi tiết phòng ở đâu ?",
+    "answer_12": "Bạn có thể kiểm tra tình trạng đặt phòng của mình bằng cách đăng nhập vào mục 'Quản lý các đặt phòng của tôi' thông qua trang web. Hoặc bạn có thể truy cập thông tin này bằng cách đăng nhập vào tài khoản của mình thông qua liên kết Tự Phục Vụ trong email xác nhận của bạn",
+    "question_13": "Tôi có thể đặt phòng không có trong Yuustay không ?",
+    "answer_13": "Không. Chỉ có những kiểu phòng thõa mãn sẽ được trình bày sau khi bạn cung cấp các yêu cầu du lịch của bạn",
+    "question_14": "Làm thế nào để tạo yêu cầu đặc biệt ?",
+    "answer_14": "Sau khi thực hiện book căn phòng mà bạn muốn, sẽ hiện lên 1 mẫu xác nhận tại đây bạn có thể thêm ghi chú đặc biệt.",
+    "question_15": "Có thể thuê phòng tốc độ wifi mạnh không ?",
+    "answer_15": "Khi thực hiện book căn phòng mà bạn muốn tại đây bạn có thể chọn cho mình gói wifi theo ý muốn của bạn.",
+    "question_16": "Mức giá được tính theo phòng hay theo số lượng người ?",
+    "answer_16": "Bên chúng tôi tính giá theo phòng chứ không theo số lượng người. Điều quan trọng là bạn nhập đúng số lượng khách đặt phòng bởi vì mức giá có thể thay đổi dựa trên số chỗ khách chiếm. Trong một số trường hợp, một vài khách sạn giới hạn số lượng khách mỗi phòng. Để tránh tình trạng bị tính thêm phí khi nhận phòng, bạn nên nhập chính xác.",
+    "question_17": "Mức giá phòng có bao gồm phí thuế và dịch vụ ?",
+    "answer_17": "Mặc định cho giá hiển thị của Yuustay  không bao gồm thuế và phí dịch vụ. Để xem giá phòng đã bao gồm thuế và phí dịch vụ, bạn có thể chọn phòng sau đó chọn thời gian thuê và giá sẽ hiển thì chi tiết tại booking. Tại đây bạn cũng có thể xem  tổng giá phòng cho kỳ nghỉ bằng cách tiếp tục chọn dịch vụ trọn gói để giảm chi phí hơn."
+  },
+  "utilities": {
+    "restaurants": "Nhà hàng",
+    "hotels": "Khách sạn",
+    "banks": "Ngân hàng", 
+    "parks": "Công viên",
+    "coffee": "Cà phê",
+    "hospitals": "Bệnh viện",
+    "bookstores": "Nhà sách",
+    "post-offices": "Bưu điện",
+    "parking-lots": "Bãi đỗ xe",
+    "groceries": "Cửa hàng tạp hoá",
+    "schools": "Trường học",
+    "gas-stations": "Trạm xăng",
+    "more": "Mở rộng",
+    "less": "Thu gọn",
+    "show-around" : "Hiển thị các tiện ích xung quanh"
+  },
+  "messages": {
+    "success-become-a-host": "Cảm ơn bạn đã gửi thông tin. Chúng tôi sẽ phản hồi bạn trong thời gian sớm nhất. Mọi thắc mắc xin vui lòng liên hệ với bộ phận CSKH của chúng tôi!",
+    "success-booking": "Xác nhận đặt chỗ thành công. Chúng tôi sẽ xử lí đặt chỗ của bạn và liên hệ với bạn trong thời gian sớm nhất. Mọi thắc mắc xin vui lòng liên hệ với bộ phận CSKH của chúng tôi!",
+    "success-sign-up": "Đăng ký tài khoản thành công!",
+    "sorry": "Xin lỗi",
+    "not-found": "Chúng tôi không tìm thấy kết quả phù hợp",
+    "incorrect-keyword": "Kiểm tra lại thông tin tìm kiếm của bạn, bao gồm: từ khóa, điều kiện đặt phòng...",
+    "hint": "Dùng những từ khóa gợi ý địa chỉ để tìm kiếm chính xác",
+    "no-apartments": "Không có căn hộ phù hợp với các tiêu chí tìm kiếm",
+    "no-internet": "Không thể kết nối Internet",
+    "try-again": "Xin vui lòng thử lại",
+    "reset-all-filter": "Đặt lại các bộ lọc kết quả tìm kiếm",
+    "input-name": "Chúng tôi có thể gọi bạn là",
+    "input-email": "Nhập vào địa chỉ Email để có thể liên lạc",
+    "input-phone": "Nhập vào số điện thoại có thể liên lạc",
+    "error": {
+      "required": "Xin hãy nhập vào đầy đủ thông tin!",
+      "email": "Email không đúng định dạng!",
+      "invaild": "Vui lòng nhập đúng định dạng!"
+    },
+    "copied": {
+      "success": "Sao chép liên kết thành công",
+      "fail": "Sao chép liên kết thất bại"
+    },
+    "page-not-found": "Xin lỗi! Làm ơn kiểm tra lại đường dẫn URL!"
+  },
+  "footer": {
+    "about-us": "Về chúng tôi",
+    "help": "Trợ giúp",
+    "copyright": " @ 2019 YuuStay  - Nội dung trên trang được công ty TNHH YuuStay giữ toàn quyền.",
+    "office-located": " Giấy phép MXH số 499/GP-BTTTT do Bộ Thông Tin và Truyền thông cấp ngày xx/xx/xxxx.",
+    "terms": "Điều khoản",
+    "privacy": "Riêng tư"
+  },
+  "daysOfWeek": {
+    "monday": "Thứ hai",
+    "tuesday": "Thứ ba",
+    "wednesday": "Thứ tư",
+    "thursday": "Thứ năm",
+    "friday": "Thứ sáu",
+    "saturday": "Thứ bảy",
+    "sunday": "Chủ nhật"
+  },
+  "help-page": {
+    "recommended": "Những câu hỏi thường gặp",
+    "read-more": "Đọc thêm",
+    "read-less": "Thu gọn lại"
+  },
+  "night-number": "Số đêm",
+  "read-less": "Thu gọn lại",
+  "show-all": "Hiện tất cả",
+  "see-more": "Xem thêm",
+  "amenities": "Tiện nghi",
+  "male": "Nam",
+  "female": "Nữ",
+  "other": "Khác",
+  "mil": "tr",
+  "thousand": "nghìn",
+  "unname-road": "Địa chỉ không xác định",
+  "house-address": "Địa chỉ nhà",
+  "page-title": "Trang chủ",
+  "results": "Kết quả được tìm thấy",
+  "cancellation-policy": "Quy định hủy phòng",
+  "flexible": "Linh hoạt",
+  "private-baths": "Phòng tắm riêng",
+  "discover": "Khám phá",
+  "popular-places": "Thắng cảnh",
+  "fail": "Service failed",
+  "not-supported": "Your browser doesn't support geolocation.",
+  "off": "You have turned off location tracking.",
+  "reset": "Huỷ",
+  "apply": "Áp dụng",
+  "no-service-arount": "Không có tiện ích xung quanh",
+  "validators": {
+    "max-is": "Giá trị tối đa là"
+  }
+}

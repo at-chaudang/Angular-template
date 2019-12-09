@@ -1,0 +1,980 @@
+.layout-2-col-full {
+  > .col-left {
+    width: 62%;
+    float: left;
+  }
+  > .col-right {
+    @include pxRem(width, 375);
+    float: right;
+    margin-left: auto;
+  }
+}
+.page-header {
+  .header-center {
+    &.hide-search {
+      display: none;
+    }
+  }
+}
+.slide-show {
+  position: relative;
+  .owl-carousel {
+    .owl-item {
+      @include pxRem(height, 382);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    img {
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+  .btn-white {
+    @include pxRem(width, 150);
+  }
+  .iconf-share,
+  .iconf-grid {
+    @include pxRem(margin-right, 12);
+    @include pxRem(font-size, 18);
+  }
+  .iconf-share {
+    @include pxRem(font-size, 20);
+  }
+  .iconf-grid {
+    @include pxRem(font-size, 12);
+  }
+  .btn-wrap {
+    @include pxRem(right, 25);
+    @include pxRem(bottom, 16);
+    position: absolute;
+    display: flex;
+    z-index: 1;
+    .btn {
+      font-weight: 700;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .btn-white {
+      @include pxRem(margin-left, 20);
+      &:first-child {
+        @include pxRem(width, 200);
+      }
+    }
+  }
+}
+.estates-detail {
+  position: relative;
+  display: flex;
+  .sticky {
+    @include pxRem(top, 60);
+    @include pxRem(width, 375 !important);
+    background: map-get($colors, white);
+    position: fixed !important;
+  }
+  .stop-scroll {
+    position: absolute;
+    bottom: 0;
+    top: auto;
+    right: 0;
+    left: 0;
+  }
+  .col-right {
+    position: relative;
+  }
+  .amenities {
+    @include pxRem(margin-top, 20);
+    @include pxRem(padding-top, 30);
+    .see-more {
+      @include pxRem(margin-top, 44);
+    }
+  }
+  .amenities-list {
+    display: flex;
+    flex-wrap: wrap;
+    .amenities-item {
+      @include pxRem(padding-top, 28);
+      display: flex;
+      flex: 1 50%;
+      align-items: center;
+    }
+    .icon-amenities {
+      @include pxRem(margin-right, 23);
+    }
+  }
+}
+.detail-main {
+  .daterangepicker-popup {
+    position: static;
+    .md-drppicker {
+      @include pxRem(margin-top, 20);
+    }
+  }
+}
+.estates-sub-title {
+  @include pxRem(line-height, 25);
+  @include pxRem(font-size, 25);
+  @include pxRem(margin-bottom, 5);
+  @include pxRem(margin-right, 10);
+  display: inline-block;
+  text-transform: capitalize;
+
+  & + .popover-hover {
+    position: relative;
+    cursor: pointer;
+    .icon-question {
+      position: absolute;
+      transform: translateY(-100%);
+    }
+    .popover-content {
+      @include pxRem(left, 7);
+      transform: translate(-50%, -16px);
+    }
+  }
+}
+.estates-label {
+  text-transform: capitalize;
+  font-weight: 700;
+}
+.see-more {
+  @include pxRem(margin-top, 10);
+  color: map-get($colors, primary);
+  cursor: pointer;
+  display: block;
+}
+.estates-content {
+  p {
+    @include pxRem(line-height, 23);
+  }
+  .estates-title {
+    @include pxRem(margin-top, 18);
+    @include pxRem(line-height, 30);
+    @include pxRem(font-size, 30);
+  }
+  .estates-address {
+    @include pxRem(margin-top, 9);
+    display: block;
+  }
+  .estates-label {
+    @include pxRem(margin-top, 19);
+  }
+  .estates-map {
+    @include pxRem(margin-left, 20);
+    color: map-get($colors, primary);
+    cursor: pointer;
+    &::after {
+      @include pxRem(padding-left, 5);
+      content: url('/assets/images/icons/ic-view-more.svg');
+    }
+  }
+  .room-available {
+    @include pxRem(margin, 3 0 0 23);
+    color: map-get($colors, green);
+    @include pxRem(line-height, 23);
+    font-weight: 700;
+    display: block;
+  }
+  .estates-description {
+    @include pxRem(margin-top, 22);
+    @include pxRem(padding-top, 18);
+    p {
+      @include pxRem(line-height, 22);
+    }
+    .see-more {
+      @include pxRem(margin-top, 17);
+    }
+  }
+  .estates-label {
+    .iconf-villa {
+      @include pxRem(margin-right, 10);
+      @include pxRem(font-size, 13);
+    }
+    .iconf-location {
+      @include pxRem(margin-right, 12);
+      @include pxRem(font-size, 15);
+    }
+  }
+  .location-content {
+    @include pxRem(margin-left, 23);
+  }
+}
+.room-structure {
+  @include pxRem(margin-left, 23);
+  display: flex;
+  .room-structure-item {
+    @include pxRem(padding-right, 20);
+  }
+}
+.rental-rooms {
+  @include pxRem(margin-top, 20);
+  @include pxRem(padding-top, 30);
+}
+.wrap-rooms-list {
+  @include pxRem(max-height, 500);
+  @include pxRem(margin-top, 25);
+  @include pxRem(padding-right, 10);
+  overflow: auto;
+  &::-webkit-scrollbar {
+    @include pxRem('width', 7);
+  }
+  &::-webkit-scrollbar-thumb {
+    @include pxRem('border-radius', 8);
+    background: map-get($colors, scroll-bg);
+  }
+  .real-estates-item {
+    &:first-child {
+      cursor: initial;
+    }
+  }
+  .real-estates-right {
+    &.active {
+      .btn-primary {
+        background: map-get($colors, scroll-bg);
+      }
+    }
+  }
+}
+.available {
+  @include pxRem(margin-top, 21);
+  @include pxRem(padding-top, 31);
+  .daterangepicker-popup {
+    .md-drppicker {
+      width: 100%;
+    }
+    .inline {
+      @include pxRem(max-height, 285);
+      z-index: 1;
+      border: 0;
+      box-shadow: unset;
+      padding-left: 0;
+    }
+    .calendar.left {
+      margin-left: 0;
+    }
+    .calendar-table {
+      padding-left: 0;
+    }
+    .buttons {
+      display: none;
+    }
+  }
+}
+.neighborhood {
+  @include pxRem(margin-top, 20);
+  @include pxRem(padding-top, 30);
+  .estates-map {
+    @include pxRem(height, 300);
+    @include pxRem(margin, 25 0 10);
+    overflow: hidden;
+    width: 100%;
+  }
+  .exact-location {
+    @include pxRem(margin-bottom, 24);
+  }
+}
+.policies {
+  @include pxRem(margin, 30 0);
+  @include pxRem(padding, 30 0 0);
+  &-content {
+    @include pxRem(padding-top, 18);
+  }
+  .estates-label {
+    @include pxRem(margin-top, 22);
+  }
+  p {
+    @include pxRem(line-height, 23);
+  }
+  .see-more {
+    @include pxRem(margin, 17 0 35);
+  }
+}
+.hastag-detail {
+  @include pxRem(margin-bottom, 30);
+  @include pxRem(padding, 30 0);
+}
+.you-may-like {
+  @include pxRem(margin-top, 20);
+  .products-list {
+    margin-right: 0;
+    .icon-dolla {
+      @include pxRem(width, 15);
+      @include pxRem(height, 15);
+      @include pxRem(margin-right, 4);
+      @include pxRem(font-size, 12);
+      @include pxRem(line-height, 15);
+    }
+  }
+  .owl-carousel {
+    .owl-item {
+      transform: none;
+    }
+  }
+}
+.price-detail {
+  @include pxRem(padding, 22 30);
+  @include pxRem(margin-top, 40);
+  border: solid 1px map-get($colors, border);
+  .calendar-daterange-single {
+    @include pxRem(padding, 0 31);
+    @include pxRem(margin, 0 -31);
+  }
+  .price-detail-title {
+    @include pxRem(font-size, 25);
+    @include pxRem(margin-bottom, 7);
+    font-weight: 700;
+    .detail-label {
+      @include pxRem(max-width, 240);
+      @include pxRem(margin-right, 6);
+      display: inline-block;
+      vertical-align: bottom;
+    }
+  }
+  .select-data {
+    @include pxRem(border-radius, 4);
+    @include pxRem(padding, 8 16);
+    max-width: initial;
+    text-align: initial;
+    border: 1px solid map-get($colors, border);
+    box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.06);
+    .data-dropdown {
+      @include pxRem(border-radius, 4);
+      z-index: 1;
+      right: -1px;
+      min-width: calc(100% + 2px);
+      border: 1px solid map-get($colors, border);
+      box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.06);
+    }
+    .data-dropdown-container {
+      @include pxRem(border-radius, 4);
+    }
+    .wifi-price {
+      right: 0;
+    }
+    &-name {
+      .wifi-price {
+        @include pxRem(right, 42);
+      }
+    }
+  }
+  .optional-choise {
+    @include pxRem(border-radius, 20);
+    @include pxRem(margin-top, 20);
+    .optional-price {
+      @include pxRem(padding, 12);
+      @include pxRem(border-radius, 20 0 0 20);
+      width: 50%;
+      box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.06);
+      border: solid 1px map-get($colors, primary);
+      &:last-child {
+        @include pxRem(border-radius, 0 20 20 0);
+      }
+    }
+    .active {
+      background-color: map-get($colors, primary);
+      color: map-get($colors, white);
+    }
+  }
+  .form-group {
+    @include pxRem(margin-top, 17);
+    @include pxRem(padding-bottom, 0);
+    position: relative;
+    line-height: 1;
+    .estates-label {
+      @include pxRem(margin-top, 8);
+      display: block;
+    }
+    .calendar-container {
+      @include pxRem(border-radius, 4);
+      position: relative;
+      border: solid 1px map-get($colors, border);
+      input {
+        @include pxRem(height, 40);
+        @include pxRem(font-size, 16);
+        border: 0;
+      }
+    }
+    .daterangepicker-popup {
+      .md-drppicker {
+        @include pxRem(max-height, 353);
+        z-index: 1;
+        margin-top: 0;
+      }
+    }
+    .estimated-label {
+      @include pxRem(margin-bottom, 13);
+    }
+    .data-dropdown {
+      width: 100%;
+      right: 0;
+      box-shadow: 0 0;
+      background: map-get($colors, white);
+      z-index: 2;
+      &::before {
+        @include pxRem(right, 11);
+      }
+    }
+    .data-dropdown-container {
+      @include pxRem(max-height, 200);
+      overflow: auto;
+      &::-webkit-scrollbar {
+        @include pxRem(width, 7);
+      }
+      &::-webkit-scrollbar-thumb {
+        @include pxRem(border-radius, 8);
+        background: map-get($colors, scroll-bg); 
+      }
+    }
+  }
+  .estates-label {
+    @include pxRem(margin-top, 17);
+    @include pxRem(line-height, 25);
+  }
+  .pricing-detail-item {
+    @include pxRem(padding, 11 0 4);
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    &:last-child {
+      border: 0;
+    }
+  }
+  .form-group {
+    .mat-expansion-panel-header-title {
+      @include pxRem(margin-bottom, 3);
+      font-family: $font-body;
+      line-height: 1.6;
+      color: map-get($colors, secondary);
+    }
+    .mat-expansion-indicator::after {
+      vertical-align: top;
+    }
+    .mat-expansion-panel-content {
+      font: inherit;
+      .mat-expansion-panel-body {
+        font: inherit;
+        color: map-get($colors, secondary);
+        .pricing-detail,
+        .estimated-label {
+          line-height: 1.6;
+          font-weight: 400;
+        }
+      }
+    }
+  }
+  .total {
+    display: flex;
+    justify-content: space-between;
+    text-transform: initial;
+    .estates-price {
+      text-transform: initial;
+    }
+  }
+  .btn-primary {
+    @include pxRem(margin-top, 24);
+  }
+  .note {
+    @include pxRem(margin-top, 15);
+    display: block;
+    text-align: center;
+  }
+  .popover-hover {
+    @include pxRem(right, -20);
+    position: absolute;
+    top: 0;
+  }
+  .bg-close {
+    display: none;
+  }
+}
+.not-charge {
+  @include pxRem(font-size, 14);
+}
+.blog-list {
+  @include pxRem(margin-bottom, 60);
+  .blog-item {
+    position: relative;
+    overflow: hidden;
+  }
+  .blog-content {
+    @include pxRem(padding, 0 10 !important);
+    position: absolute;
+    bottom: 0;
+    color: map-get($colors, white);
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0), map-get($colors, gradient));
+    width: 100% !important;
+    left: 0;
+    .product-name {
+      @include pxRem(font-size, 15);
+      @include pxRem(line-height, 15);
+      @include pxRem(padding, 5 0);
+      color: map-get($colors, white);
+      display: inline-block;
+      vertical-align: text-top;
+    }
+    .blog-category {
+      @include pxRem(max-width, 100);
+      @include pxRem(min-width, 100);
+      @include pxRem(font-size, 10);
+      @include pxRem(height, 14);
+      @include pxRem(padding, 0 5);
+      text-align: center;
+      background: rgba(0, 0, 0, 0.5);
+      text-transform: uppercase;
+      font-weight: 700;
+    }
+    .blog-author {
+      @include pxRem(font-size, 10);
+      @include pxRem(margin-bottom, 3);
+      font-weight: 700;
+    }
+  }
+  .owl-nav {
+    .owl-next,
+    .owl-prev {
+      top: 30%;
+    }
+  }
+}
+.overlay-share {
+  .mat-dialog-container {
+    @include pxRem(width, 510);
+    padding: 0;
+  }
+}
+.share-modal {
+  position: relative;
+  .share-header {
+    @include pxRem(padding, 40 70 30);
+    border-bottom: solid 1px map-get($colors, border);
+    h2 {
+      @include pxRem(font-size, 30);
+      color: map-get($colors, primary);
+    }
+  }
+  .share-list {
+    @include pxRem(padding, 10 70 40);
+    .share-item {
+      @include pxRem(padding, 10 0);
+      border-bottom: solid 1px map-get($colors, border);
+      cursor: pointer;
+    }
+  }
+  .share-item-icon {
+    @include pxRem(width, 40);
+    @include pxRem(height, 40);
+    @include pxRem(border-radius, 20);
+    @include pxRem(line-height, 40);
+    @include pxRem(margin-right, 26);
+    color: map-get($colors, white);
+    display: inline-block;
+    text-align: center;
+    vertical-align: middle;
+    &.bg-link {
+      background: map-get($colors, primary);
+    }
+    &.bg-fb {
+      background: map-get($colors, fb);
+    }
+    &.bg-tw {
+      background: map-get($colors, tw);
+    }
+    .iconf-link {
+      @include pxRem(font-size, 10);
+    }
+    i {
+      vertical-align: middle;
+    }
+  }
+  .mat-dialog-actions {
+    @include pxRem(top, 17);
+    @include pxRem(right, 17);
+    position: absolute;
+    .btn-close {
+      border: 0;
+    }
+  }
+}
+.price-sp {
+  @include pxRem(padding, 22);
+  position: fixed;
+  bottom: 0;
+  background: map-get($colors, white);
+  width: 100%;
+  z-index: 1;
+  border-top: solid 1px map-get($colors, border);
+  display: none;
+  .price {
+    width: 50%;
+    .price-title {
+      @include pxRem(margin-bottom, 6);
+    }
+  }
+  .date {
+    @include pxRem(font-size, 14);
+    &:first-child {
+      @include pxRem(margin-bottom, 3);
+    }
+  }
+  .btn-primary {
+    float: right;
+    @include pxRem(max-width, 300);
+    width: 100%;
+  }
+}
+.bg-close {
+  @include pxRem(width, 35);
+  @include pxRem(height, 35);
+  @include pxRem(line-height, 35);
+  @include pxRem(font-size, 13);
+  @include pxRem(top, 22);
+  @include pxRem(right, 30);
+  display: block;
+  background: map-get($colors, bg-close);
+  border-radius: 50%;
+  text-align: center;
+  position: absolute;
+  cursor: pointer;
+  .iconf-close {
+    vertical-align: middle;
+    border: none;
+    background: none;
+  }
+}
+body > bs-daterangepicker-container {
+  display: none !important;
+}
+
+// responsive
+@include respond-below(largest) {
+  .layout-2-col-full {
+    > .col-left {
+      width: 60%;
+    }
+  }
+  .you-may-like {
+    .products-list {
+      .owl-nav {
+        .owl-prev,
+        .owl-next {
+          opacity: 0.45;
+          background-color: map-get($colors, black);
+          &:hover {
+            background: map-get($colors, p-m);
+            color: map-get($colors, white);
+          }
+        }
+        .owl-prev {
+          left: 0;
+        }
+        .owl-next {
+          right: 0;
+        }
+      }
+    }
+  }
+}
+@include respond-below(large) {
+  .layout-2-col-full {
+    > .col-right {
+      @include pxRem(width, 337);
+    }
+  }
+  .estates-detail {
+    @include pxRem(padding, 0 30);
+    .sticky {
+      @include pxRem(width, 337 !important);
+    }
+  }
+  .you-may-like {
+    .products-list {
+      .product-item {
+        .product-content {
+          @include pxRem(padding, 20);
+        }
+      }
+    }
+  }
+}
+@include respond-below(wide) {
+  .page-header {
+    .header-col {
+      &.header-booking {
+        display: none;
+      }
+    }
+  }
+  .layout-2-col-full {
+    > .col-left {
+      width: 100%;
+    }
+    > .col-right {
+      display: none;
+      &.show {
+        @include pxRem(top, 0);
+        display: block;
+        position: fixed;
+        width: 100%;
+        left: 0;
+        background: map-get($colors, white);
+        z-index: 1001;
+        height: 100vh;
+        overflow: scroll;
+        -webkit-animation-duration: 1s;
+        animation-duration: 1s;
+        -webkit-animation-fill-mode: both;
+        animation-fill-mode: both;
+        -webkit-animation-name: slideInUp;
+        animation-name: slideInUp;
+        scrollbar-width: none;
+        -ms-overflow-style: none;
+        &::-webkit-scrollbar {
+          display: none;
+        }
+      }
+    }
+  }
+  .slide-show {
+    .owl-carousel {
+      .owl-item {
+        @include pxRem(height, 300);
+      }
+    }
+  }
+  .price-detail {
+    // display: none;
+    border: none;
+    &.sticky {
+      position: unset !important;
+      width: 100% !important;
+    }
+    .bg-close {
+      display: block;
+    }
+  }
+  .price-sp {
+    display: flex;
+    align-items: center;
+  }
+  .panel-policy {
+    .policy-modal {
+      @include pxRem(padding, 30);
+      width: 100%;
+    }
+  }
+  .house-information {
+    .house-content {
+      width: 100% !important;
+    }
+    .right {
+      display: none;
+    }
+  }
+  .slider-wrap {
+    .view-galary {
+      width: 100%;
+    }
+    .thumb-list {
+      display: none;
+    }
+    .mat-dialog-actions {
+      @include pxRem(right, 30);
+      position: absolute;
+      z-index: 2;
+    }
+  }
+}
+@include respond-below(medium) {
+  .slide-show {
+    .owl-carousel {
+      .owl-item {
+        @include pxRem(height, 250);
+      }
+      .owl-nav {
+        .owl-next,
+        .owl-prev {
+          display: none;
+        }
+      }
+    }
+  }
+  .rental-container {
+    .left {
+      width: 100%;
+    }
+    .pl-45 {
+      padding-left: 0;
+    }
+  }
+  .slider-wrap {
+    .view-galary {
+      @include pxRem(padding, 0 60);
+    }
+  }
+  .wrap-rooms-list {
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+    &::-webkit-scrollbar {
+      display: none;
+    }
+    .real-estates-list {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      .real-estates-item {
+        flex-direction: column;
+        width: 46%;
+        .real-estates-image {
+          max-width: inherit;
+        }
+        .real-estates-content {
+          @include pxRem(padding, 20 0 10);
+          width: 100%;
+          .real-estates-name {
+            @include pxRem(max-width, 180);
+            display: block;
+          }
+          .square {
+            @include pxRem(padding-left, 0);
+          }
+        }
+        .real-estates-right {
+          button {
+            @include pxRem(width, 155);
+            @include pxRem(margin-bottom, 10);
+          }
+        }
+      }
+    }
+  }
+}
+@include respond-below(small) {
+  .slide-show {
+    .owl-carousel {
+      .owl-item {
+        @include pxRem(height, 153);
+      }
+    }
+    .btn-wrap {
+      @include pxRem(right, 10);
+      @include pxRem(bottom, -50);
+      .btn-galary {
+        display: none;
+      }
+      .btn-white {
+        &:first-child {
+          @include pxRem(width, 90);
+          @include pxRem(height, 30);
+          @include pxRem(font-size, 12);
+          @include pxRem(border-radius, 14);
+        }
+        .iconf-share {
+          @include pxRem(font-size, 13);
+        }
+      }
+    }
+  }
+  .breadcrumb {
+    padding-top: 0;
+    flex-wrap: wrap;
+    .breadcrumb-item {
+      @include pxRem(font-size, 14);
+      @include pxRem(padding-right, 0);
+      font-weight: 400;
+      &:first-child,
+      &:nth-child(2) {
+        display: none;
+      }
+    }
+  }
+  .estates-content {
+    .estates-address {
+      @include pxRem(font-size, 14);
+    }
+  }
+  .panel-policy {
+    max-width: 90vw !important;
+    .policy-modal {
+      @include pxRem(padding, 10);
+    }
+    .house-title {
+      @include pxRem(font-size, 20);
+    }
+    .fee-list {
+      span {
+        @include pxRem(min-width, 120);
+      }
+      .fee-value {
+        @include pxRem(min-width, 100);
+      }
+    }
+    .btn-submit {
+      width: 100%;
+    }
+  }
+  .estates-detail,
+  .price-sp {
+    @include pxRem(padding, 15);
+    .icon-dolla {
+      @include pxRem(margin-right, 6);
+      @include pxRem(width, 20);
+      @include pxRem(height, 20);
+      @include pxRem(font-size, 12);
+      @include pxRem(line-height, 20);
+    }
+  }
+  .overlay-share {
+    max-width: 90vw !important;
+  }
+  .share-modal {
+    .share-header {
+      @include pxRem(padding, 20);
+    }
+    .share-list {
+      @include pxRem(padding, 20);
+    }
+  }
+  .real-estates-list {
+    .real-estates-item {
+      width: 100%;
+    }
+  }
+  .wrap-rooms-list {
+    .real-estates-list {
+      .real-estates-item {
+        width: 100%;
+      }
+    }
+  }
+  .available {
+    .bs-media-container {
+      .bs-datepicker-head {
+        .next {
+          visibility: inherit !important;
+        }
+      }
+      .bs-datepicker-multiple {
+        width: 100%;
+        + .bs-datepicker-multiple {
+          display: none;
+        }
+      }
+    }
+  }
+  .you-may-like {
+    &.hide-map {
+      .products-list {
+        .product-item,
+        .product-image {
+          max-width: 100%;
+        }
+        .owl-nav {
+          .owl-prev,
+          .owl-next {
+            display: none;
+          }
+        }
+      }
+    }
+  }
+}

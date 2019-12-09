@@ -1,0 +1,138 @@
+.news-main {
+  @include pxRem("padding-top", 25);
+  @include pxRem("margin-bottom", 30);
+}
+.news-image {
+  background: map-get($colors, p-l) url("assets/images/no-image.svg") ;
+  display: block;
+  padding-top: 54.8%;
+  background-repeat: no-repeat;
+  background-size: auto;
+  background-position: center center;
+  transition: transform .3s ease-in-out;
+}
+.news-content {
+  .news-title {
+    @include pxRem("font-size", 30);
+  }
+  .news-uncategoried {
+    @include pxRem("font-size", 10);
+    background: map-get($colors, primary);
+    color: map-get($colors, white);
+    text-transform: uppercase;
+    min-width: 100px;
+    display: inline-block;
+    height: 14px;
+    text-align: center;
+  }
+  .news-text {
+    @include pxRem("margin-top", 35);
+  }
+  .news-image {
+    @include pxRem("margin-top", 23);
+  }
+  .author {
+    span {
+      font-weight: 700;
+    }
+  }
+  .list-tag {
+    @include pxRem("margin-top", 40);
+  }
+}
+.social-news {
+  @include pxRem("margin-left", 30);
+  display: inline-block;
+  .social-news-item {
+    @include pxRem("width", 25);
+    @include pxRem("height", 25);
+    @include pxRem("border-radius", 5);
+    @include pxRem("margin-right", 20);
+    text-align: center;
+    float: left;
+    cursor: pointer;
+    .iconf-facebook,
+    .iconf-twitter {
+      @include pxRem("font-size", 11);
+      color: map-get($colors, white);
+    }
+    &.bg-fb {
+      background: map-get($colors, fb);
+    }
+    &.bg-tw {
+      background: map-get($colors, tw);
+    }
+  }
+}
+.news-sidebar {
+  .title-sidebar {
+    @include pxRem("font-size", 25);
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+    white-space: nowrap;
+    &::after {
+      @include pxRem("height", 1);
+      @include pxRem("margin-left", 15);
+      content: "";
+      background: map-get($colors, border);
+      display: inline-block;
+      max-width: 100%;
+      width: 100%;
+    }
+  }
+  .news-similar {
+    @include pxRem("margin-top", 10);
+  }
+}
+.news-similar {
+  .news-similar-item {
+    @include pxRem("margin-bottom", 35);
+    display: flex;
+    .news-similar-image {
+      @include pxRem("max-width", 131);
+      width: 100%;
+      overflow: hidden;
+    }
+    .news-similar-content {
+      @include pxRem("margin-left", 15);
+      .news-similar-name {
+        @include pxRem("font-size", 18);
+        @include pxRem("line-height", 25);
+      }
+      .news-similar-author {
+        @include pxRem("font-size", 14);
+      }
+    }
+  }
+  .news-image {
+    padding-top: 69.4%;
+    transform: scale(1);
+    &:hover {
+      transform: scale(1.1);
+    }
+  }
+}
+.uncategorized-list {
+  .news-image {
+    padding-top: 48.5%;
+    transform: scale(1);
+    &:hover {
+      transform: scale(1.1);
+    }
+  }
+  .uncategorized-list-content {
+    .blog-category {
+      max-width: none;
+      display: inline-block;
+    }
+  }
+  .uncategorized-list-item {
+    @include pxRem("margin-top", 20);
+    overflow: hidden;
+    .uncategorized-list-name {
+      @include pxRem("font-size", 15);
+      @include pxRem("margin-top", 5);
+    }
+  }
+}

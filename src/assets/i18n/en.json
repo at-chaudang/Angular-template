@@ -1,0 +1,553 @@
+{
+  "title-page": {
+    "home": "YuuStay - Accommodation rental including homes, rooms, apartments, studio...",
+    "become-a-host": "Become a host",
+    "about-us": "About us",
+    "help": "Help",
+    "privacy-policy": "Privacy policy",
+    "terms-of-service": "Terms of service",
+    "page-not-found": "Page not found",
+    "detail":"Yuustay - {{ title }}"
+  },
+  "meta": {
+    "description": {
+      "home": "Accommodation online searching and booking services in Vietnam with the motto is to make customers feel comfortable and trusted.",
+      "become-a-host": "Become a host of New YuuStay accommodation",
+      "about-us": "About New YuuStay",
+      "help": "New YuuStay Help Center",
+      "privacy-policy": "Privacy Policy",
+      "terms-of-service": "Terms of Service",
+      "page-not-found": "Page Not Found"
+    }
+  },
+  "about-us-page": {
+    "banner-text": "WELCOME",
+    "company-profile": "Company profile",
+    "company-name-title": "Name",
+    "company-name-content": "YYuuStay is an open service to share and collaborate with the hosts in the accommodation industry. We provide rental apartments, houses, resorts,... with the motto is to put trust and credibility on top. In addition, we have been connecting with owners of local accommodation services to work out strategies, business cooperation and develop the potential of accommodation services as well as connecting with potential customers. Our goal is to create comfort and trust in our customers by control the quality of the current accommodation services. If you are interested, please contact us directly through the Website, or contact the Hotline to answer questions.",
+    "company-address": "Slot #35 Str. No.4, Da Nang Industrial Zone, Son Tra Dist., Da Nang City.",
+    "support-team": {
+      "title": "Our Team",
+      "name_1": "Mr. Hoàng",
+      "description_1": "CEO infomation",
+      "name_2": "Mr. Toàn",
+      "description_2": "Sales information",
+      "name_3": "Mr. Bách",
+      "description_3": "Director information"
+    },
+    "service-provider": {
+      "title": "Service Provider",
+      "name_1": "House for rent",
+      "name_2": "Deposit real estate",
+      "name_3": "Other"
+    }
+  },
+  "privacy-policy-page": {
+    "description-page": "We warrant that all your personal identifiable information will be protected and respected. Please read the following privacy policy to have a better understanding of all commitments that we have made to protect our users, members and customers’ rights. Privacy policy will explain how we receive, use and (in certain cases) to disclose your personal information.<br>The policy also explains the procedures we are executing to secure your personal information. Finally, the privacy policy will explain your right choice regarding the collection, use and disclosure of your personal information.",
+    "title_1": "1. Data Collection",
+    "description_1": "We warrant that all your personal identifiable information will be protected and respected. Please read the following privacy policy to have a better understanding of all commitments that we have made to protect our users, members and customers’ rights. Privacy policy will explain how we receive, use and (in certain cases) to disclose your personal information.<br>The policy also explains the procedures we are executing to secure your personal information. Finally, the privacy policy will explain your right choice regarding the collection, use and disclosure of your personal information.",
+    "title_2": "2. Other rules about personal information",
+    "description_2": "We warrant that all your personal identifiable information will be protected and respected. Please read the following privacy policy to have a better understanding of all commitments that we have made to protect our users, members and customers’ rights. Privacy policy will explain how we receive, use and (in certain cases) to disclose your personal information.<br>The policy also explains the procedures we are executing to secure your personal information. Finally, the privacy policy will explain your right choice regarding the collection, use and disclosure of your personal information.",
+    "title_3": "3. Ensure customer benefits",
+    "description_3": "We warrant that all your personal identifiable information will be protected and respected. Please read the following privacy policy to have a better understanding of all commitments that we have made to protect our users, members and customers’ rights. Privacy policy will explain how we receive, use and (in certain cases) to disclose your personal information.<br>The policy also explains the procedures we are executing to secure your personal information. Finally, the privacy policy will explain your right choice regarding the collection, use and disclosure of your personal information.",
+    "title_4": "4. Protect customers information",
+    "description_4": "We warrant that all your personal identifiable information will be protected and respected. Please read the following privacy policy to have a better understanding of all commitments that we have made to protect our users, members and customers’ rights. Privacy policy will explain how we receive, use and (in certain cases) to disclose your personal information.<br>The policy also explains the procedures we are executing to secure your personal information. Finally, the privacy policy will explain your right choice regarding the collection, use and disclosure of your personal information.",
+    "title_5": "5. Privacy commitment of personal information",
+    "description_5": "We warrant that all your personal identifiable information will be protected and respected. Please read the following privacy policy to have a better understanding of all commitments that we have made to protect our users, members and customers’ rights. Privacy policy will explain how we receive, use and (in certain cases) to disclose your personal information.<br>The policy also explains the procedures we are executing to secure your personal information. Finally, the privacy policy will explain your right choice regarding the collection, use and disclosure of your personal information.",
+    "title_6": "6. Manage inappropriate information",
+    "description_6": "List of products, services and information that are banned from publishing.<br>We will provide you the lists of our trading products and services, thus, you can avoid violation of rules when posting. Users,to members and customers shall not:<br>Advertise any products, services that are prohibited by the laws, for instance, wine, tobacco, breast milk substitutions for kids under 24 months old, nutritional products for kids under 6 months old, any prescription or non-prescription drugs that are to not recommended to use, any products used for sexual enhancement, hunting rifles and ammunition hunting guns."
+  },
+  "terms-of-service-page": {
+    "description-page": "We warrant that all your personal identifiable information will be protected and respected. Please read the following privacy policy to have a better understanding of all commitments that we have made to protect our users, members and customers’ rights. Privacy policy will explain how we receive, use and (in certain cases) to disclose your personal information.<br>The policy also explains the procedures we are executing to secure your personal information. Finally, the privacy policy will explain your right choice regarding the collection, use and disclosure of your personal information.",
+    "title_1": "1. Data Collection",
+    "description_1": "We warrant that all your personal identifiable information will be protected and respected. Please read the following privacy policy to have a better understanding of all commitments that we have made to protect our users, members and customers’ rights. Privacy policy will explain how we receive, use and (in certain cases) to disclose your personal information.<br>The policy also explains the procedures we are executing to secure your personal information. Finally, the privacy policy will explain your right choice regarding the collection, use and disclosure of your personal information.",
+    "title_2": "2. Other rules about personal information",
+    "description_2": "We warrant that all your personal identifiable information will be protected and respected. Please read the following privacy policy to have a better understanding of all commitments that we have made to protect our users, members and customers’ rights. Privacy policy will explain how we receive, use and (in certain cases) to disclose your personal information.<br>The policy also explains the procedures we are executing to secure your personal information. Finally, the privacy policy will explain your right choice regarding the collection, use and disclosure of your personal information.",
+    "title_3": "3. Ensure customer benefits",
+    "description_3": "We warrant that all your personal identifiable information will be protected and respected. Please read the following privacy policy to have a better understanding of all commitments that we have made to protect our users, members and customers’ rights. Privacy policy will explain how we receive, use and (in certain cases) to disclose your personal information.<br>The policy also explains the procedures we are executing to secure your personal information. Finally, the privacy policy will explain your right choice regarding the collection, use and disclosure of your personal information.",
+    "title_4": "4. Protect customers information",
+    "description_4": "We warrant that all your personal identifiable information will be protected and respected. Please read the following privacy policy to have a better understanding of all commitments that we have made to protect our users, members and customers’ rights. Privacy policy will explain how we receive, use and (in certain cases) to disclose your personal information.<br>The policy also explains the procedures we are executing to secure your personal information. Finally, the privacy policy will explain your right choice regarding the collection, use and disclosure of your personal information.",
+    "title_5": "5. Privacy commitment of personal information",
+    "description_5": "We warrant that all your personal identifiable information will be protected and respected. Please read the following privacy policy to have a better understanding of all commitments that we have made to protect our users, members and customers’ rights. Privacy policy will explain how we receive, use and (in certain cases) to disclose your personal information.<br>The policy also explains the procedures we are executing to secure your personal information. Finally, the privacy policy will explain your right choice regarding the collection, use and disclosure of your personal information.",
+    "title_6": "6. Manage inappropriate information",
+    "description_6": "List of products, services and information that are banned from publishing.<br>We will provide you the lists of our trading products and services, thus, you can avoid violation of rules when posting. Users,to members and customers shall not:<br>Advertise any products, services that are prohibited by the laws, for instance, wine, tobacco, breast milk substitutions for kids under 24 months old, nutritional products for kids under 6 months old, any prescription or non-prescription drugs that are to not recommended to use, any products used for sexual enhancement, hunting rifles and ammunition hunting guns."
+  },
+  "home": {
+    "header": {
+      "share": "Share",
+      "blog": "Blog",
+      "host": "Become a host",
+      "sign-up": "Sign up",
+      "login": "Login",
+      "logout": "Logout",
+      "password": "Password"
+    },
+    "search": {
+      "explore": "Explore",
+      "search-result-information": "Search result",
+      "scroll-to-see-more": "Scroll to see more",
+      "address": "Address"
+    },
+    "sortby": {
+      "label": "Sort by",
+      "option-1": "Best match",
+      "option-2": "Price - low to high",
+      "option-3": "Price - high to low"
+    },
+    "select-city": {
+      "top-searched": "Top Searched",
+      "provinces": "Provinces",
+      "cities": "Cities",
+      "districts": "Districts",
+      "back": "Back"
+    },
+    "share": "Share",
+    "see-more": "See more",
+    "expand-searching-area": "Expand search area",
+    "rental": "rentals",
+    "rental-period": "Rental period",
+    "pricing": "Pricing",
+    "house-type": "Type of place",
+    "rooms": "Rooms",
+    "beds": "Beds",
+    "bedrooms": "Bedrooms",
+    "bathrooms": "Bathrooms",
+    "estimated-guest": "Guests",
+    "clear": "Clear",
+    "apply": "Apply",
+    "in-out": "Check-in - Checkout",
+    "min": "Min",
+    "max": "Max",
+    "compare-to": "The Min value cannot be smaller than the Max value",
+    "amenities": "Amenities",
+    "your-location": "Your location",
+    "today": "Today",
+    "twoweek": "Next 2 weeks",
+    "fourweek": "Next 4 weeks",
+    "month": "Month",
+    "threemonth": "Next 3 months",
+    "oneyear": "Next 1 year",
+    "title-products": "Display available rooms as"
+  },
+  "google-map": {
+    "message": {
+      "get-position": {
+        "success": "You have successfully requested your reservation. We will process it and contact you as soon as possible. Any questions please contact our customer service department.",
+        "fail": "Service failed",
+        "off": "You have turned off location tracking.",
+        "not-supported": "Your browser doesn't support geolocation."
+      }
+    }
+  },
+  "realestate-detail": {
+    "header": {
+      "overview": "Overview",
+      "rental-rooms": "Rental rooms",
+      "amenities": "Amenities",
+      "availability": "Availability",
+      "neighborhood": "The neighborhood",
+      "policies": "Policies"
+    },
+    "vietnam": "Viet Nam",
+    "view-photo": "View photos",
+    "share": "Share",
+    "now-available": "Now available",
+    "rooms": "Rooms",
+    "great-location": "Great location",
+    "rental-form": "Rental form",
+    "des-rental": "You can rent the entire house or a single room.",
+    "select": "Select",
+    "amenities": "Amenities",
+    "des-amenities": "Introduction to amenities and services",
+    "show-all": "Show all",
+    "availability": "Availability",
+    "des-avaibability": "The room rate can be higher or lower based promotion depend on booking time",
+    "clear-date": "Clear the dates you selected",
+    "neighborhood": "The neighborhood",
+    "read-more-space": "Read more about the space",
+    "read-more-neighborhood": "Show the location & the utility of this house",
+    "read-more-policies": "Read more about the policies",
+    "read-more-amenities": "Read more about the amenities",
+    "policies": "Policies",
+    "more-home": "More homes you may like",
+    "month": "Month",
+    "day": "Day",
+    "view-map": "View map",
+    "rental-period": "Rental period",
+    "estimated-guest": "Guests",
+    "total": "Total",
+    "nights": "Nights",
+    "pricing": "Pricing",
+    "location-info": "Địa chỉ bên trên chỉ mang tính chất tương đối, chúng tôi sẽ cung cấp vị trí sau khi quá trình đặt chỗ hoàn tất.",
+    "news": "News",
+    "uncategorized": "Uncategorized",
+    "posted": "Posted by",
+    "check-in": "Check-in",
+    "check-out": "checkout",
+    "all-in-one": "Entire place",
+    "price-info": {
+      "title": "Price breakdown",
+      "select-week": "Select the specific hashtag for a quick accommodation search",
+      "electric-fee": "Electric fee",
+      "service-fee": "Service fee",
+      "note": "Electric/Water fee will be changed based on usage norms",
+      "tax": "VAT will be calculated based on the total price"
+    },
+    "booking": {
+      "estimated": "Estimated",
+      "all-inclusive": "All-inclusive",
+      "request-to-book": "Request to book",
+      "note-book": "You won’t be charged yet",
+      "not-service-charge": "The price does not unclude additional charges such as electricity price, water price, etc.",
+      "more-detail": "More detail",
+      "reserve": "Reserve",
+      "message": {
+        "take-a-reservation": {
+          "success": "You have successfully requested your reservation. We will process it and contact you as soon as possible. Any questions please contact our customer service department.",
+          "fail": "Service failed" 
+        }
+      }
+    },
+    "wifi": {
+      "choose": "Choose wifi",
+      "money": "Wifi price",
+      "fee": "Wifi fee"
+    },
+    "share-modal": {
+      "share": "Share",
+      "copylink": "Copy link",
+      "share-fb": "Share on Facebook",
+      "share-tw": "Share on Twitter"
+    }
+  },
+  "become-a-host": {
+    "house-name": "Name",
+    "full-name": "Full Name",
+    "email": "Email",
+    "mobile-number": "Phone number",
+    "home-info": "Home information",
+    "homeowners-info": "Homeowners information",
+    "amenities": "Amenities",
+    "note": "Notes",
+    "des-home-info": "Please provide some details of the place using the following form",
+    "des-amenities": "Introduction to amenities and services",
+    "des-homeowners-info": "Please provide your contact information, we will use this to contact you when needed",
+    "des-note": "Brief description of the place",
+    "submit": "Submit",
+    "upload-image": "Upload image",
+    "edit": "Edit",
+    "choose-amenities": "Choose amenities",
+    "type": "Type",
+    "map": "Map",
+    "show-all": "Show all",
+    "select-a-type": "Select a type",
+    "message": {
+      "create-a-host": {
+        "success": "Thank you for your request. We will contact you as soon as possible. Any questions please contact our customer service department.",
+        "fail": "Service failed"
+      }
+    }
+  },
+  "policy-modal": {
+    "total": "Total",
+    "not-service-charge": "The price does not unclude additional charges such as electricity price, water price, etc.",
+    "day": "Day",
+    "rent-fee": "Rent fee",
+    "fee-wifi": "WIFI fee",
+    "your-booking-details": "Reservation details",
+    "guests": "Guests",
+    "rental-period": "Rental period",
+    "in": "in",
+    "check-in": "Check-in",
+    "check-out": "Checkout",
+    "your-information": "Your information",
+    "customer-name": "Customer name",
+    "email": "Email",
+    "mobile-number": "Phone number",
+    "special-requests": "Special requests",
+    "contact-language": "Contact language",
+    "agree-to-our": "Agree to our",
+    "privacy-policy": "Privacy Policy",
+    "submit": "Submit"
+  },
+  "profile-page": {
+    "my-booking": "My reservation",
+    "my-profile": "My profile",
+    "edit-password": "Edit password",
+    "log-out": "Logout"
+  },
+  "editting-password": {
+    "edit-password": "Edit password",
+    "title": "Edit password",
+    "current-password": "Current password",
+    "new-password": "New password",
+    "confirm-new-password": "Confirm new password",
+    "save": "Save",
+    "characters": "character(s)",
+    "errors": {
+      "required": "This field is required",
+      "email": "Wrong email format",
+      "invalid": "Please input correct format!",
+      "maxlength": "Maximum length is ",
+      "minlength": "Minimum length is ",
+      "mismatched": "Your password and confirmation password do not match",
+      "invalid-password": "Your current password is incorrect"
+    },
+    "message": {
+      "edit-password": {
+        "success": "Edit password successfully",
+        "fail": "Edit password fail"
+      }
+    }
+  },
+  "my-profile-page": {
+    "profile": "Hồ sơ",
+    "first-name": "Họ và tên đệm",
+    "last-name": "Tên chính",
+    "birthday": "Ngày sinh",
+    "gender": "Giới tính",
+    "save": "Cập nhật",
+    "email": "Email",
+    "mobile-number": "Số điện thoại",
+    "select-a-type": "Chọn một giá trị",
+    "messages": {
+      "update-avatar": {
+        "success": "Update avatar successfully",
+        "fail": "Update avatar fail",
+        "invalid-format": "Your file is unaccepted format",
+        "exceeded-size": "Your file exceeds the maximum size of 2MB"
+      },
+      "edit-profile": {
+        "success": "Edit profile successfully",
+        "fail": "Edit profile fail"
+      }
+    }
+  },
+  "my-booking-history": {
+    "my-booking": "My booking",
+    "view-details": "Chi tiết",
+    "upcoming": "Đang xử lí",
+    "completed": "Đã xử lí",
+    "canceled": "Hủy bỏ",
+    "check-in": "Nhận phòng",
+    "check-out": "Trả phòng",
+    "text-no-booking": "Xin lỗi! \nbạn chưa đặt phòng nào mới ở đây",
+    "search-new": "Tìm kiếm mới",
+    "NEW": "Đã giữ chỗ",
+    "PROCESSING": "Đang xử lí",
+    "PENDING": "Đang xử lí",
+    "DONE": "Đã hoàn thành",
+    "CONFIRMED": "Đã hoàn thành",
+    "CANCELED": "Đã hủy"
+  },
+  "my-booking-detail": {
+    "id": "Mã đặt chỗ",
+    "contact-email": "Email",
+    "mobile": "Di động",
+    "guest-name": "Tên khách hàng",
+    "room-type": "Loại chỗ ở",
+    "room-name": "Tên phòng",
+    "house-type-history": "Kiểu nhà",
+    "payment-status": "Thanh toán",
+    "check-in": "Nhận phòng",
+    "check-out": "Trả phòng",
+    "total": "Tổng",
+    "rent-fee": "Phí thuê",
+    "fee-wifi": "Phí WIFI",
+    "day": "ngày",
+    "go-back": "Back to booking",
+    "link-web": "Link web",
+    "ELECTRICFEE": "Tiền điện",
+    "WATERFEE": "Tiền nước",
+    "VAT": "Thuế VAT",
+    "NEW": "Chưa thanh toán",
+    "PROCESSING":"Chưa thanh toán",
+    "PENDING":"Chưa thanh toán",
+    "CANCELED": "Chưa thanh toán",
+    "PAID": "Đã thanh toán",
+    "DONE": "Đã thanh toán"
+  },
+  "fee": {
+    "quantity-per-date": "Ước tính sử dụng mỗi ngày",
+    "price-per-unit": "Giá tiền mỗi đơn vị",
+    "total": "Tổng tiền"
+  },
+  "auth-modal": {
+    "login-modal": {
+      "title": "Đăng nhập",
+      "no-account": "Bạn chưa có tài khoản?",
+      "reset-password": "Quên mật khẩu?",
+      "login-with-google": "Đăng nhập bằng Google",
+      "login-with-twitter": "Đăng nhập bằng Twitter",
+      "login-with-facebook": "Đăng nhập bằng Facebook"
+    },
+    "sign-up-modal": {
+      "title": "Đăng kí",
+      "confirm-password": "Xác nhận mật khẩu",
+      "first-name": "Họ và tên đệm",
+      "last-name": "Tên chính"
+    },
+    "forgot-password-modal": {
+      "title": "Khôi phục mật khẩu",
+      "description": "Nhập vào địa chỉ mail để lấy lại password."
+    },
+    "message": {
+      "sign-up": {
+        "verify-your-email": "Xác nhận email của bạn."
+      },
+      "authenticate": {
+        "email-not-verified": "Email chưa được xác thực",
+        "can-not-create-user": "Không thể tạo tài khoản, liên hệ hỗ trợ YuuStay để được trợ giúp!",
+        "auth/email-already-exists": "Email này đã tồn tại",
+        "email-not-exists": "Email không tồn tại",
+        "method-not-allowed": "Phương thức không được hỗ trợ",
+        "link-account": "Tài khoản đã tồn tài trước đó, bạn có muốn liên kết với tài khoản trước đó?",
+        "account-already-linked": "Tài khoản này đã được liên kết",
+        "auth/popup-closed-by-user": "The popup has been closed by the user before finalizing the operation.",
+        "auth/invalid-email": "Email không đúng định dạng!",
+        "auth/email-not-exists": "Email không tồn tại",
+        "auth/account-exists-with-different-credential": "Tài khoản này đã tồn tại",
+        "auth/email-already-in-use": "Email đã được sử dụng cho tài khoản khác.",
+        "auth/user-not-found": "Tài khoản không tồn tại.",
+        "auth/wrong-password": "Mật khẩu không đúng hoặc tài khoản không tồn tại.",
+        "try-again": "Xin vui lòng thử lại"
+      }
+    },
+    "sign-up": "Đăng kí",
+    "login": "Đăng nhập",
+    "logout": "Đăng xuất",
+    "password": "Mật khẩu",
+    "email": "Email",
+    "or": "Hoặc",
+    "word": "word",
+    "mobile-number": "Số điện thoại",
+    "send": "Gửi"
+  },
+  "help-content": {
+    "question_1": "How do I create an account?",
+    "answer_1": "Nếu bạn chưa có tài khoản  yuustay,hãy truy cập vào yuustay .com và nhấp đăng kí bằng email của bạn.Hoặc có thể đăng nhập trực tiếp thông qua facebook,google,twitter.",
+    "question_2": "Làm thế nào khi quên mật khẩu?",
+    "answer_2": "Nếu bạn quên mật khẩu thì truy câph vào trang yuustay sau đo vô my account bấm vô Reset  your password? Sau đó nhập email của bạn để lấy mât khẩu mới.",
+    "question_3": "Tại sao mức giá các phòng có sự khác nhau ?",
+    "answer_3": "Các phòng có mức giá khác nhau vì tuỳ thuộc vào loại phòng ,và kích thước tiện ích của từng phòng mà no quy định giá cả của phòng đó.",
+    "question_4": "Tôi muốn ở lại dài ngày hơn? ",
+    "answer_4": "yuustay cung cấp cho bạn dịch vụ cho thuê ngắn hạn  hoặc dài hạn  đều đươc ngoài ra còn cung cấp thêm dịch vụ trọn gói để bạn tiết kiệm chi phí hơn.",
+    "question_5": "Làm thế nào để trở thành chủ nhà ?",
+    "answer_5": "Bạn muốn trở thành chủ nhà truy cấp vào trang yuustay.com vào become a host làm theo mẫu  có sẵn cung cấp dữ liệu với chúng tôi. ",
+    "question_6": "Quyền lợi gì khi là chủ nhà với yuustay ?",
+    "answer_6": "Khi trở thành chủ nhà của yuustay chúng tôi luôn cam kêy mang dịch vụ của bạn tới với người tiêu dùng 1 cách nhanh nhất, bên cạnh đó còn có 1 số chế độ phúc lợi khi hợp tác vói chúng tôi.",
+    "question_7": "Làm thế nào để đặt phòng ?",
+    "answer_7": "Để đặt phòng bạn vui lòng truy cập vào trang yuustay.com,sau đó tìm kiếm điạ điểm mà bạn mong muốn ở khu vực và mức giá như thế nào.Sau đó bấm vô xem chi tiết cụ thể, tại đây bạn có thể thuê nhà nguyên căn hoặc từng phòng theo nhu cầu sử dụng của bạn với điều kiện  phòng đó còn trống trong thời gian bạn muốn thuê  .Chúng tôi hỗ trợ dịch vụ cho thuê theo ngày hoặc trọn gói nếu bạn muốn.",
+    "question_8": "Làm thế nào để chọn phòng giá rẻ ?",
+    "answer_8": "Sau khi nhập điểm đến và ngày du lịch vào ô tìm kiếm, bạn sẽ được đưa đến trang kết quả tìm kiếm. Tại đây, bạn có thể chọn lọc kết quả theo giá phòng. Bạn cũng có thể chọn lọc kết quả tìm kiếm theo khoảng giá tiền, hoặc loại chỗ ở để tìm phòng giá rẻ.",
+    "question_9": "Làm thế nào để tôi có thể xem mức giá phòng với loại tiền tệ tôi chọn ?",
+    "answer_9": "Bạn có thể dễ dàng chọn loại tiền tệ của mình từ danh sách ở góc trên đầu trang. Trang web sẽ tự động cập nhật giá phòng theo tiền tệ được chọn. ",
+    "question_10": "Làm thế nào để kéo dài thời gian lưu trú ?",
+    "answer_10": "Bạn có thể dễ dàng kéo dài thời gian lưu trú, bằng cách  đặt phòng mới cho thời gian lưu trú căn phòng mà bạn muốn gia hạn  trên web. Thông thường các khách sạn tự động sắp xếp cùng một phòng để bạn không phải chuyển phòng trong thời gian gia hạn. ",
+    "question_11": "Lúc nào tôi có email xác nhận ?",
+    "answer_11": "Trong hầu hết trường hợp, bạn sẽ nhận được email  trong vòng 30 phút kể từ lúc bạn thực hiện việc đặt phòng. Nếu bạn không nhận được sau thời gian này, hãy kiểm tra thư rác của bạn và / hoặc các bộ lọc thư rác. Bạn cũng có thể kiểm tra tình trạng đặt phòng của mình bằng cách đăng nhập vào mục 'Quản lý các đặt phòng của tôi' thông qua trang web",
+    "question_12": "Kiểm tra tình trạng đặt phòng vài chi tiết phòng ở đâu ?",
+    "answer_12": "Bạn có thể kiểm tra tình trạng đặt phòng của mình bằng cách đăng nhập vào mục 'Quản lý các đặt phòng của tôi' thông qua trang web. Hoặc bạn có thể truy cập thông tin này bằng cách đăng nhập vào tài khoản của mình thông qua liên kết Tự Phục Vụ trong email xác nhận của bạn",
+    "question_13": "Tôi có thể đặt phòng không có trong Yuustay không ?",
+    "answer_13": "Không. Chỉ có những kiểu phòng thõa mãn sẽ được trình bày sau khi bạn cung cấp các yêu cầu du lịch của bạn",
+    "question_14": "Làm thế nào để tạo yêu cầu đặc biệt ?",
+    "answer_14": "Sau khi thực hiện book căn phòng mà bạn muốn, sẽ hiện lên 1 mẫu xác nhận tại đây bạn có thể thêm ghi chú đặc biệt.",
+    "question_15": "Có thể thuê phòng tốc độ wifi mạnh không ?",
+    "answer_15": "Khi thực hiện book căn phòng mà bạn muốn tại đây bạn có thể chọn cho mình gói wifi theo ý muốn của bạn.",
+    "question_16": "Mức giá được tính theo phòng hay theo số lượng người ?",
+    "answer_16": "Bên chúng tôi tính giá theo phòng chứ không theo số lượng người. Điều quan trọng là bạn nhập đúng số lượng khách đặt phòng bởi vì mức giá có thể thay đổi dựa trên số chỗ khách chiếm. Trong một số trường hợp, một vài khách sạn giới hạn số lượng khách mỗi phòng. Để tránh tình trạng bị tính thêm phí khi nhận phòng, bạn nên nhập chính xác.",
+    "question_17": "Mức giá phòng có bao gồm phí thuế và dịch vụ ?",
+    "answer_17": "Mặc định cho giá hiển thị của Yuustay  không bao gồm thuế và phí dịch vụ. Để xem giá phòng đã bao gồm thuế và phí dịch vụ, bạn có thể chọn phòng sau đó chọn thời gian thuê và giá sẽ hiển thì chi tiết tại booking. Tại đây bạn cũng có thể xem  tổng giá phòng cho kỳ nghỉ bằng cách tiếp tục chọn dịch vụ trọn gói để giảm chi phí hơn."
+  },
+  "utilities": {
+    "restaurants": "Nhà hàng",
+    "hotels": "Khách sạn",
+    "banks": "Ngân hàng", 
+    "parks": "Công viên",
+    "coffee": "Cà phê",
+    "hospitals": "Bệnh viện",
+    "bookstores": "Nhà sách",
+    "post-offices": "Bưu điện",
+    "parking-lots": "Bãi đỗ xe",
+    "groceries": "Cửa hàng tạp hoá",
+    "schools": "Trường học",
+    "gas-stations": "Trạm xăng",
+    "more": "Mở rộng",
+    "less": "Thu gọn",
+    "show-around" : "Hiển thị các tiện ích xung quanh"
+  },
+  "messages": {
+    "success-become-a-host": "Cảm ơn bạn đã gửi thông tin. Chúng tôi sẽ phản hồi bạn trong thời gian sớm nhất. Mọi thắc mắc xin vui lòng liên hệ với bộ phận CSKH của chúng tôi!",
+    "success-booking": "Xác nhận đặt chỗ thành công. Chúng tôi sẽ xử lí đặt chỗ của bạn và liên hệ với bạn trong thời gian sớm nhất. Mọi thắc mắc xin vui lòng liên hệ với bộ phận CSKH của chúng tôi!",
+    "success-sign-up": "Đăng ký tài khoản thành công!",
+    "sorry": "Xin lỗi",
+    "not-found": "Chúng tôi không tìm thấy kết quả phù hợp",
+    "incorrect-keyword": "Kiểm tra lại thông tin tìm kiếm của bạn, bao gồm: từ khóa, điều kiện đặt phòng...",
+    "hint": "Dùng những từ khóa gợi ý địa chỉ để tìm kiếm chính xác",
+    "no-apartments": "Không có căn hộ phù hợp với các tiêu chí tìm kiếm",
+    "no-internet": "Không thể kết nối Internet",
+    "try-again": "Xin vui lòng thử lại",
+    "reset-all-filter": "Đặt lại các bộ lọc kết quả tìm kiếm",
+    "input-name": "Chúng tôi có thể gọi bạn là",
+    "input-email": "Nhập vào địa chỉ Email để có thể liên lạc",
+    "input-phone": "Nhập vào số điện thoại có thể liên lạc",
+    "error": {
+      "required": "Xin hãy nhập vào đầy đủ thông tin!",
+      "email": "Email không đúng định dạng!",
+      "invaild": "Vui lòng nhập đúng định dạng!"
+    },
+    "copied": {
+      "success": "Sao chép liên kết thành công",
+      "fail": "Sao chép liên kết thất bại"
+    },
+    "page-not-found": "Xin lỗi! Làm ơn kiểm tra lại đường dẫn URL!"
+  },
+  "footer": {
+    "about-us": "Về chúng tôi",
+    "help": "Trợ giúp",
+    "copyright": " @ 2019 YuuStay  - Nội dung trên trang được công ty TNHH YuuStay giữ toàn quyền.",
+    "office-located": " Giấy phép MXH số 499/GP-BTTTT do Bộ Thông Tin và Truyền thông cấp ngày xx/xx/xxxx.",
+    "terms": "Điều khoản",
+    "privacy": "Riêng tư"
+  },
+  "daysOfWeek": {
+    "monday": "Thứ hai",
+    "tuesday": "Thứ ba",
+    "wednesday": "Thứ tư",
+    "thursday": "Thứ năm",
+    "friday": "Thứ sáu",
+    "saturday": "Thứ bảy",
+    "sunday": "Chủ nhật"
+  },
+  "help-page": {
+    "recommended": "Những câu hỏi thường gặp",
+    "read-more": "Đọc thêm",
+    "read-less": "Thu gọn lại"
+  },
+  "night-number": "Số đêm",
+  "read-less": "Thu gọn lại",
+  "show-all": "Hiện tất cả",
+  "see-more": "Xem thêm",
+  "amenities": "Tiện nghi",
+  "male": "Nam",
+  "female": "Nữ",
+  "other": "Khác",
+  "mil": "tr",
+  "thousand": "nghìn",
+  "unname-road": "Unknow page",
+  "house-address": "Địa chỉ nhà",
+  "page-title": "Trang chủ",
+  "results": "Kết quả được tìm thấy",
+  "cancellation-policy": "Quy định hủy phòng",
+  "flexible": "Linh hoạt",
+  "private-baths": "Phòng tắm riêng",
+  "discover": "Khám phá",
+  "popular-places": "Thắng cảnh",
+  "add-photo": "Update avatar",
+  "fail": "Service failed",
+  "not-supported": "Your browser doesn't support geolocation.",
+  "off": "You have turned off location tracking.",
+  "validators": {
+    "max-is": "Giá trị tối đa là"
+  }
+}

@@ -1,0 +1,74 @@
+.popover-content {
+  @include pxRem('padding-bottom', 7);
+  position: absolute;
+  bottom: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  opacity: 0;
+  visibility: hidden;
+  transition: all .4s;
+  z-index: 10;
+  &::after {
+    @include pxRem('width', 10);
+    @include pxRem('height', 10);
+    position: absolute;
+    left: 50%;
+    content: "";
+    transform: translateX(-50%) rotate(45deg);
+    bottom: 0;
+    border-right: 1px solid map-get($colors, d-a);
+    border-bottom: 1px solid map-get($colors, d-a);
+    background: #fff;
+    margin-bottom: 1px;
+  }
+}
+.popover-wrapper {
+  @include pxRem('padding', 20);
+  @include pxRem('border-radius', 4);
+  box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.06);
+  background: map-get($colors, white);
+  border: 1px solid map-get($colors, d-a);
+}
+.popover-hover {
+  @include pxRem('font-size', 15);
+  display: inline-block;
+  position: relative;
+  line-height: normal;
+  font-weight: normal;
+  &:hover {
+    .popover-content {
+      opacity: 1;
+      visibility: visible;
+    }
+  }
+  .note {
+    @include pxRem('padding-top', 11);
+    border-top: solid 1px map-get($colors, border);
+    display: block;
+  }
+  .icon-question {
+    @include pxRem('margin-left', 5);
+  }
+}
+.popover-list {
+  .popover-item {
+    @include pxRem('padding', 11 0 4);
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    border-bottom: solid 1px map-get($colors, border);
+    &:last-child {
+      border: 0;
+    }
+  }
+}
+.popover-title {
+  @include pxRem('margin-bottom', 2);
+  line-height: normal;
+}
+
+@include respond-below(medium) {
+  .popover-hover {
+    display: none;
+  }
+}

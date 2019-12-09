@@ -1,0 +1,75 @@
+.login-modal {
+  .or {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    &::before,
+    &::after {
+      content: "";
+      height: 1px;
+      width: 100%;
+      display: inline-block;
+      background: map-get($colors, border);
+    }
+    span {
+      @include pxRem("padding", 10);
+    }
+  }
+  .twitter-btn {
+    background: map-get($colors, tw);
+  }
+  .facebook-btn {
+    background: map-get($colors, fb);
+  }
+  .btn-social {
+    @include pxRem("padding", 0 55);
+    display: inline-flex;
+    align-items: center;
+    i {
+      @include pxRem("width", 25);
+    }
+    span {
+      @include pxRem("padding-left", 20);
+    }
+  }
+  button {
+    @include pxRem("height", 45);
+  }
+  .icon {
+    @include pxRem("height", 25);
+    @include pxRem("width", 25);
+    &.google {
+      @include pxRem("margin-left", -3);
+      background: url("assets/images/icons/ic_google.svg") no-repeat center;
+      vertical-align: middle;
+    }
+  }
+  .iconf-twitter,
+  .iconf-facebook {
+    @include pxRem("font-size", 16);
+    color: map-get($colors, white);
+  }
+}
+
+// Responsive
+@include respond-below(medium) {
+  .overlay-login {
+    max-width: 95% !important;
+  }
+  .login-modal {
+    @include pxRem("padding", 20 0);
+    .btn-social {
+      @include pxRem("padding", 0 75);
+    }
+  }
+}
+@include respond-below(small) {
+  .login-modal {
+    .btn-social {
+      @include pxRem("padding", 0 10);
+      span {
+        @include pxRem("padding-left", 10);
+      }
+    }
+  }
+}

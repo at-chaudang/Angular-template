@@ -1,0 +1,71 @@
+.search {
+  @include pxRem(width, 591 !important);
+  @include pxRem(top, 28);
+  position: absolute !important;
+  background: map-get($colors, white);
+  box-shadow: 0 40000rem 0 40000rem rgba(255, 255, 255, 0.9) !important;
+  .list-tag {
+    @include pxRem(padding-top, 10);
+    li {
+      @include pxRem(padding-bottom, 12);
+    }
+  }
+  &-results {
+    @include pxRem(margin, 14 0);
+    .mat-option {
+      @include pxRem(line-height, 35);
+      height: auto;
+      padding: 0;
+    }
+    .results {
+      @include pxRem(max-height, 160);
+      @include pxRem(padding-top, 8);
+      overflow: auto;
+    }
+    .result {
+      &-name {
+        @include pxRem(padding-left, 5);
+      }
+      .placeholder-loading {
+        @include pxRem(height, 16);
+        @include pxRem(margin-bottom, 20);
+        @include pxRem(border-radius, 2);
+      }
+      .iconf {
+        @include pxRem(font-size, 12);
+        @include pxRem(width, 14);
+      }
+      &.mat-option:hover:not(.mat-option-disabled) {
+        background: none;
+      }
+      .mat-option-text {
+        &:hover {
+          color: map-get($colors, primary);
+        }
+      }
+    }
+  }
+  &-more {
+    @include pxRem(padding-top, 15);
+    border-top: 1px solid map-get($colors, border);
+  }
+  &.mat-autocomplete-panel.mat-autocomplete-hidden {
+    visibility: visible;
+  }
+  &-inner {
+    @include pxRem(padding, 20 35);
+    @include pxRem(box-shadow, 0 0 8 0 rgba(0, 0, 0, 0.06));
+    @include pxRem(border-radius, 5);
+    @include pxRem(min-height, 290);
+    background: map-get($colors, white);
+  }
+  &.mat-autocomplete-panel {
+    overflow: visible;
+  }
+  .stage {
+    @include pxRem(height, 40);
+    @include pxRem(top, 20);
+    position: relative;
+    left: 50%;
+  }
+}

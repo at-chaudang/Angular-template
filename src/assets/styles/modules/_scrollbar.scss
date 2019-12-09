@@ -1,0 +1,29 @@
+// * {
+//   /* width */
+//   ::-webkit-scrollbar {
+//     @include pxRem(width, 7);
+//     height: 1px;
+//   }
+
+//   /* Track */
+//   ::-webkit-scrollbar-track {
+//     @include pxRem(border-radius, 8);
+//     box-shadow: inset 0 0 5px map-get($colors, pink);
+//   }
+
+//   /* Handle */
+//   ::-webkit-scrollbar-thumb {
+//     @include pxRem(border-radius, 8);
+//     background: map-get($colors, scroll-bg);
+//   }
+
+//   /* Handle on hover */
+//   ::-webkit-scrollbar-thumb:hover {
+//     background: map-get($colors, scroll-bg);
+//   }
+//   &:hover {
+//     ::-webkit-scrollbar-thumb {
+//       background: map-get($colors, scroll-bg);
+//     }
+//   }
+// }

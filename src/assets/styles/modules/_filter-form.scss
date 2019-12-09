@@ -1,0 +1,106 @@
+// Filter Sectiona
+app-filter,
+.filter {
+  @include pxRem("font-size", 16);
+  height: 100%;
+  position: relative;
+  .btn {
+    &:hover {
+      color: map-get($colors, primary);
+    }
+  }
+  .filter-wrap {
+    @include pxRem("padding", 20 25 20 20);
+    height: calc(100% - 2.8125rem);
+    overflow-x: hidden;
+    .form-group {
+      @include pxRem("padding-bottom", 25);
+    }
+    .house-type {
+      @include pxRem("padding-bottom", 20);
+      .type-item:not(:last-child) {
+        @include pxRem("padding-bottom", 15);
+      }
+    }
+  }
+  .title-filter {
+    @include pxRem("padding-bottom", 10);
+    display: inline-block;
+    font-weight: 700;
+    color: map-get($colors, secondary);
+  }
+  // Calendar input style
+  .living-time-container {
+    .living-time-input {
+      @include pxRem("height", 40);
+      @include pxRem("padding", 9 10);
+      @include pxRem("border-radius", 4);
+      @include pxRem("font-size", 15);
+      width: 100%;
+      border: solid 1px map-get($colors, border);
+      text-align: center;
+      @include respond-below(medium) {
+        width: 100%;;
+      }
+    }
+    .fade-out {
+      opacity: 0;
+      visibility: hidden;
+    }
+  }
+  // PRICING STYLE
+  .price-filter {
+    display: flex;
+    justify-content: space-between;
+    .group-price {
+      position: relative;
+      width: 48%;
+    }
+    .input-price {
+      @include pxRem("height", 40);
+      @include pxRem("font-size", 15);
+      @include pxRem("padding", 0 15 0 5);
+      @include pxRem("border-radius", 4);
+      width: 100%;
+      text-align: center;
+      border: solid 1px map-get($colors, border);
+    }
+    .unit-price {
+      @include pxRem("top", 9);
+      @include pxRem("right", 5);
+      position: absolute;
+    }
+  }
+  // Style tooptip
+  .popover-content {
+    opacity: 1;
+    visibility: visible;
+  }
+  // House type and Rooms Style
+  .list-type-container {
+    @include pxRem("font-size", 16);
+    font-family: $font-body;
+    .type-item:not(:last-child) {
+      @include pxRem("padding-bottom", 12);
+    }
+  }
+  // Clear and Apply
+  .filter-action {
+    @include pxRem("padding", 8 0);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    border-top: 1px solid map-get($colors, border);
+    background: map-get($colors, white);
+    .btn-clear {
+      border-right: 1px solid map-get($colors, border);
+    }
+    button {
+      @include pxRem("height", 32);
+      border: 0;
+      border-radius: 0;
+      font-weight: 700;
+    }
+  }
+}
