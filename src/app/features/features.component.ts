@@ -7,9 +7,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class FeaturesComponent implements OnInit {
 
+  test: string;
+
   constructor() { }
 
   ngOnInit() {
+    this.test = 123;
   }
 
 }
