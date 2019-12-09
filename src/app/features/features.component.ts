@@ -12,7 +12,7 @@ export class FeaturesComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
-    this.test = 1234;
+    this.test = 12345;
   }
 
 }
