@@ -11,4 +11,4 @@ export const END_POINT = {
   tournamentTeams: 'tournamentTeams',
   statistics: 'statistics',
   match_detail: 'match-detail',
-}
+};
