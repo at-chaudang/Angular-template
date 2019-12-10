@@ -1,0 +1,11 @@
+.login-page {
+  .login-box {
+    // border: 1px solid map-get($colors, border);
+    border: 1px solid #ececec;
+    padding: 48px 40px;
+    height: 100%;
+    .logo-img {
+      width: 75px;
+    }
+  }
+}

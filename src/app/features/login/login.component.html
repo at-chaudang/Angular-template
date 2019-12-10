@@ -1,1 +1,15 @@
-<p>login works!</p>
+<div class="login-page">
+  <section class="login-box txt-center">
+    <header>
+      <img class="logo-img" [src]="IMAGES.logo.src" [alt]="IMAGES.logo.alt">
+      <h1 class="first-letter-uppercase"><span>Sign in</span></h1>
+      <div><span>Use your Google Account</span></div>
+    </header>
+    <main>
+      <form [formGroup]="submitForm">
+        <input class="form-control" formControlName="email" type="email" placeholder="Email">
+      </form>
+    </main>
+    <footer></footer>
+  </section>
+</div>

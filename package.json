@@ -6,7 +6,7 @@
     "start": "ng serve --port 4100",
     "build": "ng build",
     "test": "ng test",
-    "hmr": "ng serve --configuration hmr",
+    "hmr": "ng serve --configuration hmr --port 4100",
     "lint": "ng lint",
     "e2e": "ng e2e"
   },

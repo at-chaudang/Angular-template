@@ -1,2 +1,12 @@
-<p>features works!</p>
-<router-outlet></router-outlet>
+<div class="angular-template">
+  <div class="navigation">
+    <ul class="menu-link">
+      <li *ngFor="let item of menuLink" class="item-link pointer">
+        <a [routerLink]="item.url" routerLinkActive="active">{{item.name}}</a>
+      </li>
+    </ul>
+  </div>
+  <div class="container">
+    <router-outlet></router-outlet>
+  </div>
+</div>

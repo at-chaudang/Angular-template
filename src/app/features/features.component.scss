@@ -1,0 +1,23 @@
+.navigation {
+  .menu-link {
+    line-height: 3;
+    border: 1px solid rgb(212, 20, 20);
+    margin: 0;
+    padding: 0;
+    display: flex;
+    .item-link {
+      outline: 0;
+      flex: 1;
+      a {
+        display: inline-block;
+        width: 100%;
+        text-align: center;
+        background: rgba(238, 13, 13);
+        &:hover {
+          color: #fff;
+          background: rgba(238, 13, 13, 0.75);
+        }
+      }
+    }
+  }
+}

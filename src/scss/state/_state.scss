@@ -21,7 +21,7 @@
   border-color: $color-grey;
 }
 .active {
-  color: $color-blue !important;
+  color: map-get($colors, active);
 }
 .txt-center {
   text-align: center;
@@ -38,41 +38,42 @@
 .txt-dm {
   font-size: 10px !important;
 }
-.display-none {
+// Display
+.d-none {
   display: none !important;
 }
-.display-full {
-  width: 100% !important;
+.d-flex {
+  display: flex !important;
 }
-.notification {
-  font-size: 33px;
-  color: $color-blue;
-  margin-bottom: 20px;
+.d-inline {
+  display: inline !important;
 }
-input.file {
-  position: relative;
-    -moz-opacity: 0;
-    opacity: 0;
-    z-index: 2;
+.d-block {
+  display: block !important;
 }
-.fileinputs {
-    position: relative;
+.d-inline-block {
+  display: inline-block !important;
 }
-.fakefile {
-    position: absolute;
-    top: 0px;
-    left: 0px;
-    z-index: 1;
+// Style text
+.uppercase {
+  text-transform: uppercase;
 }
-.disabled-li {
-  pointer-events: none;
+.lowercase {
+  text-transform: lowercase;
 }
-.position-left-30 {
-  left: 30px;
+.capitalize {
+  text-transform: capitalize;
 }
-.height-1000 {
-  height: 900px !important;
+.first-letter-uppercase {
+  @extend .lowercase;
+  &::first-letter {
+    text-transform: uppercase;
+  }
 }
-.pl0 {
-  padding-left: 0 !important;
+// Cursor
+.pointer {
+  cursor: pointer;
+}
+.progress {
+  cursor: progress;
 }
