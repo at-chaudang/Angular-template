@@ -6,20 +6,32 @@
     background: transparent;
     // Style cho all label đằng sau
     & ~ label {
+      @include pxRem(left, 14);
       position: absolute;
-      left: 14px;
-      top: 10px;
+      top: 50%;
+      transform: translateY(-50%);
       color: #aaa;
       transition: 0.3s;
       z-index: -1;
       letter-spacing: 0.5px;
     }
     // Do effect
-    &.has-content ~ label {
-      top: -18px;
-      left: 0;
-      font-size: 12px;
-      color: #333;
+    &.has-content {
+      background: map-get($colors, google-input-bg);
+      & ~ label {
+        @include pxRem(left, 8);
+        @include pxRem(font-size, 12);
+        @include pxRem(padding, 0 5);
+        top: 0;
+        background: map-get($colors, white);
+        z-index: 1;
+      }
+    }
+    &:focus {
+      & ~ label {
+        color: map-get($colors, google-primary);
+      }
+      border: 1px solid map-get($colors, google-primary) !important;
     }
   }
 }

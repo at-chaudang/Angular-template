@@ -2,14 +2,19 @@
   <section class="login-box txt-center">
     <header>
       <img class="logo-img" [src]="IMAGES.logo.src" [alt]="IMAGES.logo.alt">
-      <h1 class="first-letter-uppercase"><span>Sign in</span></h1>
-      <div><span>Use your Google Account</span></div>
+      <h1 class="first-letter-uppercase mt-3 headingText"><span>Sign in</span></h1>
+      <div class="mt-3 headingSubText"><span>Use your Google Account</span></div>
     </header>
-    <main>
+    <main class="mt-5">
       <form [formGroup]="submitForm">
         <div class="input-effect">
           <input class="form-control" formControlName="email" appOnFocus type="email">
-          <label>Email</label>
+          <label>Email or phone</label>
+        </div>
+        <div class="txt-left">
+          <button class="btn btn-txt forgot-email-btn px-0">
+            Forgot email?
+          </button>
         </div>
       </form>
     </main>
