@@ -109,20 +109,20 @@ $sides: (top, bottom, left, right); // Leave this variable alone
   $space: convertPxToRem($space);
   // Create margin, padding width xy
   .mx-#{$index} {
-    margin-left: $space;
-    margin-right: $space;
+    margin-left: $space !important;
+    margin-right: $space !important;
   }
   .my-#{$index} {
-    margin-top: $space;
-    margin-bottom: $space;
+    margin-top: $space !important;
+    margin-bottom: $space !important;
   }
   .px-#{$index} {
-    padding-left: $space;
-    padding-right: $space;
+    padding-left: $space !important;
+    padding-right: $space !important;
   }
   .py-#{$index} {
-    padding-top: $space;
-    padding-bottom: $space;
+    padding-top: $space !important;
+    padding-bottom: $space !important;
   }
   @each $side in $sides {
     $prototype-short: str-slice($side, 0, 1);
