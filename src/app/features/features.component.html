@@ -1,11 +1,11 @@
 <div class="angular-template">
-  <div class="navigation">
+  <nav class="navigation">
     <ul class="menu-link">
       <li *ngFor="let item of menuLink" class="item-link pointer">
         <a [routerLink]="item.url" routerLinkActive="active">{{item.name}}</a>
       </li>
     </ul>
-  </div>
+  </nav>
   <div class="container">
     <router-outlet></router-outlet>
   </div>
