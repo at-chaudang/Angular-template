@@ -33,8 +33,12 @@
 .txt-right {
   text-align: right;
 }
-.txt-bold {
-  font-weight: 600;
+// === Font weight ===
+.light {
+  font-weight: map-get($font-weights, light);
+}
+.bold {
+  font-weight: map-get($font-weights, bold);
 }
 .txt-dm {
   font-size: 10px !important;

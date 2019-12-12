@@ -3,14 +3,19 @@
   @include pxRem(padding, 8 16);
   @include pxRem(font-size, 14);
   @include pxRem(border-radius, 4);
+  @include prefix(user-select, none);
   display: inline-block;
   text-align: center;
   cursor: pointer;
   border: 1px solid transparent;
+  outline: 0;
   font-weight: map-get($font-weights, bold);
+  background: map-get($colors, primary);
 }
 .btn-txt {
   border: 0;
+  padding-left: 0;
+  padding-right: 0;
   background: transparent;
 }
 .btn-default {

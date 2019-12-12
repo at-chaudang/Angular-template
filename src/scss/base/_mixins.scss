@@ -134,3 +134,14 @@ $sides: (top, bottom, left, right); // Leave this variable alone
     }
   }
 }
+
+// === Mixin prefix ===
+$prefixes: (webkit, moz, ms, o);
+@mixin prefix($property, $value) {
+  @each $prefix in $prefixes {
+    #{'-' + $prefix + '-' + $property}: $value;
+  }
+
+  // Output standard non-prefixed declaration
+  #{$property}: $value;
+}

@@ -1,7 +1,9 @@
 $colors: (
+  white: #fff,
   border: #e4e4e4,
   primary: #1a73e8,
-  input-bg: #e8f0fe
+  input-bg: #e8f0fe,
+  info-txt: #5f6368
 );
 .login-page {
   .login-box {
@@ -30,5 +32,27 @@ $colors: (
       text-align: left;
       color: map-get($colors, primary);
     }
+    .info-txt {
+      color: map-get($colors, info-txt);
+    }
+    .hype-link {
+      display: inline-block;
+      color: map-get($colors, primary);
+    }
+    footer {
+      display: flex;
+      justify-content: space-between;
+      .next-btn {
+        padding: 8px 24px;
+      }
+    }
   }
+}
+.btn {
+  background: map-get($colors, primary);
+  color: map-get($colors, white);
+}
+.btn-txt {
+  background: transparent;
+  color: map-get($colors, primary);
 }
