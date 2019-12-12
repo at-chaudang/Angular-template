@@ -42,3 +42,95 @@
     }
   }
 }
+
+// == Convert Px To Rem ==
+@function strip-units($number) {
+  @return $number / ($number * 0 + 1);
+}
+
+@function convertRootPxToEm($value) {
+  // check for null:
+  @if($value == null) {
+    @return $value;
+  }
+  // assume em:
+  @if (unitless($value) or unit($value) == em) {
+    @return 0em + $value;
+  }
+  @else {
+    @return 0em + strip-units($value)/16;
+  }
+}
+
+@function convertPxToRem($px) {
+  @return 0rem + strip-units($px)/16;
+}
+
+@mixin pxRem($property, $values) {
+  // Create a couple of empty lists as output buffers:
+  $px-values: ();
+  $rem-values: ();
+
+  // Ensure $values is a list.
+  @if type-of($values) != 'list' {
+    $values: join((), $values);
+  }
+
+  // Loop through the $values list:
+  @each $value in $values {
+    @if type-of($value) == number and (unitless($value) or unit($value) == px) {
+    $px-values: join($px-values, 0px + ($value));
+      $rem-values: join($rem-values, convertPxToRem($value));
+    }
+    @else {
+    // no conversion:
+    $px-values: join($px-values, $value);
+    $rem-values: join($rem-values, $value);
+    }
+  }
+
+  #{$property}: $px-values;
+
+  // don't add media query if it's not needed:
+  @if $px-values != $rem-values {
+    // @media only all {
+      #{$property}: $rem-values;
+    // }
+  }
+}
+// == End / Convert Px To Rem ==
+
+// === Create class space ===
+$spaceamounts: (0, 4, 8, 16, 24, 32, 40); // Adjust this to include the pixel amounts you need.
+$sides: (top, bottom, left, right); // Leave this variable alone
+
+@each $space in $spaceamounts {
+  $index: index($spaceamounts, $space) - 1; // Index start is 0
+  $space: convertPxToRem($space);
+  // Create margin, padding width xy
+  .mx-#{$index} {
+    margin-left: $space;
+    margin-right: $space;
+  }
+  .my-#{$index} {
+    margin-top: $space;
+    margin-bottom: $space;
+  }
+  .px-#{$index} {
+    padding-left: $space;
+    padding-right: $space;
+  }
+  .py-#{$index} {
+    padding-top: $space;
+    padding-bottom: $space;
+  }
+  @each $side in $sides {
+    $prototype-short: str-slice($side, 0, 1);
+    .m#{$prototype-short}-#{$index} {
+      margin-#{$side}: $space !important;
+    }
+    .p#{$prototype-short}-#{$index} {
+      padding-#{$side}: $space !important;
+    }
+  }
+}
