@@ -1,4 +1,5 @@
 // === Space base ===
+// FIXME:
 $xxs: 2px;
 $xs: $xxs * 2;
 $s: $xs * 2;
@@ -14,6 +15,7 @@ $breakpoints: (
   large: 1024px,
   largest: 1280px
 );
+// FIXME:
 $color-green: #00ff00;
 $color-light-green: #76c100;
 $color-black: #000;
@@ -28,3 +30,26 @@ $color-blue: #00afd8;
 $color-light-red: #a94442;
 $color-primary: #62c6f8;
 $active-dot: #00afd8;
+// === Colors ===
+$colors: (
+  primary: #ff8a87,
+  secondary: #484848,
+  white: #fff,
+  black: #000,
+  pink: #ffeeed,
+  green: #72ca57,
+  checkbox-bg: #f8f4f4,
+  checkbox-border: #ddd,
+  border: #e4e4e4,
+  active: #fff,
+  slider-border: #d1d1d1,
+  slider-bg: #f2f2f2,
+  placeholder: #a3a3a3,
+  google-primary: #1a73e8,
+  google-input-bg: #e8f0fe
+);
+// === Font weight ===
+$font-weights: (
+  light: 200,
+  bold: 600
+);

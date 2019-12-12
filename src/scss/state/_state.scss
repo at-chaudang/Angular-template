@@ -21,7 +21,8 @@
   border-color: $color-grey;
 }
 .active {
-  color: $color-blue !important;
+  color: map-get($colors, active);
+  box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
 }
 .txt-center {
   text-align: center;
@@ -32,47 +33,59 @@
 .txt-right {
   text-align: right;
 }
-.txt-bold {
-  font-weight: 600;
+// === Font weight ===
+.light {
+  font-weight: map-get($font-weights, light);
+}
+.bold {
+  font-weight: map-get($font-weights, bold);
 }
 .txt-dm {
   font-size: 10px !important;
 }
-.display-none {
+// Display
+.d-none {
   display: none !important;
 }
-.display-full {
-  width: 100% !important;
+.d-flex {
+  display: flex !important;
 }
-.notification {
-  font-size: 33px;
-  color: $color-blue;
-  margin-bottom: 20px;
+.d-inline {
+  display: inline !important;
 }
-input.file {
+.d-block {
+  display: block !important;
+}
+.d-inline-block {
+  display: inline-block !important;
+}
+// Style text
+.uppercase {
+  text-transform: uppercase;
+}
+.lowercase {
+  text-transform: lowercase;
+}
+.capitalize {
+  text-transform: capitalize;
+}
+.first-letter-uppercase {
+  @extend .lowercase;
+  &::first-letter {
+    text-transform: uppercase;
+  }
+}
+// Cursor
+.pointer {
+  cursor: pointer;
+}
+.progress {
+  cursor: progress;
+}
+// Position
+.is-relative {
   position: relative;
-    -moz-opacity: 0;
-    opacity: 0;
-    z-index: 2;
 }
-.fileinputs {
-    position: relative;
-}
-.fakefile {
-    position: absolute;
-    top: 0px;
-    left: 0px;
-    z-index: 1;
-}
-.disabled-li {
-  pointer-events: none;
-}
-.position-left-30 {
-  left: 30px;
-}
-.height-1000 {
-  height: 900px !important;
-}
-.pl0 {
-  padding-left: 0 !important;
+.is-absolute {
+  position: absolute;
 }

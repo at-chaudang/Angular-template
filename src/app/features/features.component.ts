@@ -7,12 +7,19 @@ import { Component, OnInit } from '@angular/core';
 })
 export class FeaturesComponent implements OnInit {
 
-  test: string;
+  menuLink = [
+    {
+      name: 'Home',
+      url: '/profile'
+    },
+    {
+      name: 'Login',
+      url: '/login'
+    }
+  ];
 
   constructor() { }
 
-  ngOnInit() {
-    this.test = 123;
-  }
+  ngOnInit() {}
 
 }

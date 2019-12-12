@@ -6,21 +6,25 @@ import { FeaturesComponent } from './features.component';
 const routes: Routes = [
   {
     path: '',
-    // pathMatch: 'full',
     component: FeaturesComponent,
     children: [
-      // {
-      //   path: 'home',
-      //   loadChildren: () => import('./features/features.module').then(m => m.FeaturesModule)
-      // }
       {
-        path: 'auth',
-        loadChildren: () => import('../auth/auth.module').then(m => m.AuthModule)
+        path: '',
+        pathMatch: 'full',
+        redirectTo: 'profile'
       },
-      // {
-      //   path: '**',
-      //   loadChildren: () => import('../auth/auth.module').then(m => m.AuthModule)
-      // },
+      {
+        path: 'login',
+        loadChildren: () => import('./login/login.module').then(m => m.LoginModule)
+      },
+      {
+        path: 'profile',
+        loadChildren: () => import('./profile/profile.module').then(m => m.ProfileModule)
+      },
+      {
+        path: '**',
+        redirectTo: 'login'
+      }
     ],
   },
 ];
