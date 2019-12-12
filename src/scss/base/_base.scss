@@ -3,7 +3,7 @@
 }
 
 body {
-  font-family: $font-body;
+  font-family: $font-family;
 }
 
 a {
@@ -43,11 +43,21 @@ h1, h2, h3, h4, h5, h6 {
   text-transform: uppercase;
   font-weight: 600;
 }
-
 h1 {
-  font-size: $m * 1.3 ;
+  @include pxRem(font-size, 24);
 }
-
 h2 {
-  font-size: 1.2 * $m;
+  @include pxRem(font-size, 22);
+}
+h3 {
+  @include pxRem(font-size, 20);
+}
+h4 {
+  @include pxRem(font-size, 18);
+}
+h5 {
+  @include pxRem(font-size, 16);
+}
+h6 {
+  @include pxRem(font-size, 14);
 }
