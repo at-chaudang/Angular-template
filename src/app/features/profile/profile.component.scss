@@ -1,0 +1,74 @@
+$colors: (
+  white: #fff,
+  border: #e4e4e4,
+  primary: #1a73e8,
+  input-bg: #e8f0fe,
+  info-txt: #5f6368
+);
+.profile-box {
+  max-width: 800px;
+  margin: auto;
+  margin-top: 32px;
+  border: 1px solid map-get($colors, border);
+  border-radius: 8px;
+  header {
+    padding: 24px 24px 12px;
+  }
+  .prototype-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 24px;
+    &:not(:last-child) {
+      border-bottom: 1px solid map-get($colors, border);
+    }
+    .photo-place {
+      width: 60px;
+      height: 60px;
+      border-radius: 50%;
+      overflow: hidden;
+    }
+    .avatar {
+      width: 60px;
+      height: 60px;
+    }
+    &.password {
+      .prototype-content {
+        opacity: 0.6;
+      }
+      .password-txt {
+        font-size: 75%;
+      }
+    }
+    .prototype-name {
+      font-size: 80%;
+      opacity: 0.6;
+      flex: 2;
+    }
+    .prototype-content {
+      opacity: 0.9;
+      letter-spacing: 0.5px;
+    }
+    .last-place {
+      flex: 1;
+    }
+    .prototype-content {
+      flex: 6;
+    }
+    .upload-btn-container {
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      width: 60px;
+      height: 33%;
+      background-color: rgba(32,33,36,0.6);
+      .upload-btn-main {
+        height: 100%;
+        width: 100%;
+        background: url('src/assets/images/photo_camera_white_24dp.png') center no-repeat;
+        background-size: 20px 20px;
+        opacity: 0.8;
+      }
+    }
+  }
+}

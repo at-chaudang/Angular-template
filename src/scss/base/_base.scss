@@ -1,5 +1,6 @@
 * {
   box-sizing: border-box;
+  outline: 0;
 }
 
 body {
@@ -9,11 +10,12 @@ body {
 a {
   text-decoration: none;
   cursor: pointer;
-  color: $color-black;
+  color: map-get($colors, link-path);
 }
 
 button {
   cursor: pointer;
+  border: 0;
 }
 
 input[type=submit] {

@@ -9,7 +9,7 @@ export class FeaturesComponent implements OnInit {
 
   menuLink = [
     {
-      name: 'Home',
+      name: 'Profile',
       url: '/profile'
     },
     {
