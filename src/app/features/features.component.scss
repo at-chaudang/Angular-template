@@ -1,0 +1,29 @@
+$colors: (
+  white: #fff,
+  border: #e4e4e4,
+  primary: #1a73e8,
+  input-bg: #e8f0fe,
+  info-txt: #5f6368
+);
+.navigation {
+  .menu-link {
+    line-height: 3;
+    border: 1px solid map-get($colors, primary);
+    margin: 0;
+    padding: 0;
+    display: flex;
+    .item-link {
+      flex: 1;
+      a {
+        display: inline-block;
+        width: 100%;
+        text-align: center;
+        background: map-get($colors, primary);
+        color: map-get($colors, white);
+        &:hover {
+          background: rgba(map-get($colors, primary), 0.75);
+        }
+      }
+    }
+  }
+}

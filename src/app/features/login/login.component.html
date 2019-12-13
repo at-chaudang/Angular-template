@@ -1,0 +1,36 @@
+<div class="login-page">
+  <section class="login-box txt-center">
+    <header>
+      <img class="logo-img" [src]="IMAGES.logo.src" [alt]="IMAGES.logo.alt">
+      <h1 class="first-letter-uppercase mt-3 headingText"><span>Sign in</span></h1>
+      <div class="mt-3 headingSubText"><span>Use your Google Account</span></div>
+    </header>
+    <main class="mt-5">
+      <form [formGroup]="submitForm">
+        <div class="input-effect">
+          <input class="form-control" formControlName="email" appOnFocus type="email">
+          <label>Email or phone</label>
+        </div>
+        <div class="txt-left">
+          <button class="btn btn-txt forgot-email-btn px-0">
+            Forgot email?
+          </button>
+        </div>
+      </form>
+      <div class="mt-6 txt-left">
+        <span class="info-txt">
+          Not your computer? Use Guest mode to sign in privately.
+        </span>
+        <a class="hype-link bold mt-1" href="https://support.google.com/chrome/answer/6130773?hl=en">Learn more</a>
+      </div>
+    </main>
+    <footer class="mt-5 mb-5">
+      <div>
+        <button class="btn btn-txt">Create account</button>
+      </div>
+      <div>
+        <button class="btn next-btn">Next</button>
+      </div>
+    </footer>
+  </section>
+</div>

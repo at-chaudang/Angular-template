@@ -1,0 +1,91 @@
+.real-estates-list {
+  .real-estates-item {
+    @include pxRem('padding', 10);
+    @include pxRem('border-radius', 5);
+    @include pxRem('margin-bottom', 20);
+    display: flex;
+    border: solid 1px map-get($colors, border);
+    transition: box-shadow .4s;
+    box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.06);
+    cursor: pointer;
+    &:hover {
+      box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.06);
+    }
+    .real-estates-content {
+      @include pxRem('width', 280);
+      @include pxRem('padding', 0 20);
+      display: flex;
+      flex-direction: column;
+      .real-estates-name {
+        @include pxRem('font-size', 20);
+        @include pxRem('line-height', 25);
+        @include pxRem('max-width', 125);
+        vertical-align: text-bottom;
+      }
+      .square {
+        @include pxRem('padding', 0 6);
+        @include pxRem('font-size', 16);
+      }
+      .real-estates-avaibale {
+        @include pxRem('font-size', 15);
+        font-weight: 700;
+      }
+      .real-estates-price {
+        @include pxRem('font-size', 15);
+        margin-top: auto;
+        .icon-dolla {
+          @include pxRem('width', 15);
+          @include pxRem('height', 15);
+          @include pxRem('margin-right', 10);
+          font-size: 12px;
+          line-height: 15px;
+        }
+        .price {
+          font-weight: 700;
+        }
+      }
+      .placeholder-loading {
+        @include pxRem('margin-bottom', 10);
+      }
+    }
+    .real-estates-right {
+      flex: 1;
+      text-align: center;
+      button {
+        @include pxRem('width', 175);
+        @include pxRem('margin-top', 10);
+      }
+      &.active,
+      &:hover {
+        button {
+          background: map-get($colors, scroll-bg);
+        }
+      }
+    }
+  }
+}
+.real-estates-image {
+  @include pxRem('max-width', 200);
+  width: 100%;
+  display: inline-block;
+  position: relative;
+  transition: all .3s ease;
+  line-height: 0;
+  overflow: hidden;
+  .image-item {
+    background: map-get($colors, p-l) url("assets/images/no-image.svg") ;
+    display: block;
+    padding-top: 62%;
+    background-repeat: no-repeat;
+    background-size: auto;
+    background-position: center center;
+    transition: transform .3s ease-in-out;
+    transform: scale(1);
+    &:hover {
+      transform: scale(1.1);
+    }
+  }
+  .placeholder-loading {
+    @include pxRem('height', 130);
+  }
+}

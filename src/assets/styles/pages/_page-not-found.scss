@@ -1,0 +1,12 @@
+.page-not-found {
+  .content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 36vh;
+  }
+  .status {
+    @include pxRem('font-size', 120);
+  }
+}

@@ -1,0 +1,48 @@
+.language {
+  &-dropdown {
+    @include pxRem("min-width", 341);
+    @include pxRem("top", 72);
+    @include pxRem("right", 20);
+    @include pxRem("box-shadow", 0 4 8 0 rgba(0, 0, 0, 0.1));
+    border: 1px solid map-get($colors, light-white);
+    background: map-get($colors, white);
+    position: absolute;
+    text-align: left;
+    &::before {
+      @include pxRem("top", -8);
+      @include pxRem("right", 28);
+      @include pxRem("height", 16);
+      @include pxRem("width", 16);
+      @include pxRem("box-shadow", 0 4 8 0 rgba(0, 0, 0, 0.1));
+      border: 1px solid map-get($colors, light-white);
+      background: map-get($colors, white);
+      content: "";
+      position: absolute;
+      transform: rotate(45deg);
+    }
+    &-container {
+      position: relative;
+      background: map-get($colors, white);
+    }
+    &-item {
+      @include pxRem("margin", 0 20);
+      @include pxRem("height", 60);
+      @include pxRem("line-height", 60);
+      border-bottom: 1px solid map-get($colors, border);
+      .language-name {
+        @include pxRem("padding-left", 17);
+      }
+    }
+    &-action {
+      @include pxRem("padding", 8 0 9);
+      overflow: hidden;
+    }
+    .ic-success {
+      &::after {
+        @include pxRem("bottom", 27);
+        @include pxRem("left", -15);
+        position: absolute;
+      }
+    }
+  }
+}

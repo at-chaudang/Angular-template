@@ -1,0 +1,13 @@
+.cdk-global-overlay-wrapper {
+  .mat-dialog-container {
+    max-height: calc(100vh - 1.875rem);
+    overflow: auto;
+    &::-webkit-scrollbar {
+      @include pxRem('width', 7);
+    }
+    &::-webkit-scrollbar-thumb {
+      @include pxRem('border-radius', 8);
+      background: map-get($colors, scroll-bg); 
+    }
+  }
+}

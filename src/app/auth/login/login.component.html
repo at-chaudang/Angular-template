@@ -1,0 +1,28 @@
+<section class="login">
+  <div class="container">
+    <form #formLogin="ngForm" (ngSubmit)="onSubmit(formLogin)" class="login-form">
+      <header>
+        <div class="logo">
+          <img [src]="images?.logo?.src" [alt]="images?.logo?.alt">
+        </div>
+      </header>
+      <main></main>
+      <footer></footer>
+      <div class="form-group">
+        <label class="form-label" for="username">User ID</label>
+        <input class="input-form" type="text" name="username" id="username" ngModel maxlength="20" required>
+      </div>
+      <div class="form-group">
+        <label class="form-label" for="password">Password</label>
+        <input class="input-form" type="password" name="password" id="password" ngModel maxlength="20" required>
+      </div>
+      <p class="text-danger center-text text-prewarp pb-5" *ngIf="errorMsgs && errorMsgs.errors">{{errorMsgs.errors[0]}}</p>
+      <div class="center-text">
+        <button [disabled]="!formLogin.valid || !canAction" type="submit" [className]="formLogin.valid ? 'btn btn-login' : 'btn btn-disabled'">Login</button>
+        <a class="forgot-link" [routerLink]="['/forgot']">
+          <p>Forgot your User ID/Password?</p>
+        </a>
+      </div>
+    </form>
+  </div>
+</section>

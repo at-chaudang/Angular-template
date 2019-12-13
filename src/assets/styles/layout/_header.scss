@@ -1,0 +1,359 @@
+app-header {
+  display: block;
+  height: 100%;
+}
+.page-header {
+  @include pxRem("height", 80);
+  @include pxRem("padding", 0 63);
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  border-bottom: solid 1px map-get($colors, border);
+  background: map-get($colors, white);
+  z-index: 123;
+  .header-col {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    .col-middle {
+      @include pxRem("margin-left", 63);
+      flex: 1;
+    }
+  }
+  .logo {
+    display: block;
+    text-align: center;
+    line-height: 0;
+    img {
+      @include pxRem("max-width", 145);
+    }
+  }
+  .icon-home {
+    @include pxRem("margin-top", -2);
+  }
+  .select-city {
+    @include pxRem("height", 24);
+    @include pxRem("line-height", 24);
+    @include pxRem("padding", 3 13 0 10);
+    @include pxRem("border-right", 1 solid map-get($colors, border));
+    position: relative;
+    display: flex;
+    align-items: center;
+    .icon-sort-down {
+      margin-left: auto;
+    }
+    span {
+      @include pxRem("padding-right", 10);
+      @include pxRem("max-width", 76);
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      &:hover {
+        content: attr(data-title);
+      }
+    }
+  }
+  .header-center {
+    @include pxRem("width", 480);
+    @include pxRem("height", 50);
+    @include pxRem("padding-left", 20);
+    @include pxRem("border-radius", 8);
+    box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.06);
+    display: flex;
+    align-items: center;
+    background-color: map-get($colors, white);
+    border: solid 1px map-get($colors, border);
+    .search-input {
+      @include pxRem("width", 300);
+      @include pxRem("height", 25);
+      @include pxRem("padding-left", 15);
+      // @include pxRem("padding-top", 6);
+      @include pxRem("margin-top", 3);
+      @include pxRem("font-size", 16);
+      display: inline-block;
+      border: 0;
+      outline: 0;
+    }
+  }
+  .ic-current-location {
+    @include pxRem("height", 16);
+    @include pxRem("width", 16);
+    background-image: url("assets/images/icons/ic_format_paint.png");
+    background-size: cover;
+    display: inline-block;
+    vertical-align: middle;
+  }
+  .menu-header {
+    @include pxRem("line-height", 40);
+    @include pxRem("height", 40);
+    .menu-item {
+      display: inline-block;
+      &-link {
+        @include pxRem("padding", 0 12);
+        cursor: pointer;
+        display:inline-block;
+        text-align:center;
+        transition: text-shadow .3s;
+        &:hover {
+          color: map-get($colors, secondary);
+          text-shadow: 1px 0  map-get($colors, secondary);
+        }
+        &::after {
+          display: block;
+          content: attr(title);
+          font-weight: 700;
+          height: 0;
+          visibility: hidden;
+        }
+      }
+      .ic-triangel-down {
+        @include pxRem("top", 16);
+        @include pxRem("right", 15);
+      }
+      .active {
+        text-shadow: 1px 0  map-get($colors, secondary);
+        color: map-get($colors, secondary);
+      }
+      .data-dropdown {
+        @include pxRem("border-radius", 2);
+        border: solid 1px map-get($colors, d-a);
+        box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.06);
+      }
+      .data-dropdown-item {
+        @include pxRem("margin", 0 20);
+        @include pxRem("height", 60);
+        @include pxRem("line-height", 60);
+      }
+      &.login-header {
+        .select-data {
+          .select-data-name {
+            @include pxRem("max-width", 60);
+            display: inline-block;
+            vertical-align: middle;
+            text-overflow: initial;
+          }
+        }
+      }
+    }
+  }
+  .language {
+    @include pxRem("margin-left", 10);
+    @include pxRem("border-radius", 20);
+    @include pxRem("padding", 9 16);
+    line-height: normal;
+    position: relative;
+    border: 1px solid map-get($colors, border);
+    &-image {
+      @include pxRem("width", 26);
+      @include pxRem("height", 26);
+      vertical-align: middle;
+      border-radius: 50%;
+    }
+    &-name {
+      @include pxRem("margin", 0 10 0 12);
+      display: inline-block;
+      position: relative;
+    }
+  }
+  .col-right {
+    .mat-toolbar.mat-primary {
+      padding: 0;
+    }
+  }
+  .header-booking {
+    .col-left {
+      width: auto;
+    }
+    .col-right {
+      margin-left: auto;
+    }
+    .menu-header {
+      padding-right: 0;
+      display: flex;
+      .menu-item-link {
+        @include pxRem("padding", 0 24 0 0);
+      }
+    }
+    .btn-white {
+      border: 0;
+      display: flex;
+      align-items: center;
+      .iconf-share {
+        @include pxRem("margin-right", 12);
+      }
+    }
+    .language {
+      @include pxRem("margin-left", 54);
+    }
+    .select-display {
+      position: relative;
+      .language-dropdown {
+        @include pxRem("top", 52);
+        @include pxRem("right", -16);
+      }
+    }
+  }
+}
+// custom menu bar
+.mat-toolbar {
+  font: inherit;
+}
+.mat-toolbar.mat-primary {
+  background: none;
+  color: map-get($colors, secondary);
+}
+.mat-button-wrapper {
+  span {
+    display: none;
+  }
+}
+.mat-drawer {
+  z-index: 1000;
+}
+.mat-drawer-container {
+  background-color: unset;
+}
+.mat-drawer-opened {
+  position: fixed !important;
+  top: 0;
+  right: 0;
+}
+.mat-drawer-backdrop.mat-drawer-shown {
+  background-color: rgba(0,0,0,.7);
+}
+.mat-toolbar-row, .mat-toolbar-single-row {
+  height: 0 !important;
+}
+.mat-toolbar-single-row {
+  justify-content: flex-end;
+}
+.mat-drawer-inner-container {
+  @include pxRem("padding", 20 19 0 5);
+  @include pxRem("width", 333!important);
+  text-align: left;
+  .close-menu {
+    position: absolute;
+    right: 19px;
+    top: 26px;
+  }
+}
+.mat-icon {
+  @include pxRem("width", 32!important);
+  @include pxRem("height", 27!important);
+}
+.material-icons {
+  @include pxRem("font-size", 40!important);
+}
+
+// Responsive
+@include respond-below(largest) {
+  .page-header {
+    .header-col {
+      .col-middle {
+        width: auto;
+      }
+    }
+    .menu-header {
+      .menu-item {
+        &.login-header {
+          .select-data {
+            @include pxRem("max-width", 165);
+            @include pxRem("margin", 10);
+          }
+        }
+      }
+    }
+  }
+  .language {
+    @include pxRem("width", 165);
+    @include pxRem("margin-top", 10);
+  }
+  .language-dropdown {
+    @include pxRem("top", 202);
+    @include pxRem("right", 3);
+    @include pxRem("min-width", 327);
+    &::before {
+      @include pxRem("left", 30);
+      right: auto;
+    }
+  }
+}
+@include respond-below(large) {
+  .page-header {
+    .col-right {
+      width: auto;
+      margin-left: auto;
+    }
+    .header-center {
+      @include pxRem("width", 380);
+      .search-input {
+        @include pxRem("width", 200);
+      }
+    }
+  }
+}
+
+@include respond-below(wide) {
+  .page-header {
+    @include pxRem("padding", 0 20);
+  }
+}
+
+@include respond-below(medium) {
+  .page-header {
+    position: absolute;
+    .header-col {
+      .col-middle {
+        @include pxRem("top", 95);
+        @include pxRem("left", 90);
+        @include pxRem("right", 90);
+        position: absolute;
+        margin-left: 0;
+      }
+    }
+    .header-center {
+      @include pxRem("padding-left", 10);
+      width: 100%;
+      .search-input {
+        width: 100%;
+      }
+      .ic-home {
+        @include pxRem("width", 15);
+        @include pxRem("height", 14);
+      }
+    }
+  }
+}
+
+@include respond-below(small) {
+  .page-header {
+    @include pxRem("padding", 0 15);
+    .header-col {
+      .col-middle {
+        @include pxRem("left", 15);
+        @include pxRem("right", 15);
+      }
+    }
+    .header-center {
+      @include pxRem("height", 40);
+    }
+    .select-city {
+      span {
+        @include pxRem("padding", 0 5);
+        @include pxRem("margin-top", 3);
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+      }
+      .icon-sort-down {
+        @include pxRem("margin-right", 5);
+      }
+    }
+    .ic-current-location {
+      @include pxRem("width", 12);
+      @include pxRem("height", 12);
+    }
+  }
+}

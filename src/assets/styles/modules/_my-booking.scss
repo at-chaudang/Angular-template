@@ -1,0 +1,283 @@
+.my-booking {
+  .container {
+    @include pxRem("max-width", 830);
+    @include pxRem("margin", 20 auto);
+    padding: 0;
+  }
+  .status-menu {
+    display: flex;
+    li {
+      @include pxRem("width", 157);
+      @include pxRem("line-height", 40);
+      transition: text-shadow 0.3s;
+      &::after {
+        @include pxRem("height", 5);
+        content: "";
+        display: block;
+        background: map-get($colors, pink);
+        width: 100%;
+      }
+      &:hover {
+        text-shadow: 0 0 1px map-get($colors, secondary), 0 0 1px map-get($colors, secondary);
+      }
+      &.active-tap {
+        text-shadow: 0 0 1px map-get($colors, secondary), 0 0 1px map-get($colors, secondary);
+        &::after {
+          background: map-get($colors, primary);
+        }
+      }
+    }
+  }
+  .bookings-history {
+    @include pxRem("margin-top", 45);
+    .bookings-history-item {
+      @include pxRem("margin-top", 20);
+      cursor: initial;
+      position: relative;
+      .real-estates-content {
+        @include pxRem("width", 400);
+        .real-estates-name {
+          @include pxRem("max-width",300);
+        }
+      }
+      .real-estates-right {
+        margin: auto 0 5;
+        text-align: center;
+        .price-history {
+          @include pxRem("font-size", 25);
+        }
+        .btn-primary {
+          @include pxRem("width", 160);
+          @include pxRem("height", 40);
+          @include pxRem("line-height", 40);
+          @include pxRem("margin", 5 auto);
+          display: block;
+        }
+      }
+    }
+    .booking-id {
+      @include pxRem("font-size", 14);
+      @include pxRem("line-height", 14);
+    }
+    .booking-date {
+      p {
+        @include pxRem("width", 180);
+        display: flex;
+        justify-content: space-between;
+      }
+    }
+  }
+  .no-booking {
+    @include pxRem("margin-bottom", 100);
+    img {
+      @include pxRem("margin-top", 110);
+    }
+    p {
+      @include pxRem("font-size", 20);
+      @include pxRem("margin-top", 40);
+      white-space: pre-wrap;
+    }
+    .btn-primary {
+      @include pxRem("width", 250);
+      @include pxRem("margin-top", 24);
+    }
+  }
+  .pagination {
+    @include pxRem("margin-bottom", 120);
+  }
+}
+.status-label {
+  @include pxRem("padding", 0 14);
+  @include pxRem("font-size", 12);
+  @include pxRem("height", 28);
+  background: map-get($colors, completed);
+  color: map-get($colors, white);
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  z-index: 1;
+  .iconf-completed {
+    @include pxRem("font-size", 18);
+    @include pxRem("margin-right", 5);
+    vertical-align: bottom;
+  }
+  &.new {
+    background: map-get($colors, white);
+    color: map-get($colors, secondary);
+    .icon-return {
+      &:before {
+        content: $iconf-reserved;
+      }
+    }
+  }
+  &.processing,
+  &.pending {
+    background: map-get($colors, progress);
+    .icon-return {
+      &:before {
+        content: $iconf-in-progress;
+      }
+    }
+  }
+  &.canceled {
+    background: map-get($colors, primary);
+    .icon-return {
+      &:before {
+        content: $iconf-canelled;
+      }
+    }
+  }
+}
+.my-booking-detail {
+  @include pxRem("padding", 65);
+}
+.back-my-booking {
+  .iconf-back {
+    @include pxRem("margin-right", 8);
+    vertical-align: middle;
+  }
+}
+.my-booking-information {
+  .image-my-booking {
+    position: relative;
+    .real-estates-image {
+      @include pxRem("max-width", 562px);
+      .image-item {
+        padding-top: 69%;
+      }
+    }
+  }
+  .btn-link-web {
+    @include pxRem("width", 150);
+    @include pxRem("bottom", 16);
+    @include pxRem("right", 25);
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    .dots {
+      @include pxRem("margin-right", 10);
+    }
+  }
+}
+.booking-info-list {
+  display: flex;
+  flex-direction: column;
+  .booking-info-item {
+    @include pxRem("padding", 5 0);
+    span {
+      @include pxRem("min-width", 175);
+      float: left;
+      width: auto;
+      white-space: nowrap;
+    }
+    .status-label {
+      @include pxRem("padding", 0 5);
+      @include pxRem("font-size", 16);
+      @include pxRem("margin-left", 10);
+      position: static;
+      background: map-get($colors, white);
+      color: map-get($colors, completed);
+      float: right;
+      .icon-return {
+        @include pxRem("margin-right", 8);
+      }
+      &.new {
+        color: map-get($colors, secondary);
+      }
+      &.processing,
+      &.pending {
+        color: map-get($colors, progress);
+      }
+      &.canceled {
+        color: map-get($colors, primary);
+      }
+    }
+    .red {
+      &.green {
+        color: map-get($colors, green);
+      }
+    }
+  }
+}
+
+// Responsive
+@include respond-below(largest) {
+  .my-booking {
+    @include pxRem("padding", 35 64);
+  }
+}
+@include respond-below(wide) {
+  .my-booking {
+    @include pxRem("padding", 20);
+    .bookings-history{
+      .bookings-history-item {
+        .real-estates-content {
+          @include pxRem("width", 215);
+          .real-estates-name {
+            @include pxRem("font-size", 16);
+          }
+          .real-estates-price {
+            @include pxRem("font-size", 13);
+          }
+        }
+        .real-estates-right {
+          .price-history {
+            @include pxRem("font-size", 16);
+          }
+          .btn-primary {
+            @include pxRem("width", 130);
+          }
+        }
+      }
+    }
+  }
+}
+@include respond-below(medium) {
+  .my-booking {
+    padding: 0;
+    .container {
+      margin: 0;
+    }
+    .status-menu {
+      @include pxRem("padding", 0 35);
+    }
+    .bookings-history {
+      @include pxRem("padding", 0 35);
+      .bookings-history-item {
+        flex-direction: column;
+        .real-estates-image {
+          max-width: 100%;
+        }
+        .real-estates-content  {
+          @include pxRem("padding", 10 0);
+          width: 100%;
+          .real-estates-price {
+            @include pxRem("font-size", 14);
+          }
+        }
+        .real-estates-right {
+          .price-history {
+            @include pxRem("font-size", 18);
+          }
+          .btn-primary {
+            width: 100%;
+          }
+        }
+      }
+    }
+  }
+}
+@include respond-below(small) {
+  .my-booking {
+    .status-menu {
+      @include pxRem("padding", 0 15);
+    }
+    .bookings-history {
+      @include pxRem("padding", 0 15);
+    }
+  }
+}

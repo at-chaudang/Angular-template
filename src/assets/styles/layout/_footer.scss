@@ -1,0 +1,86 @@
+footer {
+  @include pxRem("padding", 40 0 50);
+  border-top: solid 1px map-get($colors , border);
+}
+.footer-list  {
+  width: 70%;
+  .nav-footer {
+    display: flex;
+    .nav-footer-item {
+      @include pxRem("padding", 0 5);
+      cursor: pointer;
+      &:last-child {
+        &::after {
+          content: none;
+        }
+      }
+      &::after {
+        @include pxRem("width", 1);
+        @include pxRem("height", 19);
+        @include pxRem("margin-left", 10);
+        content: "";
+        background: map-get($colors, secondary);
+        display: inline-block;
+        vertical-align: middle;
+      }
+    }
+  }
+  .title-contact {
+    @include pxRem("font-size", 16);
+  }
+  .social-footer {
+    @include pxRem("margin-top", 20);
+    .nav-footer-item {
+      @include pxRem("padding", 0 10);
+      &::after {
+        content: none;
+      }
+      .iconf-facebook,
+      .iconf-twitter {
+        &::before {
+          color: map-get($colors, bg-social);
+        }
+      }
+    }
+  }
+  .logo-footer {
+    width: 148px;
+  }
+}
+.img-register {
+  width: 30%;
+  text-align: right;
+  display: flex;
+  justify-content: flex-end;
+  img {
+    @include pxRem("height", 112);
+    margin-top: auto;
+  }
+}
+
+// Responsive
+@include respond-below(wide) {
+  footer {
+    @include pxRem("height", 57);
+    @include pxRem("padding", 12 0);
+    background: map-get($colors, background);
+    border-top: solid 1px map-get($colors, border);
+  }
+  .footer-list  {
+    width: 100%;
+    text-align: center;
+    .logo-footer,
+    .nav-footer,
+    .license {
+      display: none;
+    }
+    .coppy-right {
+      @include pxRem("font-size", 14);
+      @include pxRem("line-height", 17);
+      margin-top: 0;
+    }
+  }
+  .img-register {
+    display: none;
+  }
+}

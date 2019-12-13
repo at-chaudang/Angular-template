@@ -19,8 +19,8 @@ $grid-gutter: 15px;
 $container-width: 1200px;
 .container {
   @extend %clr;
-  padding-left: $grid-gutter;
-  padding-right: $grid-gutter;
+  // padding-left: $grid-gutter;
+  // padding-right: $grid-gutter;
   margin: 0 auto;
   max-width: $container-width;
 }

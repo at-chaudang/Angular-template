@@ -1,0 +1,58 @@
+.images-dlg {
+  @include pxRem("max-width", 1223 !important);
+  @include pxRem("max-height", 693);
+  width: 100%;
+  height: 100%;
+  .mat-dialog-container {
+    @include pxRem("padding", 55 82);
+    position: relative;
+    app-images-modal {
+      @include pxRem("height", 580);
+      display: flex;
+      flex-direction: column;
+    }
+    .img-body {
+      @include pxRem("max-height", 500);
+      display: flex;
+      flex-wrap: wrap;
+      overflow: auto;
+    }
+    .img-section {
+      width: calc(100% / 3);
+      @include pxRem("height", 230);
+      @include pxRem("padding", 10);
+    }
+    .close-btn, .plus-img {
+      width: 100%;
+      height: 100%;
+    }
+    .bg-close {
+      top: 0;
+      right: 0;
+      @include pxRem("width", 30);
+      @include pxRem("height", 30);
+    }
+    .close-btn {
+      border: solid 1px map-get($colors, btn-close-border);
+      background: map-get($colors, white);
+      color: map-get($colors, black);;
+      border-radius: 50%;
+    }
+    .plus-img {
+      @include pxRem("font-size", 96);
+      @include pxRem("border-radius", 3);
+      color: map-get($colors, primary);
+      border: solid 1px map-get($colors, border);
+      background-color: map-get($colors, d-a);
+    }
+    .img-footer {
+      @include pxRem("padding", 10);
+      margin-top: auto;
+    }
+    .img-handle-btn {
+      @include pxRem("width", 242);
+      @include pxRem("height", 40);
+      @include pxRem("border-radius", 20);
+    }
+  }
+}

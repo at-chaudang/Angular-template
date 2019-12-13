@@ -1,0 +1,37 @@
+.auth-modal {
+  @include pxRem("max-width", 450);
+  @include pxRem("padding", 20 42 55);
+  @include pxRem("border-radius", 8);
+  width: 100%;
+  .form-control {
+    @include pxRem("border-radius", 22);
+    @include pxRem("padding", 0 25);
+    @include pxRem("height", 45);
+  }
+  .iconf {
+    @include pxRem("right", 20);
+    @include pxRem("font-size", 14);
+    position: absolute;
+    margin: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    color: map-get($colors, iconf-bg);
+    &-password {
+      @include pxRem("font-size", 20);
+    }
+    &-close {
+      @include pxRem("padding", 8);
+      @include pxRem("top", 8);
+      right: 0;
+      border-radius: 50%;
+      background: map-get($colors, bg-close);
+      color: map-get($colors, iconf-close);
+    }
+  }
+  .mat-error {
+    @include pxRem("left", 10);
+    @include pxRem("bottom", -22);
+    position: absolute;
+    white-space: nowrap;
+  }
+}

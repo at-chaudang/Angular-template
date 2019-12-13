@@ -1,0 +1,227 @@
+app-map {
+  .category-section-dropdown {
+    @include pxRem("padding", 4 24);
+    @include pxRem("margin", 2);
+    @include pxRem("height", 25);
+    @include pxRem("width", 299);
+    @include pxRem("border-radius", 4);
+    position: absolute;
+    top: 0;
+    right: 0;
+    overflow: visible;
+    border: solid 1px map-get($colors, d-a);
+    background-color: map-get($colors, white);
+    box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.06);
+    .mat-expansion-panel-header {
+      padding: 0;
+      &:hover {
+        background: map-get($colors, white) !important;
+      }
+      .mat-expansion-panel-header-title {
+        @include pxRem("font-size", 16);
+      }
+    }
+    .category-section-container {
+      @include pxRem("border-radius", 4);
+      @include pxRem("padding", 6 9 0);
+      @include pxRem("width", 349);
+      @include pxRem("margin", 7 -1 1);
+      position: absolute;
+      left: 0;
+      border: solid 1px map-get($colors, d-a);
+      background-color: map-get($colors, white);
+      box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.06);
+      .category-area-title {
+        @include pxRem("padding", 0 15 4);
+        @include pxRem("margin-bottom", 10);
+        border-bottom: 1px solid map-get($colors, border);
+      }
+      .category-area-none-service {
+        @include pxRem("margin-bottom", 6);
+      }
+      .category-section-more {
+        @include pxRem("max-height", 210);
+        box-shadow: none;
+        position: relative;
+        &-two {
+          .section-categorical-shortcut {
+            display: flex;
+            justify-content: space-around;
+            width: 100% !important;
+          }
+          .mat-expansion-indicator {
+            display: none;
+          }
+        }
+        .mat-expansion-panel-header {
+          @include pxRem("padding", 0 9 10);
+          cursor: initial;
+          .mat-expansion-panel-header-title {
+            margin-right: 0;
+            .section-categorical-shortcut {
+              width: 100%;
+              overflow-y: hidden;
+              white-space: nowrap;
+              display: flex;
+              justify-content: space-around;
+              .shorcut-item {
+                width: 20%;
+                cursor: pointer;
+              }
+            }
+            .item-title {
+              @include pxRem("font-size", 10);
+              display: block;
+            }
+            .item-icon {
+              width: 30px;
+              height: 30px;
+              background-size: 100%;
+            }
+          }
+        }
+        .mat-expansion-panel-body {
+          @include pxRem("max-height", 145);
+          @include pxRem("padding-top", 4);
+          border-top: 1px solid map-get($colors, border);
+          overflow: auto;
+          .section-categorical-shortcut-more {
+            &-two {
+              display: flex;
+              justify-content: space-around;
+            }
+            .shortcut-more-item {
+              @include pxRem("padding-top", 12);
+              .item-more-title {
+                @include pxRem("margin-left", 7);
+                @include pxRem("max-width", 90);
+                @include pxRem("line-height", 30);
+                width: 100%;
+                display: inline-block;
+              }
+            }
+          }
+        }
+        .mat-expansion-indicator {
+          @include pxRem("height", 25);
+          @include pxRem("width", 25);
+          @include pxRem("right", 30);
+          cursor: pointer;
+          position: absolute;
+          top: 0;
+          text-align: center;
+          border-radius: 50%;
+          background-color: map-get($colors, b-k);
+          &::after {
+            color: map-get($colors, white);
+          }
+        }
+      }
+    }
+    .map-icon {
+      @include pxRem("font-size", 30);
+      @include pxRem("width", 30);
+      @include pxRem("height", 30);
+      cursor: pointer;
+      &-custom {
+        @include pxRem("font-size", 24);
+      }
+      &-custom {
+        color: map-get($colors, b-k);
+      }
+    }
+  }
+  /* Style for zoom-in and zoom-out buttons in Google map. */
+  .gmnoprint:not(.gm-bundled-control) > div {
+    @include pxRem("height", 61 !important);
+    @include pxRem("width", 30 !important);
+    @include pxRem("font-size", 30 !important);
+    .gm-control-active {
+      @include pxRem("width", 30 !important);
+      @include pxRem("height", 30 !important);
+      img {
+        @include pxRem("width", 15 !important);
+        @include pxRem("height", 15 !important);
+      }
+    }
+    div {
+      @include pxRem("width", 20 !important);
+    }
+  }
+  .popup-container .popup-bubble-anchor {
+    .popup-bubble {
+      box-shadow: none;
+      &::after {
+        visibility: hidden;
+      }
+      .popup-label {
+        padding: 0;
+        border: 0;
+        background: none;
+        .marker-icon {
+          @include pxRem("width", 30);
+          @include pxRem("height", 30);
+          background-size: 100%;
+          background-color: map-get($colors, white);
+          border-radius: 50%;
+        }
+      }
+      .popup-content {
+        .card-map-title,
+        .card-map-body {
+          @include pxRem("padding", 8 15);
+        }
+        .card-map-title {
+          border-bottom: solid 1px map-get($colors, border);
+          @include pxRem("font-size", 14);
+        }
+        .card-map-body {
+          @include pxRem("font-size", 11);
+          .card-map-wrap {
+            .iconf-location {
+              @include pxRem("top", 3);
+            }
+            .card-map-text {
+              @include pxRem("margin-left", 20);
+              @include pxRem("margin-bottom", 6);
+            }
+          }
+        }
+      }
+    }
+    .hightlight-anchor::after {
+      visibility: visible;
+      @include pxRem("bottom", 3);
+    }
+    .show-popup-content {
+      @include pxRem("bottom", 3);
+    }
+  }
+  .gm-style-cc {
+    display: none;
+  }
+  .gmnoprint.gm-bundled-control .gmnoprint {
+    left: -5px !important;
+    top: -5px !important;
+  }
+}
+.my-location {
+  @include pxRem("top", 71);
+  @include pxRem("left", 4);
+  @include pxRem("padding", 5);
+  @include pxRem("height", 30);
+  @include pxRem("width", 32);
+  @include pxRem("border-radius", 2);
+  background-color: map-get($colors, white);
+  position: absolute;
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 1px 4px -1px;
+  .location-icon {
+    @include pxRem("height", 18);
+    @include pxRem("width", 18);
+    @include pxRem("background-size", 180 18);
+    background-image: url("assets/images/current-location-sprite.png");
+    display: inline-block;
+    background-position: 0 center;
+    background-repeat: no-repeat;
+  }
+}

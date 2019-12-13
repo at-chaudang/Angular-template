@@ -1,0 +1,125 @@
+.overlay-room {
+  @include pxRem('width', 1071);
+  position: relative !important;
+  .mat-dialog-container {
+    @include pxRem('padding', 43 123);
+  }
+  .select-data {
+    border-radius: 0;
+    text-align: left;
+    .data-dropdown {
+      width: 100%;
+    }
+    .data-dropdown-container {
+      z-index: 10;
+    }
+    .data-dropdown-item {
+      .data-name {
+        white-space: nowrap;
+        overflow: hidden;
+        &::after {
+          @include pxRem('width', 60);
+          @include pxRem('top', 2);
+          @include pxRem('bottom', 2);
+          position: absolute;
+          right: 0;
+          content: '';
+          background: rgb(255,255,255);
+          background: linear-gradient(90deg, rgba(255,255,255,0) 0%, rgba(255,255,255, .5) 50%, rgba(255,255,255,1) 100%);
+        }
+      }
+    }
+  }
+  .select-data-name {
+    @include pxRem('width', 180);
+    display: inline-block;
+    margin-left: 0;
+  }
+  .wrap-amenities-list {
+    @include pxRem('max-height', 210);
+    @include pxRem("margin-top", 20);
+    overflow: auto;
+    &::-webkit-scrollbar {
+      @include pxRem('width', 7);
+    }
+    &::-webkit-scrollbar-thumb {
+      @include pxRem('border-radius', 8);
+      background: map-get($colors, scroll-bg); 
+    }
+    .amenities-list {
+      .amenities-item {
+        @include pxRem("padding", 0 0 28 0);
+      }
+    }
+  }
+}
+.galary-rooms {
+  @include pxRem('margin-top', 20);
+  .owl-carousel {
+    .owl-item {
+      @include pxRem('max-width', 825);
+      width: 100%;
+      height: initial;
+      display: block;
+    }
+  }
+  .owl-nav {
+    .owl-next,
+    .owl-prev {
+      background-color: map-get($colors, white);
+      box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.06);
+      opacity: 1;
+      transform: none;
+      color: map-get($colors, secondary);
+    }
+    .owl-next {
+      @include pxRem("right", -30);
+    }
+    .owl-prev {
+      @include pxRem("left", -30);
+    }
+    &.disabled {
+      display: none;
+    }
+  }
+  .room-img {
+    background: map-get($colors, p-l) url("assets/images/no-image.svg") ;
+    display: block;
+    padding-top: 69.4%;
+    background-repeat: no-repeat;
+    background-size: auto;
+    background-position: center center;
+  }
+}
+.room-detail-main {
+  .estates-detail {
+    padding: 0;
+  }
+  .room-available {
+    @include pxRem('margin', 18 0 0);
+  }
+  .estates-label {
+    @include pxRem('margin-top', 10);
+  }
+  .property-list {
+    @include pxRem('margin-top', 10);
+    display: flex;
+    .property-list-item {
+      @include pxRem('padding-right', 20);
+    }
+  }
+}
+
+// responsive
+@include respond-below(large) {
+  .overlay-room {
+    .mat-dialog-container {
+      @include pxRem('padding', 40);
+    }
+  }
+}
+@include respond-below(wide) {
+  .overlay-room {
+    max-width: 90vw !important;
+  }
+}

@@ -1,22 +1,46 @@
 * {
   box-sizing: border-box;
+  outline: 0;
 }
 
 body {
-  font-family: $font-body;
+  font-family: $font-family;
 }
 
 a {
   text-decoration: none;
   cursor: pointer;
-  color: $color-black;
+  color: map-get($colors, link-path);
+  &:visited {
+    color: map-get($colors, link-visited);
+  }
+  &:hover {
+    opacity: .8;
+    text-decoration: underline;
+  }
+  &[target='blank'],
+  &[target='_blank'] {
+    &::after {
+      background-image: url('src/assets/icons/icons8-external-link.svg');
+      background-repeat: no-repeat;
+      background-size: cover;
+      content: '';
+      display: inline-block;
+      height: 0.8125rem;
+      margin: 0 0.1875rem 0 0.25rem;
+      position: relative;
+      top: 0.125rem;
+      width: 0.8125rem;
+    }
+  }
 }
 
 button {
   cursor: pointer;
+  border: 0;
 }
 
-input[type=submit] {
+input[type='submit'] {
   cursor: pointer;
 }
 
@@ -29,7 +53,7 @@ p {
 }
 
 a {
-  transition: all .5s;
+  transition: all 0.5s;
 }
 
 label {
@@ -39,15 +63,30 @@ label {
   font-weight: 700;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   text-transform: uppercase;
   font-weight: 600;
 }
-
 h1 {
-  font-size: $m * 1.3 ;
+  @include pxRem(font-size, 24);
 }
-
 h2 {
-  font-size: 1.2 * $m;
+  @include pxRem(font-size, 22);
+}
+h3 {
+  @include pxRem(font-size, 20);
+}
+h4 {
+  @include pxRem(font-size, 18);
+}
+h5 {
+  @include pxRem(font-size, 16);
+}
+h6 {
+  @include pxRem(font-size, 14);
 }

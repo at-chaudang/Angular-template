@@ -1,0 +1,124 @@
+.panel-policy {
+  .form-control {
+    @include pxRem(padding, 0 35 0 15);
+  }
+  .mat-dialog-container {
+    @include pxRem(border-radius, 8);
+    padding: 0;
+  }
+  .policy-modal {
+    @include pxRem(width, 935);
+    @include pxRem(padding, 50 125);
+    .intl-tel-input {
+      display: block;
+    }
+    .mat-error {
+      @include pxRem(top, 40);
+    }
+    .property-list {
+      display: flex;
+      flex-wrap: wrap;
+      .property-item {
+        &::before {
+          @include pxRem(padding-right, 5);
+          @include pxRem(width, 20);
+          display: inline-block;
+        }
+        &:first-child::before {
+          content: url(/assets/images/icons/bathroom.svg);
+        }
+        &:nth-child(2)::before {
+          content: url(/assets/images/icons/bedroom.svg);
+        }
+        &:nth-child(3)::before {
+          content: url(/assets/images/icons/bed.svg);
+        }
+      }
+    }
+  }
+  .house-title {
+    @include pxRem(font-size, 30);
+  }
+  .house-img {
+    @include pxRem(min-width, 190);
+    width: 100%;
+  }
+  .fee-list {
+    span {
+      @include pxRem(min-width, 150);
+    }
+    .fee-value {
+      @include pxRem(min-width, 120);
+      display: inline-block;
+      text-align: right;
+    }
+    .not-charge {
+      @include pxRem(max-width, 300);
+    }
+  }
+  .iconf {
+    @include pxRem(margin-top, 8);
+    &-money {
+      @include pxRem(font-size, 10);
+      @include pxRem(margin-top, 8);
+    }
+    &-guest,
+    &-calendar {
+      @include pxRem(margin-top, 4);
+    }
+  }
+  .input-disable {
+    @include pxRem(width, 240);
+    @include pxRem(border-radius, 8);
+    @include pxRem(font-size, 16);
+    border: 1px solid map-get($colors, d-a);
+    background: map-get($colors, p-g);
+  }
+  .form-group {
+    @include pxRem(margin-bottom, 20);
+  }
+  .user-info {
+    .iconf {
+      @include pxRem(right, 15);
+      position: absolute;
+      margin: 0;
+      top: 50%;
+      transform: translateY(-50%);
+      color: map-get($colors, border);
+      &-email {
+        @include pxRem(font-size, 10);
+      }
+      &-phone {
+        @include pxRem(font-size, 12);
+      }
+    }
+    .input-description {
+      @include pxRem(padding, 10 15);
+    }
+    .policy-title {
+      @include pxRem(line-height, 24);
+      vertical-align: middle;
+    }
+    .policies-modal {
+      p {
+        @include pxRem(margin-top, 15);
+        @include pxRem(line-height, 23);
+      }
+    }
+  }
+  textarea {
+    @include pxRem(min-height, 120);
+  }
+  .form-control {
+    @include pxRem(font-size, 16);
+    @include pxRem(box-shadow, 0 0 8 0 rgba(0, 0, 0, 0.06));
+  }
+  .btn-submit {
+    @include pxRem(width, 400);
+    background: map-get($colors, primary);
+    color: map-get($colors, white);
+  }
+  .bg-close {
+    @include pxRem(top, 5);
+  }
+}

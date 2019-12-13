@@ -1,0 +1,46 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  @include pxRem('padding-top', 80);
+  font-family: $font-body;
+  line-height: 1.6;
+  font-weight: 400;
+  color: map-get($colors, secondary);
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+}
+a {
+  text-decoration: none;
+  color: map-get($colors, secondary);
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  line-height: 1.8;
+  font-weight: 700;
+}
+h1 {
+  @include pxRem('font-size', 26);
+}
+h2 {
+  @include pxRem('font-size', 24);
+}
+h3 {
+  @include pxRem('font-size', 22);
+}
+h4 {
+  @include pxRem('font-size', 20);
+}
+h5 {
+  @include pxRem('font-size', 18);
+}
+h6 {
+  @include pxRem('font-size', 16);
+}
+img {
+  max-width: 100%;
+}

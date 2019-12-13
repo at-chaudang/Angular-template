@@ -1,0 +1,33 @@
+.list-tag {
+  @include pxRem("font-size", 14);
+  li {
+    @include pxRem("padding", 0 0 5 0);
+    float: left;
+    width: auto;
+    input[type="checkbox"] + span {
+      @include pxRem("max-width",  390);
+      width: 100%;
+      background-color: map-get($colors, pink);
+      color: map-get($colors, p-a);
+    }
+    input[type="checkbox"]:checked + span {
+      background-color: map-get($colors, primary);
+      color: map-get($colors, white);
+    }
+    .tag {
+      @include pxRem("padding", 0 14);
+      @include pxRem("margin-right", 5);
+      @include pxRem("border-radius", 17);
+      @include pxRem("height", 30);
+      @include pxRem("line-height", 30);
+      display: block;
+      background-color: map-get($colors, pink);
+      &:hover {
+        color: map-get($colors, primary);
+      }
+      &.placeholder-loading {
+        @include pxRem("width", 120);
+      }
+    }
+  }
+}

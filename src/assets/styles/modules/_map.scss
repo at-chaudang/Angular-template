@@ -1,0 +1,199 @@
+:host {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+.wrap-map {
+  .iconf-close {
+    display: none;
+  }
+  .my-location {
+    @include pxRem("height", 29);
+    @include pxRem("width", 29);
+    @include pxRem("top", 31);
+    @include pxRem("left", 3);
+    z-index: 1;
+    border: 0;
+  }
+}
+.home-map {
+  width: 100%;
+  height: calc(100vh - 4.0625rem);
+  position: relative;
+  right: 0;
+  bottom: 0;
+  .gm-style {
+    .toggle-map-control {
+      left: 0 !important;
+    }
+    .my-location {
+      @include pxRem("top", 32 !important);
+      @include pxRem("left", 3 !important);
+    }
+    .pulse-container {
+      @include pxRem("width", 23);
+      @include pxRem("height", 23);
+      background-image: url("assets/images/current_location.svg");
+      background-repeat: round;
+      border-radius: 50% !important;
+      box-shadow: none !important;
+      &.popup-bubble::after {
+        width: 0;
+        height: 0;
+        border: 0;
+        position: initial;
+      }
+    }
+  }
+  .gm-style-iw.gm-style-iw-c {
+    .gm-style-iw-d + button.gm-ui-hover-effect {
+      display: none !important;
+    }
+  }
+  .gmnoprint.gm-bundled-control .gmnoprint {
+    @include pxRem("top", 54 !important);
+    @include pxRem("left", -7 !important);
+    > div {
+      @include pxRem("width", 29 !important);
+      > div {
+        @include pxRem("width", 20 !important);
+      }
+    }
+    button {
+      width: 100% !important;
+      img {
+        @include pxRem("width", 13 !important);
+        @include pxRem("height", 13 !important);
+      }
+    }
+  }
+}
+.popup-container {
+  @include pxRem("width", 200);
+  height: 0;
+  position: relative;
+  font-family: $font-body;
+  .popup-bubble-anchor {
+    @include pxRem("bottom", 8);
+    position: absolute;
+    width: 100%;
+    left: 0;
+    .popup-bubble {
+      @include pxRem("border-radius", 2);
+      @include pxRem("font-size", 14);
+      position: absolute;
+      top: 0;
+      left: 0;
+      transform: translate(-50%, -100%);
+      box-shadow: 0px 2px 10px 1px rgba(0, 0, 0, 0.5);
+      font-weight: 700;
+      &.hightlight-popup {
+        z-index: 9999;
+      }
+      &::after {
+        @include pxRem("width", 8);
+        @include pxRem("height", 8);
+        @include pxRem("margin-top", -8);
+        content: "";
+        position: absolute;
+        bottom: -1px;
+        left: 50%;
+        background: map-get($colors, pink);
+        transform: rotate(-45deg) translateX(-50%);
+        border-left: 1px solid map-get($colors, b-a);
+        border-bottom: 1px solid map-get($colors, b-a);
+      }
+      &.available-anchor::after {
+        background-color: map-get($colors, b-d);
+        border-color: map-get($colors, b-e);
+      }
+      &.reference-anchor::after {
+        background-color: map-get($colors, primary) !important;
+        border-color: map-get($colors, primary) !important;
+      }
+      &.hightlight-anchor::after {
+        @include pxRem("margin-top", -7);
+        background-color: map-get($colors, white);
+        border: 0;
+      }
+    }
+    .popup-label {
+      @include pxRem("padding", 5);
+      cursor: pointer;
+      background-color: map-get($colors, pink);
+      margin-bottom: 0;
+      border: 1px solid map-get($colors, b-a);
+      display: inline-block;
+      &.is-available {
+        background-color: map-get($colors, b-d);
+        border-color: map-get($colors, b-e);
+      }
+      &.hide-popup-label {
+        display: none;
+      }
+      &.reference-label {
+        background-color: map-get($colors, primary);
+        border: map-get($colors, primary);
+        color: map-get($colors, white);
+        .iconf-arrow {
+          content: url("/assets/images/icons/arrow-up-hover.svg");
+        }
+      }
+      .iconf-arrow {
+        @include pxRem("height", 12);
+        @include pxRem("margin", 0 0 2 2);
+        content: url("/assets/images/icons/ic-arrow-up.svg");
+        animation: bouncing 1s ease-in-out infinite;
+      }
+    }
+    .popup-content {
+      @include pxRem("border-radius", 4);
+      cursor: pointer;
+      position: relative;
+      background: map-get($colors, white);
+      bottom: 100%;
+      left: 50%;
+      transform: translateX(-50%);
+      box-shadow: 0 0 4px map-get($colors, b-f);
+      display: none;
+      &.show-popup-content {
+        display: block;
+      }
+    }
+  }
+}
+.card-map {
+  @include pxRem("width", 274);
+  @include pxRem("border-radius", 2px);
+  box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.06);
+  background-color: map-get($colors, white);
+  .card-map-content {
+    width: 100%;
+    .card-map-img {
+      @include pxRem("height", 189);
+      width: 100%;
+      object-fit: cover;
+    }
+    .card-map-body {
+      @include pxRem("padding", 10 12 12);
+      @include pxRem("font-size", 16);
+      font-weight: 700;
+    }
+    .card-map-status {
+      @include pxRem("margin-bottom", 3);
+      color: map-get($colors, primary);
+      &.green {
+        color: map-get($colors, b-e);
+      }
+    }
+    .card-map-text {
+      @include pxRem("margin-bottom", 6);
+      color: map-get($colors, secondary);
+    }
+    .card-map-price {
+      @include pxRem("font-size", 14);
+      font-weight: 300;
+      color: map-get($colors, secondary);
+    }
+  }
+}

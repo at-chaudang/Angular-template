@@ -1,0 +1,71 @@
+button {
+  outline: 0;
+  cursor: pointer;
+  background: none;
+  &:disabled {
+    opacity: .5;
+  }
+}
+.btn-select-number {
+  @include pxRem("height", 24);
+  @include pxRem("width", 24);
+  outline: 0;
+  border: 0;
+  cursor: pointer;
+  display: inline-block;
+  vertical-align: middle;
+  background-size: cover;
+}
+.input-txt {
+  @include pxRem("height", 40);
+  @include pxRem("font-size", 16);
+  @include pxRem("border-radius", 4);
+  width: 100%;
+  border: solid 1px map-get($colors, border);
+}
+.btn {
+  @include pxRem("height", 40);
+  @include pxRem("border-radius", 20);
+  width: 100%;
+  // text-transform: capitalize;
+  &.btn-primary {
+    background-color: map-get($colors , primary);
+    color: map-get($colors, white);
+    border: 0;
+  }
+  &.btn-white {
+    background-color: map-get($colors , white);
+    color: map-get($colors, secondary);
+    border: solid 1px map-get($colors, border);
+  }
+}
+.btn-text {
+  @include pxRem("padding", 11 20);
+  height: auto;
+  width: auto;
+  border: 0;
+  background: none;
+  font-weight: 700;
+}
+.back-sp {
+  display: none;
+  @include respond-below(medium) {
+    @include pxRem("margin-bottom", 10);
+    display: block;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    font-weight: 700;
+    .iconf-prev-chevron {
+      @include pxRem("width", 18);
+      @include pxRem("height", 18);
+      @include pxRem("margin-right", 5);
+      @include pxRem("font-size", 10);
+      border: solid 1px map-get($colors, primary);
+      border-radius: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+}
